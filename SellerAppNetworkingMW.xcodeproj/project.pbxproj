@@ -14,6 +14,7 @@
 		2B11985F1F01B02200C7A1FC /* RefinementGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11985E1F01B02200C7A1FC /* RefinementGroups.swift */; };
 		2B1198611F01B06D00C7A1FC /* Refinement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1198601F01B06D00C7A1FC /* Refinement.swift */; };
 		2B1198631F01B1F100C7A1FC /* SortOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1198621F01B1F100C7A1FC /* SortOptions.swift */; };
+		2B1198651F01B2EC00C7A1FC /* MacVariantsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1198641F01B2EC00C7A1FC /* MacVariantsInfo.swift */; };
 		2B1310E71F016E5500611EC9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1310E61F016E5500611EC9 /* Home.swift */; };
 		2B1310E91F016EAB00611EC9 /* CarousalBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1310E81F016EAB00611EC9 /* CarousalBanners.swift */; };
 		2B1310EB1F016ECF00611EC9 /* StackBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1310EA1F016ECF00611EC9 /* StackBanners.swift */; };
@@ -47,6 +48,7 @@
 		2B11985E1F01B02200C7A1FC /* RefinementGroups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefinementGroups.swift; sourceTree = "<group>"; };
 		2B1198601F01B06D00C7A1FC /* Refinement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refinement.swift; sourceTree = "<group>"; };
 		2B1198621F01B1F100C7A1FC /* SortOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortOptions.swift; sourceTree = "<group>"; };
+		2B1198641F01B2EC00C7A1FC /* MacVariantsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacVariantsInfo.swift; sourceTree = "<group>"; };
 		2B1310E61F016E5500611EC9 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		2B1310E81F016EAB00611EC9 /* CarousalBanners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarousalBanners.swift; sourceTree = "<group>"; };
 		2B1310EA1F016ECF00611EC9 /* StackBanners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackBanners.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				2B11985E1F01B02200C7A1FC /* RefinementGroups.swift */,
 				2B1198601F01B06D00C7A1FC /* Refinement.swift */,
 				2B1198621F01B1F100C7A1FC /* SortOptions.swift */,
+				2B1198641F01B2EC00C7A1FC /* MacVariantsInfo.swift */,
 			);
 			name = PLP;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				2B11985F1F01B02200C7A1FC /* RefinementGroups.swift in Sources */,
 				2B1198591F01AE2200C7A1FC /* PLPResults.swift in Sources */,
 				2B1310E71F016E5500611EC9 /* Home.swift in Sources */,
+				2B1198651F01B2EC00C7A1FC /* MacVariantsInfo.swift in Sources */,
 				2B11985D1F01AE7F00C7A1FC /* PLPState.swift in Sources */,
 				2B1310ED1F016F2F00611EC9 /* NewProducts.swift in Sources */,
 				2B396EB71EFF5CEE008194C8 /* MenuLevel.swift in Sources */,

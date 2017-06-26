@@ -15,7 +15,7 @@ class Records: Mappable{
     var skuRepositoryId: String?
     var smImage: String?
     var productDisplayName: String?
-    var macVariantsInfo: [Macvariantsinfo]?
+    var macVariantsInfo: [MacVariantsInfo]?
     var maximumPromoPrice: Int?
     var productRatingCount: Int?
     var xlImage: String?
