@@ -17,6 +17,7 @@ public typealias ErrorStringHandler = (_ errorString:String) -> Void
 
 public class AsyncClientMW
 {
+    
     // Request for home
     public class func getHome(completion:@escaping (_ dataResponse: Home)-> Void, completionError: @escaping ErrorStringHandler )
     {
@@ -38,6 +39,13 @@ public class AsyncClientMW
         }) { (msg) in
             completionError(msg)
         }
+    }
+    
+    
+    
+    public class func getPLP()
+    {
+        
     }
     
     /************** Petición GET con Parametros **********************/
