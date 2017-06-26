@@ -15,7 +15,7 @@ class PLPResults: Mappable{
     var refinementGroups: [RefinementGroups]?
     var sortOptions: [SortOptions]?
     var label: String?
-    
+      
     required init?(map: Map){
     }
     func mapping(map: Map){

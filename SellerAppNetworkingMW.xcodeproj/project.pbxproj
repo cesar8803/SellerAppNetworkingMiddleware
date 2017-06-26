@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		029CB05D096F97A9AE5265C3 /* Pods_SellerAppNetworkingMW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D3AB2DC56018663124B01D /* Pods_SellerAppNetworkingMW.framework */; };
-		2B1198591F01AE2200C7A1FC /* PLPResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1198581F01AE2200C7A1FC /* PLPResults.swift */; };
 		2B11985B1F01AE5900C7A1FC /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11985A1F01AE5900C7A1FC /* Records.swift */; };
 		2B11985D1F01AE7F00C7A1FC /* PLPState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11985C1F01AE7F00C7A1FC /* PLPState.swift */; };
 		2B11985F1F01B02200C7A1FC /* RefinementGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11985E1F01B02200C7A1FC /* RefinementGroups.swift */; };
@@ -24,6 +23,7 @@
 		2B396EB61EFF5CEE008194C8 /* CategoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B396EB21EFF5CEE008194C8 /* CategoryInfo.swift */; };
 		2B396EB71EFF5CEE008194C8 /* MenuLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B396EB31EFF5CEE008194C8 /* MenuLevel.swift */; };
 		2B396EB81EFF5CEE008194C8 /* BackendUrlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B396EB41EFF5CEE008194C8 /* BackendUrlManager.swift */; };
+		2B7FD14C1F01BE5A00232C66 /* PLPResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7FD14B1F01BE5A00232C66 /* PLPResults.swift */; };
 		2BE72FD01EFDFDA9009AC510 /* SellerAppNetworkingMW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE72FC61EFDFDA9009AC510 /* SellerAppNetworkingMW.framework */; };
 		2BE72FD51EFDFDA9009AC510 /* SellerAppNetworkingMWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE72FD41EFDFDA9009AC510 /* SellerAppNetworkingMWTests.swift */; };
 		2BE72FD71EFDFDA9009AC510 /* SellerAppNetworkingMW.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE72FC91EFDFDA9009AC510 /* SellerAppNetworkingMW.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		0DC5EEAE2C6B7E7FD59C5B5B /* Pods-SellerAppNetworkingMW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellerAppNetworkingMW.release.xcconfig"; path = "Pods/Target Support Files/Pods-SellerAppNetworkingMW/Pods-SellerAppNetworkingMW.release.xcconfig"; sourceTree = "<group>"; };
-		2B1198581F01AE2200C7A1FC /* PLPResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLPResults.swift; sourceTree = "<group>"; };
 		2B11985A1F01AE5900C7A1FC /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
 		2B11985C1F01AE7F00C7A1FC /* PLPState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLPState.swift; sourceTree = "<group>"; };
 		2B11985E1F01B02200C7A1FC /* RefinementGroups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefinementGroups.swift; sourceTree = "<group>"; };
@@ -58,6 +57,7 @@
 		2B396EB21EFF5CEE008194C8 /* CategoryInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryInfo.swift; sourceTree = "<group>"; };
 		2B396EB31EFF5CEE008194C8 /* MenuLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLevel.swift; sourceTree = "<group>"; };
 		2B396EB41EFF5CEE008194C8 /* BackendUrlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendUrlManager.swift; sourceTree = "<group>"; };
+		2B7FD14B1F01BE5A00232C66 /* PLPResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLPResults.swift; sourceTree = "<group>"; };
 		2BE72FC61EFDFDA9009AC510 /* SellerAppNetworkingMW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SellerAppNetworkingMW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE72FC91EFDFDA9009AC510 /* SellerAppNetworkingMW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SellerAppNetworkingMW.h; sourceTree = "<group>"; };
 		2BE72FCA1EFDFDA9009AC510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		2B1198571F01ADFF00C7A1FC /* PLP */ = {
 			isa = PBXGroup;
 			children = (
-				2B1198581F01AE2200C7A1FC /* PLPResults.swift */,
+				2B7FD14B1F01BE5A00232C66 /* PLPResults.swift */,
 				2B11985A1F01AE5900C7A1FC /* Records.swift */,
 				2B11985C1F01AE7F00C7A1FC /* PLPState.swift */,
 				2B11985E1F01B02200C7A1FC /* RefinementGroups.swift */,
@@ -352,8 +352,8 @@
 				2B11985B1F01AE5900C7A1FC /* Records.swift in Sources */,
 				2B1310EF1F01704B00611EC9 /* BestSellerProducts.swift in Sources */,
 				2B11985F1F01B02200C7A1FC /* RefinementGroups.swift in Sources */,
-				2B1198591F01AE2200C7A1FC /* PLPResults.swift in Sources */,
 				2B1310E71F016E5500611EC9 /* Home.swift in Sources */,
+				2B7FD14C1F01BE5A00232C66 /* PLPResults.swift in Sources */,
 				2B1198651F01B2EC00C7A1FC /* MacVariantsInfo.swift in Sources */,
 				2B11985D1F01AE7F00C7A1FC /* PLPState.swift in Sources */,
 				2B1310ED1F016F2F00611EC9 /* NewProducts.swift in Sources */,
