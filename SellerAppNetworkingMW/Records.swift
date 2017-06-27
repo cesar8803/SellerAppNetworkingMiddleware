@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Records: Mappable{
+public class Records: Mappable{
     var groupType: String?
     var productAvgRating: Int?
     var skuRepositoryId: String?
@@ -28,9 +28,9 @@ class Records: Mappable{
     var listPrice: Int?
     var productId: String?
     
-    required init?(map: Map){
+    required public init?(map: Map){
     }
-    func mapping(map: Map){
+    public func mapping(map: Map){
         groupType <- map["groupType"]
         productAvgRating <- map["productAvgRating"]
         skuRepositoryId <- map["skuRepositoryId"]

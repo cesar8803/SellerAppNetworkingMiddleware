@@ -10,16 +10,16 @@
 import Foundation
 import ObjectMapper
 
-class Refinement: Mappable{
+public class Refinement: Mappable{
     var refinementId: String?
     var count: Int?
     var selected: Int?
     var label: String?
     
-    required init?(map: Map){
+    required public init?(map: Map){
     }
     
-    func mapping(map: Map){
+    public func mapping(map: Map){
         refinementId <- map["refinementId"]
         count <- map["count"]
         selected <- map["selected"]

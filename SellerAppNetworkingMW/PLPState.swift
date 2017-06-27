@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class PLPState: Mappable{
+public class PLPState: Mappable{
     var firstRecNum: Int?
     var recsPerPage: Int?
     var originalSearchTerm: String?
@@ -19,9 +19,10 @@ class PLPState: Mappable{
     var currentFilters: String?
     var categoryId: String?
     
-    required init?(map: Map){
+    required public init?(map: Map){
     }
-    func mapping(map: Map){
+    
+    public func mapping(map: Map){
         firstRecNum <- map["firstRecNum"]
         recsPerPage <- map["recsPerPage"]
         originalSearchTerm <- map["originalSearchTerm"]

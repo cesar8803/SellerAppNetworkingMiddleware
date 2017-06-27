@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class MacVariantsInfo: Mappable{
+public class MacVariantsInfo: Mappable{
     var sku: String?
     var smImage: String?
     var colorName: String?
@@ -18,9 +18,9 @@ class MacVariantsInfo: Mappable{
     var lgImage: String?
     var listPrice: String?
     
-    required init?( map: Map){
+    required public init?( map: Map){
     }
-    func mapping(map: Map){
+    public func mapping(map: Map){
         sku <- map["sku"]
         smImage <- map["smImage"]
         colorName <- map["colorName"]
