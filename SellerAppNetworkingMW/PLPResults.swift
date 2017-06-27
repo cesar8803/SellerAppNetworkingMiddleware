@@ -9,16 +9,17 @@
 import Foundation
 import ObjectMapper
 
-class PLPResults: Mappable{
+public class PLPResults: Mappable{
     var records: [Records]?
     var plpState: PLPState?
     var refinementGroups: [RefinementGroups]?
     var sortOptions: [SortOptions]?
     var label: String?
       
-    required init?(map: Map){
+    required public init?(map: Map){
     }
-    func mapping(map: Map){
+    
+    public func mapping(map: Map){
         records <- map["records"]
         plpState <- map["plpState"]
         refinementGroups <- map["refinementGroups"]

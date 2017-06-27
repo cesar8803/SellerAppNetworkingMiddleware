@@ -9,17 +9,17 @@
 import Foundation
 import ObjectMapper
 
-class SortOptions: Mappable
+public class SortOptions: Mappable
 {
     var sortBy: String?
     var label: String?
     
-    required init?(map: Map)
+    required public init?(map: Map)
     {
         
     }
     
-    func mapping(map: Map)
+    public func mapping(map: Map)
     {
         sortBy <- map["sortBy"]
         label <- map["label"]

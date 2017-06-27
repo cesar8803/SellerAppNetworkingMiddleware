@@ -43,10 +43,28 @@ public class AsyncClientMW
     
     
     
-    public class func getPLP()
+    public class func getPLP(mandatory:PLP_MandatoryParams, parameters:[PLP_Optional<Any>]?, completion:@escaping (_ dataResponse:PLPResults) -> Void, completionError:@escaping ErrorStringHandler)
     {
+        var params = mandatory.getParameters()
+        
+        if let p = parameters
+        {
+            for plp_opt in p {
+                params[plp_opt.type.rawValue] = plp_opt.value
+            }
+        }
+        
+        print("params..:\(params)")
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.plp, parameters: params, completion: { (plp_results:PLPResults) in
+            completion(plp_results)
+        }) { (msg) in
+            completionError(msg)
+        }
         
     }
+    
+    
     
     /************** Petición GET con Parametros **********************/
     class func getRequestExecute<T:Mappable>(_ type:BackendUrlManager.ServiceUrlsId, parameters: Parameters, completion:@escaping (_ dataResponse:T) -> Void, errorCompletition: @escaping (_ errorString:String) -> Void){

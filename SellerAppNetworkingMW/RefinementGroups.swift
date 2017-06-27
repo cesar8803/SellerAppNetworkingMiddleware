@@ -9,15 +9,15 @@
 import Foundation
 import ObjectMapper
 
-class RefinementGroups: Mappable{
+public class RefinementGroups: Mappable{
     var dimensionName: String?
     var refinement: [Refinement]?
     var multiSelect: Int?
     var name: String?
     
-    required init?(map: Map){
+    required public init?(map: Map){
     }
-    func mapping(map: Map){
+    public func mapping(map: Map){
         dimensionName <- map["dimensionName"]
         refinement <- map["refinement"]
         multiSelect <- map["multiSelect"]
