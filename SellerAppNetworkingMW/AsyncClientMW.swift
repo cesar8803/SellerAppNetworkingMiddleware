@@ -43,7 +43,7 @@ public class AsyncClientMW
     
     
     
-    public class func getPLP(mandatory:PLP_MandatoryParams, parameters:[PLP_Optional<Any>]?, completion:@escaping (_ dataResponse:PLPResults) -> Void, completionError:@escaping ErrorStringHandler)
+    public class func getPLP(mandatory:PLP_MandatoryParams, parameters:[PLP_Optional<Any>]?, completion:@escaping (_ dataResponse:PLPLevel) -> Void, completionError:@escaping ErrorStringHandler)
     {
         var params = mandatory.getParameters()
         
@@ -54,10 +54,9 @@ public class AsyncClientMW
             }
         }
         
-        print("params..:\(params)")
         
-        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.plp, parameters: params, completion: { (plp_results:PLPResults) in
-            completion(plp_results)
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.plp, parameters: params, completion: { (plp_level:PLPLevel) in
+            completion(plp_level)
         }) { (msg) in
             completionError(msg)
         }
