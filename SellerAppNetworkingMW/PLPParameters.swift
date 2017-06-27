@@ -11,19 +11,22 @@ import Alamofire
 
 public protocol PLP_Mandatory
 {
-    var category_id:String {get set}
+    var search_string:String {get set}
     var store_code:String {get set}
     var terminal_code:String {get set}
 }
 
+public enum PLP_Parameters_Mandatory:String
+{
+    case store_code = "store-code"
+    case terminal_code = "terminal-code"
+    case search_string = "search-string"
+}
 
 public enum PLP_Parameters:String
 {
-    case category_id = "category-id"
-    case store_code = "store-code"
-    case terminal_code = "terminal-code"
     //optionals
-    case search_string = "search-string"
+    case category_id = "category-id"
     case sort_option = "sort-option"
     case refinement_options = "refinement-options"
     case page_number = "page-number"
@@ -35,19 +38,19 @@ public enum PLP_Parameters:String
 
 public struct PLP_MandatoryParams:PLP_Mandatory
 {
-    public var category_id:String
+    public var search_string:String
     public var store_code:String
     public var terminal_code:String
     
     public func getParameters()->Parameters
     {
-        return [PLP_Parameters.category_id.rawValue: category_id,
-                PLP_Parameters.store_code.rawValue: store_code,
-                PLP_Parameters.terminal_code.rawValue: terminal_code]
+        return [PLP_Parameters_Mandatory.search_string.rawValue: search_string,
+                PLP_Parameters_Mandatory.store_code.rawValue: store_code,
+                PLP_Parameters_Mandatory.terminal_code.rawValue: terminal_code]
     }
     
-    public init(category_id:String, store_code:String, terminal_code:String){
-        self.category_id = category_id
+    public init(search_string:String, store_code:String, terminal_code:String){
+        self.search_string = search_string
         self.store_code = store_code
         self.terminal_code = terminal_code
     }
