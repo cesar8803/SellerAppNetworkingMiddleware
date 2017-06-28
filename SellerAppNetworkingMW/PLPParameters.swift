@@ -11,7 +11,6 @@ import Alamofire
 
 public protocol PLP_Mandatory
 {
-    var search_string:String {get set}
     var store_code:String {get set}
     var terminal_code:String {get set}
 }
@@ -20,7 +19,6 @@ public enum PLP_Parameters_Mandatory:String
 {
     case store_code = "store-code"
     case terminal_code = "terminal-code"
-    case search_string = "search-string"
 }
 
 public enum PLP_Parameters:String
@@ -33,24 +31,22 @@ public enum PLP_Parameters:String
     case number_of_items_per_page = "number-of-items-per-page"
     case force_plp = "force-plp"
     case group_type = "group-type"
+    case search_string = "search-string"
 }
 
 
 public struct PLP_MandatoryParams:PLP_Mandatory
 {
-    public var search_string:String
     public var store_code:String
     public var terminal_code:String
     
     public func getParameters()->Parameters
     {
-        return [PLP_Parameters_Mandatory.search_string.rawValue: search_string,
-                PLP_Parameters_Mandatory.store_code.rawValue: store_code,
+        return [PLP_Parameters_Mandatory.store_code.rawValue: store_code,
                 PLP_Parameters_Mandatory.terminal_code.rawValue: terminal_code]
     }
     
-    public init(search_string:String, store_code:String, terminal_code:String){
-        self.search_string = search_string
+    public init(store_code:String, terminal_code:String){
         self.store_code = store_code
         self.terminal_code = terminal_code
     }
