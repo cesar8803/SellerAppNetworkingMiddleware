@@ -46,7 +46,7 @@ public struct PLP_MandatoryParams:PLP_Mandatory
                 PLP_Parameters_Mandatory.terminal_code.rawValue: terminal_code]
     }
     
-    public init(search_string:String, store_code:String, terminal_code:String){
+    public init(store_code:String, terminal_code:String){
         self.store_code = store_code
         self.terminal_code = terminal_code
     }
