@@ -16,6 +16,7 @@ class BackendUrlManager : NSObject{
         case logOut
         case categories
         case home
+        case plp
     }
     
     fileprivate static let SERVICE_CONTEXT:[String] = [
@@ -23,7 +24,8 @@ class BackendUrlManager : NSObject{
         "appclienteservices/services/account/login?",                           //logIn
         "appclienteservices/services/account/logout",                           //logOut
         "Middleware/rest/service/menu?",                                        //Menu
-        "Middleware/rest/service/home"                                          //Home
+        "Middleware/rest/service/home",                                         //Home
+        "Middleware/rest/service/plp?"                                          //plp
     ]
     
     // The array of all the services url's.

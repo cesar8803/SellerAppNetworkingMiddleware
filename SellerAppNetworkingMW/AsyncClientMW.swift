@@ -17,6 +17,7 @@ public typealias ErrorStringHandler = (_ errorString:String) -> Void
 
 public class AsyncClientMW
 {
+    
     // Request for home
     public class func getHome(completion:@escaping (_ dataResponse: Home)-> Void, completionError: @escaping ErrorStringHandler )
     {
@@ -39,6 +40,30 @@ public class AsyncClientMW
             completionError(msg)
         }
     }
+    
+    
+    
+    public class func getPLP(mandatory:PLP_MandatoryParams, parameters:[PLP_Optional<Any>]?, completion:@escaping (_ dataResponse:PLPLevel) -> Void, completionError:@escaping ErrorStringHandler)
+    {
+        var params = mandatory.getParameters()
+        
+        if let p = parameters
+        {
+            for plp_opt in p {
+                params[plp_opt.type.rawValue] = plp_opt.value
+            }
+        }
+        
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.plp, parameters: params, completion: { (plp_level:PLPLevel) in
+            completion(plp_level)
+        }) { (msg) in
+            completionError(msg)
+        }
+        
+    }
+    
+    
     
     /************** Petición GET con Parametros **********************/
     class func getRequestExecute<T:Mappable>(_ type:BackendUrlManager.ServiceUrlsId, parameters: Parameters, completion:@escaping (_ dataResponse:T) -> Void, errorCompletition: @escaping (_ errorString:String) -> Void){

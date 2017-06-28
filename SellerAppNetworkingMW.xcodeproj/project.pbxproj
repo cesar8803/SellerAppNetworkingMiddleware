@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		029CB05D096F97A9AE5265C3 /* Pods_SellerAppNetworkingMW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D3AB2DC56018663124B01D /* Pods_SellerAppNetworkingMW.framework */; };
+		2B11985B1F01AE5900C7A1FC /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11985A1F01AE5900C7A1FC /* Records.swift */; };
+		2B11985D1F01AE7F00C7A1FC /* PLPState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11985C1F01AE7F00C7A1FC /* PLPState.swift */; };
+		2B11985F1F01B02200C7A1FC /* RefinementGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11985E1F01B02200C7A1FC /* RefinementGroups.swift */; };
+		2B1198611F01B06D00C7A1FC /* Refinement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1198601F01B06D00C7A1FC /* Refinement.swift */; };
+		2B1198631F01B1F100C7A1FC /* SortOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1198621F01B1F100C7A1FC /* SortOptions.swift */; };
+		2B1198651F01B2EC00C7A1FC /* MacVariantsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1198641F01B2EC00C7A1FC /* MacVariantsInfo.swift */; };
 		2B1310E71F016E5500611EC9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1310E61F016E5500611EC9 /* Home.swift */; };
 		2B1310E91F016EAB00611EC9 /* CarousalBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1310E81F016EAB00611EC9 /* CarousalBanners.swift */; };
 		2B1310EB1F016ECF00611EC9 /* StackBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1310EA1F016ECF00611EC9 /* StackBanners.swift */; };
@@ -17,6 +23,9 @@
 		2B396EB61EFF5CEE008194C8 /* CategoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B396EB21EFF5CEE008194C8 /* CategoryInfo.swift */; };
 		2B396EB71EFF5CEE008194C8 /* MenuLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B396EB31EFF5CEE008194C8 /* MenuLevel.swift */; };
 		2B396EB81EFF5CEE008194C8 /* BackendUrlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B396EB41EFF5CEE008194C8 /* BackendUrlManager.swift */; };
+		2B3C78381F02AE9100FAB4BA /* PLPLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3C78371F02AE9100FAB4BA /* PLPLevel.swift */; };
+		2B7FD14C1F01BE5A00232C66 /* PLPResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7FD14B1F01BE5A00232C66 /* PLPResults.swift */; };
+		2B7FD14E1F01C46700232C66 /* PLPParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7FD14D1F01C46700232C66 /* PLPParameters.swift */; };
 		2BE72FD01EFDFDA9009AC510 /* SellerAppNetworkingMW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE72FC61EFDFDA9009AC510 /* SellerAppNetworkingMW.framework */; };
 		2BE72FD51EFDFDA9009AC510 /* SellerAppNetworkingMWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE72FD41EFDFDA9009AC510 /* SellerAppNetworkingMWTests.swift */; };
 		2BE72FD71EFDFDA9009AC510 /* SellerAppNetworkingMW.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE72FC91EFDFDA9009AC510 /* SellerAppNetworkingMW.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +44,12 @@
 
 /* Begin PBXFileReference section */
 		0DC5EEAE2C6B7E7FD59C5B5B /* Pods-SellerAppNetworkingMW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellerAppNetworkingMW.release.xcconfig"; path = "Pods/Target Support Files/Pods-SellerAppNetworkingMW/Pods-SellerAppNetworkingMW.release.xcconfig"; sourceTree = "<group>"; };
+		2B11985A1F01AE5900C7A1FC /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
+		2B11985C1F01AE7F00C7A1FC /* PLPState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLPState.swift; sourceTree = "<group>"; };
+		2B11985E1F01B02200C7A1FC /* RefinementGroups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefinementGroups.swift; sourceTree = "<group>"; };
+		2B1198601F01B06D00C7A1FC /* Refinement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refinement.swift; sourceTree = "<group>"; };
+		2B1198621F01B1F100C7A1FC /* SortOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortOptions.swift; sourceTree = "<group>"; };
+		2B1198641F01B2EC00C7A1FC /* MacVariantsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacVariantsInfo.swift; sourceTree = "<group>"; };
 		2B1310E61F016E5500611EC9 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		2B1310E81F016EAB00611EC9 /* CarousalBanners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarousalBanners.swift; sourceTree = "<group>"; };
 		2B1310EA1F016ECF00611EC9 /* StackBanners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackBanners.swift; sourceTree = "<group>"; };
@@ -44,6 +59,9 @@
 		2B396EB21EFF5CEE008194C8 /* CategoryInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryInfo.swift; sourceTree = "<group>"; };
 		2B396EB31EFF5CEE008194C8 /* MenuLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLevel.swift; sourceTree = "<group>"; };
 		2B396EB41EFF5CEE008194C8 /* BackendUrlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendUrlManager.swift; sourceTree = "<group>"; };
+		2B3C78371F02AE9100FAB4BA /* PLPLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLPLevel.swift; sourceTree = "<group>"; };
+		2B7FD14B1F01BE5A00232C66 /* PLPResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLPResults.swift; sourceTree = "<group>"; };
+		2B7FD14D1F01C46700232C66 /* PLPParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLPParameters.swift; sourceTree = "<group>"; };
 		2BE72FC61EFDFDA9009AC510 /* SellerAppNetworkingMW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SellerAppNetworkingMW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE72FC91EFDFDA9009AC510 /* SellerAppNetworkingMW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SellerAppNetworkingMW.h; sourceTree = "<group>"; };
 		2BE72FCA1EFDFDA9009AC510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +93,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B1198571F01ADFF00C7A1FC /* PLP */ = {
+			isa = PBXGroup;
+			children = (
+				2B7FD14B1F01BE5A00232C66 /* PLPResults.swift */,
+				2B11985A1F01AE5900C7A1FC /* Records.swift */,
+				2B11985C1F01AE7F00C7A1FC /* PLPState.swift */,
+				2B11985E1F01B02200C7A1FC /* RefinementGroups.swift */,
+				2B1198601F01B06D00C7A1FC /* Refinement.swift */,
+				2B1198621F01B1F100C7A1FC /* SortOptions.swift */,
+				2B1198641F01B2EC00C7A1FC /* MacVariantsInfo.swift */,
+				2B7FD14D1F01C46700232C66 /* PLPParameters.swift */,
+				2B3C78371F02AE9100FAB4BA /* PLPLevel.swift */,
+			);
+			name = PLP;
+			sourceTree = "<group>";
+		};
 		2B1310F11F01709B00611EC9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +172,7 @@
 		2BE72FE71EFF4AA7009AC510 /* AsyncClientMWObjects */ = {
 			isa = PBXGroup;
 			children = (
+				2B1198571F01ADFF00C7A1FC /* PLP */,
 				2B396EB11EFF5CEE008194C8 /* AsyncClientMW.swift */,
 				2B396EB21EFF5CEE008194C8 /* CategoryInfo.swift */,
 				2B396EB31EFF5CEE008194C8 /* MenuLevel.swift */,
@@ -312,14 +347,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1198631F01B1F100C7A1FC /* SortOptions.swift in Sources */,
 				2B396EB51EFF5CEE008194C8 /* AsyncClientMW.swift in Sources */,
 				2B396EB61EFF5CEE008194C8 /* CategoryInfo.swift in Sources */,
 				2B396EB81EFF5CEE008194C8 /* BackendUrlManager.swift in Sources */,
+				2B1198611F01B06D00C7A1FC /* Refinement.swift in Sources */,
 				2B1310E91F016EAB00611EC9 /* CarousalBanners.swift in Sources */,
 				2B1310EB1F016ECF00611EC9 /* StackBanners.swift in Sources */,
+				2B3C78381F02AE9100FAB4BA /* PLPLevel.swift in Sources */,
 				2BE72FE11EFE0014009AC510 /* Greeting.swift in Sources */,
+				2B7FD14E1F01C46700232C66 /* PLPParameters.swift in Sources */,
+				2B11985B1F01AE5900C7A1FC /* Records.swift in Sources */,
 				2B1310EF1F01704B00611EC9 /* BestSellerProducts.swift in Sources */,
+				2B11985F1F01B02200C7A1FC /* RefinementGroups.swift in Sources */,
 				2B1310E71F016E5500611EC9 /* Home.swift in Sources */,
+				2B7FD14C1F01BE5A00232C66 /* PLPResults.swift in Sources */,
+				2B1198651F01B2EC00C7A1FC /* MacVariantsInfo.swift in Sources */,
+				2B11985D1F01AE7F00C7A1FC /* PLPState.swift in Sources */,
 				2B1310ED1F016F2F00611EC9 /* NewProducts.swift in Sources */,
 				2B396EB71EFF5CEE008194C8 /* MenuLevel.swift in Sources */,
 			);
