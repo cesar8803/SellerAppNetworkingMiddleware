@@ -10,14 +10,14 @@ import Foundation
 import ObjectMapper
 
 public class PLPState: Mappable{
-    var firstRecNum: Int?
-    var recsPerPage: Int?
-    var originalSearchTerm: String?
-    var totalNumRecs: Int?
-    var currentSortOption: String?
-    var lastRecNum: Int?
-    var currentFilters: String?
-    var categoryId: String?
+    public var firstRecNum: Int?
+    public var recsPerPage: Int?
+    public var originalSearchTerm: String?
+    public var totalNumRecs: Int?
+    public var currentSortOption: String?
+    public var lastRecNum: Int?
+    public var currentFilters: String?
+    public var categoryId: String?
     
     required public init?(map: Map){
     }

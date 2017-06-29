@@ -10,12 +10,12 @@ import Foundation
 import ObjectMapper
 
 public class MenuLevel: Mappable{
-    var name: String?
-    var isRoot: Int?
-    var isBrandLanding: Int?
-    var categoryInfo: [CategoryInfo]?
-    var isSuccessful: Int?
-    var categoryId: String?
+    public var name: String?
+    public var isRoot: Int?
+    public var isBrandLanding: Int?
+    public var categoryInfo: [CategoryInfo]?
+    public var isSuccessful: Int?
+    public var categoryId: String?
     
     required public init?(map: Map){
     }
