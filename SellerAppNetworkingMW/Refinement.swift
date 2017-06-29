@@ -11,10 +11,10 @@ import Foundation
 import ObjectMapper
 
 public class Refinement: Mappable{
-    var refinementId: String?
-    var count: Int?
-    var selected: Int?
-    var label: String?
+    public var refinementId: String?
+    public var count: Int?
+    public var selected: Int?
+    public var label: String?
     
     required public init?(map: Map){
     }

@@ -10,11 +10,11 @@ import Foundation
 import ObjectMapper
 
 public class PLPResults: Mappable{
-    var records: [Records]?
-    var plpState: PLPState?
-    var refinementGroups: [RefinementGroups]?
-    var sortOptions: [SortOptions]?
-    var label: String?
+    public var records: [Records]?
+    public var plpState: PLPState?
+    public var refinementGroups: [RefinementGroups]?
+    public var sortOptions: [SortOptions]?
+    public var label: String?
       
     required public init?(map: Map){
     }
