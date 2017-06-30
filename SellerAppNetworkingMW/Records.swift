@@ -10,23 +10,23 @@ import Foundation
 import ObjectMapper
 
 public class Records: Mappable{
-    var groupType: String?
-    var productAvgRating: Int?
-    var skuRepositoryId: String?
-    var smImage: String?
-    var productDisplayName: String?
-    var macVariantsInfo: [MacVariantsInfo]?
-    var maximumPromoPrice: Int?
-    var productRatingCount: Int?
-    var xlImage: String?
-    var minimumPromoPrice: Int?
-    var productType: String?
-    var maximumListPrice: Int?
-    var promoPrice: Int?
-    var minimumListPrice: Int?
-    var lgImage: String?
-    var listPrice: Int?
-    var productId: String?
+    public var groupType: String?
+    public var productAvgRating: Int?
+    public var skuRepositoryId: String?
+    public var smImage: String?
+    public var productDisplayName: String?
+    public var macVariantsInfo: [MacVariantsInfo]?
+    public var maximumPromoPrice: Int?
+    public var productRatingCount: Int?
+    public var xlImage: String?
+    public var minimumPromoPrice: Int?
+    public var productType: String?
+    public var maximumListPrice: Int?
+    public var promoPrice: Int?
+    public var minimumListPrice: Int?
+    public var lgImage: String?
+    public var listPrice: Int?
+    public var productId: String?
     
     required public init?(map: Map){
     }

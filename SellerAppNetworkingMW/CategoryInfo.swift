@@ -10,15 +10,15 @@ import Foundation
 import ObjectMapper
 
 public class CategoryInfo: Mappable{
-    var contentType: String?
-    var name: String?
-    var hasChildren: Int?
-    var image: String?
-    var isBrandLanding: Int?
-    var order: Int?
-    var isBrand: Int?
-    var redirectsToWeb: Int?
-    var categoryId: String?
+    public var contentType: String?
+    public var name: String?
+    public var hasChildren: Int?
+    public var image: String?
+    public var isBrandLanding: Int?
+    public var order: Int?
+    public var isBrand: Int?
+    public var redirectsToWeb: Int?
+    public var categoryId: String?
     
     required public init?(map: Map){
     }

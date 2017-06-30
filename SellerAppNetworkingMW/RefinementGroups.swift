@@ -10,10 +10,10 @@ import Foundation
 import ObjectMapper
 
 public class RefinementGroups: Mappable{
-    var dimensionName: String?
-    var refinement: [Refinement]?
-    var multiSelect: Int?
-    var name: String?
+    public var dimensionName: String?
+    public var refinement: [Refinement]?
+    public var multiSelect: Int?
+    public var name: String?
     
     required public init?(map: Map){
     }
