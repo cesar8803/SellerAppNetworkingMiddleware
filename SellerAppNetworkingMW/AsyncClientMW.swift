@@ -145,7 +145,8 @@ public class AsyncClientMW
     
     
     /************** Petición PUT **********************/
-    class func putRequestExecute<T:Mappable>(_ _Type:BackendUrlManager.ServiceUrlsId, _Parameters: Parameters, _ViewLoader:Bool, _MsjLoader: String,_Completion:@escaping (_ _putRequest: T) -> Void, _ErrorCompletition: @escaping (_ errorString:String) -> Void){
+    class func putRequestExecute<T:Mappable>(_ _Type:BackendUrlManager.ServiceUrlsId, _Parameters: Parameters, _ViewLoader:Bool, _MsjLoader: String,_Completion:@escaping (_ putRequest: T) -> Void, _ErrorCompletition: @escaping (_ errorString:String) -> Void){
+        
         
         let _Url = BackendUrlManager.Current.getUrl(_Type)
         Alamofire.request(_Url, method: .put, parameters: _Parameters, encoding: URLEncoding.default).responseObject { (response: DataResponse<T>) in

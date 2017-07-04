@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 public class MenuLevel: Mappable{
+    
     public var name: String?
     public var isRoot: Int?
     public var isBrandLanding: Int?
