@@ -13,7 +13,7 @@ public class Home: Mappable{
     public var carousalBanners: [CarousalBanners]?
     public var stackBanners: [StackBanners]?
     public var newProducts: [NewProducts]?
-    public var isSuccessful: Int?
+    public var isSuccessful: Bool?
     public var bestsellerProducts: [BestSellerProducts]?
     
     required public init?(map: Map){
