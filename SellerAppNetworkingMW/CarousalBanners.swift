@@ -11,9 +11,9 @@ import Foundation
 import ObjectMapper
 
 public class CarousalBanners: Mappable{
-    var image: String?
-    var redirectsTo: String?
-    var type: String?
+    public var image: String?
+    public var redirectsTo: String?
+    public var type: String?
     
     required public init?(map: Map){
     }

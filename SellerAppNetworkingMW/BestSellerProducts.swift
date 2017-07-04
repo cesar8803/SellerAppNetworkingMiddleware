@@ -10,9 +10,9 @@ import Foundation
 import ObjectMapper
 
 public class BestSellerProducts: Mappable{
-    var imageUrl: String?
-    var displayName: String?
-    var repositoryId: String?
+    public var imageUrl: String?
+    public var displayName: String?
+    public var repositoryId: String?
     
     required public init?(map: Map){
     }

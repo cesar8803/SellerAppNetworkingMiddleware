@@ -10,14 +10,15 @@ import Foundation
 import ObjectMapper
 
 public class Home: Mappable{
-    var carousalBanners: [CarousalBanners]?
-    var stackBanners: [StackBanners]?
-    var newProducts: [NewProducts]?
-    var isSuccessful: Int?
-    var bestsellerProducts: [BestSellerProducts]?
+    public var carousalBanners: [CarousalBanners]?
+    public var stackBanners: [StackBanners]?
+    public var newProducts: [NewProducts]?
+    public var isSuccessful: Int?
+    public var bestsellerProducts: [BestSellerProducts]?
     
     required public init?(map: Map){
     }
+    
     public func mapping(map: Map){
         carousalBanners <- map["carousalBanners"]
         stackBanners <- map["stackBanners"]
