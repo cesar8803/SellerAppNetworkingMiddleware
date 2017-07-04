@@ -32,8 +32,9 @@ class BackendUrlManager : NSObject{
     fileprivate var serviceUrls:[String] = [String]();
     
     fileprivate func createUrls() {
-        //let backendHost = "172.22.209.88:9090/"
-        let backendHost = "172.22.49.66:9090/"
+        let backendHost = "172.22.209.88:9090/"
+        
+        //let backendHost = "172.22.49.66:9090/"
         let backendProtocol = "http://"
         let servicesCount = BackendUrlManager.SERVICE_CONTEXT.count
         for index in 0..<servicesCount {
