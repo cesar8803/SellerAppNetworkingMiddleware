@@ -14,6 +14,7 @@ public class MWListaArticulos: Mappable {
     public var SKU: String?
     public var cantidad: Float?
     public var clasificacion: String?
+    public var categoryId: String?
     public var url: String?
     public var maximumListPrice: Float?
     public var nombre: String?
@@ -26,6 +27,7 @@ public class MWListaArticulos: Mappable {
         SKU <- map["SKU"]
         cantidad <- map["cantidad"]
         clasificacion <- map["clasificacion"]
+        categoryId <- map["categoryId"]
         url <- map["url"]
         maximumListPrice <- map["maximumListPrice"]
         nombre <- map["nombre"]
