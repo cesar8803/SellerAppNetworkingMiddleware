@@ -63,6 +63,25 @@ public class AsyncClientMW
         
     }
     
+    public class func getGiftRegistryPLP(mandatory: GiftRegistry_MandatoryParams, parameters: [GiftRegistry_Optional<Any>]?, completion: @escaping (_ dataResponse: GiftRegistryPLPLevel) -> Void, completionError: @escaping ErrorStringHandler) {
+        
+        var params = mandatory.getParameters()
+        
+        if let pOptionals = parameters {
+            
+            for gr_opt in pOptionals {
+                params[gr_opt.type.rawValue] = gr_opt.value
+            }
+            
+        }
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.giftRegistryPLP, parameters: params, completion: { (GiftRegistryPLP_level: GiftRegistryPLPLevel) in
+            completion(GiftRegistryPLP_level)
+        }) { (msg) in
+            completionError(msg)
+        }
+                                        
+    }
     
     
     /************** Petición GET con Parametros **********************/
