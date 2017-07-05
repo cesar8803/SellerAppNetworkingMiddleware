@@ -9,20 +9,20 @@
 import Foundation
 import ObjectMapper
 
-public class ListaDirecciones: Mappable {
+public class MWListaDirecciones: Mappable {
     
-    var poblacion: String?
-    var telefono1: String?
-    var numExt: String?
-    var tipoFestejado: Float?
-    var telefono2: String?
-    var calle: String?
-    var colonia: String?
-    var edificio: String?
-    var municipio: String?
-    var pais: String?
-    var estado: String?
-    var codPos: String?
+    public var poblacion: String?
+    public var telefono1: String?
+    public var numExt: String?
+    public var tipoFestejado: Float?
+    public var telefono2: String?
+    public var calle: String?
+    public var colonia: String?
+    public var edificio: String?
+    public var municipio: String?
+    public var pais: String?
+    public var estado: String?
+    public var codPos: String?
     
     required public init?(map: Map) {
     }

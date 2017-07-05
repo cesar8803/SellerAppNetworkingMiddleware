@@ -23,7 +23,7 @@ public enum GiftRegistry_Parameters_Mandatory: String {
     case terminal_code = "terminal-code"
 }
 
-public enum PGiftRegistry_Parameters:String {
+public enum GiftRegistry_Parameters:String {
     
     case type_id = "tipo"
     
@@ -49,9 +49,9 @@ public struct GiftRegistry_MandatoryParams: GiftRegistry_Mandatory {
 
 public struct GiftRegistry_Optional<T>{
     
-    public let type: PGiftRegistry_Parameters
+    public let type: GiftRegistry_Parameters
     public let value: T
-    public init(type: PGiftRegistry_Parameters, value: T) {
+    public init(type: GiftRegistry_Parameters, value: T) {
         self.type = type
         self.value = value
     }

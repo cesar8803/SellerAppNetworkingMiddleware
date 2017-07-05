@@ -9,15 +9,15 @@
 import Foundation
 import ObjectMapper
 
-public class ListaArticulos: Mappable {
+public class MWListaArticulos: Mappable {
     
-    var SKU: String?
-    var cantidad: Float?
-    var clasificacion: String?
-    var url: String?
-    var maximumListPrice: Float?
-    var nombre: String?
-    var minimumListPrice: Float?
+    public var SKU: String?
+    public var cantidad: Float?
+    public var clasificacion: String?
+    public var url: String?
+    public var maximumListPrice: Float?
+    public var nombre: String?
+    public var minimumListPrice: Float?
     
     required public init?(map: Map) {
     }

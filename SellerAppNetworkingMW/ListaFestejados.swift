@@ -9,10 +9,10 @@
 import Foundation
 import ObjectMapper
 
-public class ListaFestejados: Mappable {
+public class MWListaFestejados: Mappable {
     
-    var nombreCompleto: String?
-    var tipo: Float?
+    public var nombreCompleto: String?
+    public var tipo: Float?
     
     required public init?(map: Map) {
     }

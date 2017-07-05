@@ -116,7 +116,6 @@
 				2B1198621F01B1F100C7A1FC /* SortOptions.swift */,
 				2B1198641F01B2EC00C7A1FC /* MacVariantsInfo.swift */,
 				2B7FD14D1F01C46700232C66 /* PLPParameters.swift */,
-				A9A0EE101F0C528D0092DA45 /* GiftRegistryParamaters.swift */,
 				2B3C78371F02AE9100FAB4BA /* PLPLevel.swift */,
 			);
 			name = PLP;
@@ -207,6 +206,7 @@
 		A9A0EE141F0CAB380092DA45 /* GiftRegistryPLP */ = {
 			isa = PBXGroup;
 			children = (
+				A9A0EE101F0C528D0092DA45 /* GiftRegistryParamaters.swift */,
 				A9A0EE121F0CAB260092DA45 /* GiftRegistryPLPLevel.swift */,
 				A9A0EE151F0CAC190092DA45 /* ListaEventoResponse.swift */,
 				A9A0EE171F0CAC810092DA45 /* ListaDirecciones.swift */,

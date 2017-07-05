@@ -11,9 +11,9 @@ import ObjectMapper
 
 public class GiftRegistryPLPLevel: Mappable {
     
-    var WARNING: String?
-    var listaEventoResponse: ListaEventoResponse?
-    var isSuccessful: Int?
+    public var WARNING: String?
+    public var listaEventoResponse: MWListaEventoResponse?
+    public var isSuccessful: Int?
     
     required public init?(map: Map) {
     }

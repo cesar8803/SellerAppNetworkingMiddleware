@@ -9,16 +9,16 @@
 import Foundation
 import ObjectMapper
 
-public class ListaEventoResponse: Mappable {
+public class MWListaEventoResponse: Mappable {
     
-    var tienda: String?
-    var listaDirecciones: [ListaDirecciones]?
-    var fechaEvento: String?
-    var listaFestejados: [ListaFestejados]?
-    var listaArticulos: [ListaArticulos]?
-    var tipoMesa: Float?
-    var comentarios: String?
-    var numEvento: String?
+    public var tienda: String?
+    public var listaDirecciones: [MWListaDirecciones]?
+    public var fechaEvento: String?
+    public var listaFestejados: [MWListaFestejados]?
+    public var listaArticulos: [MWListaArticulos]?
+    public var tipoMesa: Float?
+    public var comentarios: String?
+    public var numEvento: String?
     
     required public init?(map: Map) {
     }
