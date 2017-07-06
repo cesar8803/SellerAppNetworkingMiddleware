@@ -20,6 +20,9 @@ public class CategoryInfo: Mappable{
     public var redirectsToWeb: Int?
     public var categoryId: String?
     
+    init(){
+    }
+    
     required public init?(map: Map){
     }
     public func mapping(map: Map){
