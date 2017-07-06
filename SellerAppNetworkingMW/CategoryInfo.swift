@@ -23,6 +23,7 @@ public class CategoryInfo: Mappable{
     public init(){
     }
     
+    
     required public init?(map: Map){
     }
     public func mapping(map: Map){
