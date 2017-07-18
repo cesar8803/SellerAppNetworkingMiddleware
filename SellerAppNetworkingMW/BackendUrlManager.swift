@@ -18,6 +18,7 @@ class BackendUrlManager : NSObject{
         case home
         case plp
         case giftRegistryPLP
+        case typeahead
     }
     
     fileprivate static let SERVICE_CONTEXT:[String] = [
@@ -27,7 +28,8 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/menu?",                                        //Menu
         "Middleware/rest/service/home",                                         //Home
         "Middleware/rest/service/plp?",                                         //plp
-        "Middleware/rest/service/lista-evento"                                  //GiftRegistryPLP
+        "Middleware/rest/service/lista-evento",                                  //GiftRegistryPLP
+        "/Middleware/rest/service/type-ahead?"                                  //Type ahead
     ]
     
     // The array of all the services url's.
