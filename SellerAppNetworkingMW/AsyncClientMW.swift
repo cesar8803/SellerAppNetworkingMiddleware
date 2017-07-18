@@ -42,6 +42,16 @@ public class AsyncClientMW
     }
     
     
+    public class func getImagesOrders(sku:String, completion:@escaping (_ dataResponse:Orderslevel) -> Void, completionError:@escaping ErrorStringHandler)
+    {
+        let params:Parameters = ["sku":sku]
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.orders, parameters: params, completion: { (orders:Orderslevel) in
+            completion(orders)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
+    
     
     public class func getPLP(mandatory:PLP_MandatoryParams, parameters:[PLP_Optional<Any>]?, completion:@escaping (_ dataResponse:PLPLevel) -> Void, completionError:@escaping ErrorStringHandler)
     {
