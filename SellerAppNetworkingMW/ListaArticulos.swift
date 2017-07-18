@@ -19,6 +19,7 @@ public class MWListaArticulos: Mappable {
     public var maximumListPrice: Float?
     public var nombre: String?
     public var minimumListPrice: Float?
+    public var initialOrder: Int?
     
     required public init?(map: Map) {
     }
@@ -32,6 +33,7 @@ public class MWListaArticulos: Mappable {
         maximumListPrice <- map["maximumListPrice"]
         nombre <- map["nombre"]
         minimumListPrice <- map["minimumListPrice"]
+        initialOrder <- map["initialOrder"]
     }
     
 }
