@@ -20,6 +20,12 @@ public class MWListaArticulos: Mappable {
     public var nombre: String?
     public var minimumListPrice: Float?
     public var initialOrder: Int?
+    public var smImage: String?
+    public var fecEntrega: String?
+    public var descEstado: String?
+    public var descripcion: String?
+    public var estado: String?
+    public var lgImage: String?
     
     required public init?(map: Map) {
     }
@@ -34,6 +40,12 @@ public class MWListaArticulos: Mappable {
         nombre <- map["nombre"]
         minimumListPrice <- map["minimumListPrice"]
         initialOrder <- map["initialOrder"]
+        smImage <- map["smImage"]
+        fecEntrega <- map["fecEntrega"]
+        descEstado <- map["descEstado"]
+        descripcion <- map["descripcion"]
+        estado <- map["estado"]
+        lgImage <- map["lgImage"]
     }
     
 }
