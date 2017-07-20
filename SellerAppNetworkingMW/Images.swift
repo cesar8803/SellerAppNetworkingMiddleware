@@ -19,11 +19,9 @@ class Images: Mappable {
     }
     
     public func mapping(map: Map) {
-        
         lg <- map["lg"]
         sm <- map["sm"]
         xl <- map["xl"]
-        
     }
     
 }

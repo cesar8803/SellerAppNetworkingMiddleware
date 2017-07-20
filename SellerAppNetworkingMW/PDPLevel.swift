@@ -21,7 +21,7 @@ class PDPLevel: Mappable{
     public var numberInWarehouse: String?
     public var availableToShip: Int?
     public var InventarioFull: InventarioFull?
-    public var variantsInfo: [VariantsInfo]?*/
+    public var variantsInfo: [VariantsInfo]?
     
     public required init?(map: Map){
     }

@@ -1,25 +1,22 @@
 //
-//  Flags.swift
+//  ConsultaSKUInventarioResponse.swift
 //  SellerAppNetworkingMW
 //
-//  Created by Alejandro Hernandez on 19/07/17.
+//  Created by Alejandro Hernandez on 20/07/17.
 //  Copyright © 2017 Liverpool. All rights reserved.
 //
 
 import Foundation
 import ObjectMapper
 
-class Flags: Mappable {
+class ConsultaSkuInventarioResponse: Mappable {
     
-    public var name: String?
-    public var value: Int?
+    public var sap_inventario: SapInventario?
     
     public required init?(map: Map) {
     }
     
     public func mapping(map: Map) {
-        name <- map["name"]
-        value <- map["value"]
+        sap_inventario <- map["Sap_inventario"]
     }
-    
 }

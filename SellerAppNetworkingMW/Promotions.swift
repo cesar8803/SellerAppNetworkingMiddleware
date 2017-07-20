@@ -18,10 +18,8 @@ class Promotions: Mappable {
     }
     
     public func mapping(map: Map){
-        
         lpPromotions <- map["lpPromotions"]
         otherPromotions <- map["otherPromotions"]
-        
     }
     
 }

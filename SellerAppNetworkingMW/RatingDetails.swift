@@ -21,12 +21,11 @@ class RatingDetails: Mappable {
     }
     
     public func mapping(map: Map) {
-        
         threeStarRatingCount <- map["threeStarRatingCount"]
         oneStarRatingCount <- map["oneStarRatingCount"]
         fourStarRatingCount <- map["fourStarRatingCount"]
         twoStarRatingCount <- map["twoStarRatingCount"]
         fiveStarRatingCount <- map["fiveStarRatingCount"]
-        
     }
+    
 }

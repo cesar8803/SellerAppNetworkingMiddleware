@@ -22,14 +22,12 @@ class EddInfo: Mappable {
     }
     
     public func mapping(map: Map) {
-        
         isSpecialSale <- map["isSpecialSale"]
         edd <- map["edd"]
         eddEnabled <- map["eddEnabled"]
         eddErrorMessages <- map["eddErrorMessages"]
         startDayRangeSL <- map["startDayRangeSL"]
         endDayRangeSL <- map["endDayRangeSL"]
-        
     }
     
 }

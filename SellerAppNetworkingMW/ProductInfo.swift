@@ -39,7 +39,6 @@ class ProductInfo: Mappable {
     }
     
     public func mapping(map: Map) {
-        
         ratingCount <- map["ratingCount"]
         images <- map["images"]
         promoPrice <- map["promoPrice"]
@@ -63,7 +62,6 @@ class ProductInfo: Mappable {
         gwp <- map["gwp"]
         salePrice <- map["salePrice"]
         listPrice <- map["listPrice"]
-        
     }
     
 }

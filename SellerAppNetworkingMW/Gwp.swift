@@ -19,11 +19,9 @@ class Gwp: Mappable {
     }
     
     public func mapping(map: Map) {
-        
         exclusiveOnlineMessage <- map["exclusiveOnlineMessage"]
         promotionalGiftKey <- map["promotionalGiftKey"]
         promotionalGiftMessage <- map["promotionalGiftMessage"]
-        
     }
     
 }

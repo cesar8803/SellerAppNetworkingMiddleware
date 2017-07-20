@@ -18,10 +18,10 @@ class BuscaProducto: Mappable {
     public var buscaFree: Int?
     public var buscaPromocion: Int?
     
-    public required init?(map: Map){
+    public required init?(map: Map) {
     }
     
-    public func mapping(map: Map){
+    public func mapping(map: Map) {
         buscaBarcode <- map["buscaBarcode"]
         buscaDepartment <- map["buscaDepartment"]
         buscaPrice <- map["buscaPrice"]

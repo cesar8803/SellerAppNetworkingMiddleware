@@ -1,25 +1,23 @@
 //
-//  Flags.swift
+//  Attributes.swift
 //  SellerAppNetworkingMW
 //
-//  Created by Alejandro Hernandez on 19/07/17.
+//  Created by Alejandro Hernandez on 20/07/17.
 //  Copyright © 2017 Liverpool. All rights reserved.
 //
 
 import Foundation
 import ObjectMapper
 
-class Flags: Mappable {
+class Attributes: Mappable {
     
-    public var name: String?
-    public var value: Int?
+    public var marca: String?
     
     public required init?(map: Map) {
     }
     
     public func mapping(map: Map) {
-        name <- map["name"]
-        value <- map["value"]
+        marca <- map["Marca"]
     }
     
 }
