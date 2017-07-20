@@ -21,6 +21,8 @@ public class RemisionesConsultaOrdenresponse: Mappable{
     public var listaArticulos: [MWListaArticulos]?
     public var diasEntrega: String?
     public var importeTotal: String?
+    public var locacionDestino: String?
+    public var numeroEmpleado: String?
     
     required  public init?(map: Map){
     }
@@ -36,5 +38,7 @@ public class RemisionesConsultaOrdenresponse: Mappable{
         listaArticulos <- map["listaArticulos"]
         diasEntrega <- map["diasEntrega"]
         importeTotal <- map["importeTotal"]
+        locacionDestino <- map["locacionDestino"]
+        numeroEmpleado <- map["numeroEmpleado"]
     }
 }
