@@ -9,22 +9,22 @@
 import Foundation
 import ObjectMapper
 
-class RemisionesConsultaOrdenresponse: Mappable{
-    var fechaEmision: String?
-    var estadoOrden: String?
-    var periodicidad: String?
-    var observaciones: String?
-    var descEstado: String?
-    var tipoCompra: String?
-    var nombreDestinatario: String?
-    var direccionDestinatario: Direcciondestinatario?
-    var listaArticulos: [MWListaArticulos]?
-    var diasEntrega: String?
-    var importeTotal: String?
+public class RemisionesConsultaOrdenresponse: Mappable{
+    public var fechaEmision: String?
+    public var estadoOrden: String?
+    public var periodicidad: String?
+    public var observaciones: String?
+    public var descEstado: String?
+    public var tipoCompra: String?
+    public var nombreDestinatario: String?
+    public var direccionDestinatario: Direcciondestinatario?
+    public var listaArticulos: [MWListaArticulos]?
+    public var diasEntrega: String?
+    public var importeTotal: String?
     
-    required init?(map: Map){
+    required  public init?(map: Map){
     }
-    func mapping(map: Map){
+    public func mapping(map: Map){
         fechaEmision <- map["fechaEmision"]
         estadoOrden <- map["estadoOrden"]
         periodicidad <- map["periodicidad"]

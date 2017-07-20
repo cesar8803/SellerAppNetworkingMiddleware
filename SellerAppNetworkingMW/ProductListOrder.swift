@@ -9,13 +9,13 @@
 import Foundation
 import ObjectMapper
 
-class Productlistorder: Mappable{
-    var Remisiones_consulta_ordenResponse: RemisionesConsultaOrdenresponse?
-    var isSuccessful: Int?
+public class Productlistorder: Mappable{
+    public var Remisiones_consulta_ordenResponse: RemisionesConsultaOrdenresponse?
+    public var isSuccessful: Int?
     
-    required init?(map: Map){
+    required public init?(map: Map){
     }
-    func mapping(map: Map){
+    public func mapping(map: Map){
         Remisiones_consulta_ordenResponse <- map["Remisiones_consulta_ordenResponse"]
         isSuccessful <- map["isSuccessful"]
     }

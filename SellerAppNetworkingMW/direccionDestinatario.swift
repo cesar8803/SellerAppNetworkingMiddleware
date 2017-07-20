@@ -9,18 +9,18 @@
 import Foundation
 import ObjectMapper
 
-class Direcciondestinatario: Mappable{
-    var entre: String?
-    var colonia: String?
-    var estado: String?
-    var direccion: String?
-    var y: String?
-    var telefono: String?
-    var municipio: String?
+public class Direcciondestinatario: Mappable{
+    public var entre: String?
+    public var colonia: String?
+    public var estado: String?
+    public var direccion: String?
+    public var y: String?
+    public var telefono: String?
+    public var municipio: String?
     
-    required init?(map: Map){
+    required public init?(map: Map){
     }
-    func mapping(map: Map){
+    public func mapping(map: Map){
         entre <- map["entre"]
         colonia <- map["colonia"]
         estado <- map["estado"]

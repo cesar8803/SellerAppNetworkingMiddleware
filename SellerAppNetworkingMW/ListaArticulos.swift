@@ -26,6 +26,7 @@ public class MWListaArticulos: Mappable {
     public var descripcion: String?
     public var estado: String?
     public var lgImage: String?
+    public var importe: String?
     
     required public init?(map: Map) {
     }
@@ -46,6 +47,7 @@ public class MWListaArticulos: Mappable {
         descripcion <- map["descripcion"]
         estado <- map["estado"]
         lgImage <- map["lgImage"]
+        importe <- map["importe"]
     }
     
 }
