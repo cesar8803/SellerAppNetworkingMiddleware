@@ -11,7 +11,7 @@ import ObjectMapper
 
 class PDPLevel: Mappable{
     public var carruselDummy: CarruselDummy?
-    /*public var buscaProducto: BuscaProducto?
+    public var buscaProducto: BuscaProducto?
     public var productInfo: ProductInfo?
     public var WARNING: String?
     public var isSuccessful: Int?
@@ -26,9 +26,9 @@ class PDPLevel: Mappable{
     public required init?(map: Map){
     }
     
-   public func mapping(map: Map){
+    public func mapping(map: Map){
         carruselDummy <- map["carruselDummy"]
-       /* buscaProducto <- map["buscaProducto"]
+        buscaProducto <- map["buscaProducto"]
         productInfo <- map["productInfo"]
         WARNING <- map["WARNING"]
         isSuccessful <- map["isSuccessful"]
@@ -38,7 +38,7 @@ class PDPLevel: Mappable{
         numberInWarehouse <- map["numberInWarehouse"]
         availableToShip <- map["availableToShip"]
         InventarioFull <- map["InventarioFull"]
-        variantsInfo <- map["public variantsInfo"]*/
+        variantsInfo <- map["public variantsInfo"]
     }
     
 }
