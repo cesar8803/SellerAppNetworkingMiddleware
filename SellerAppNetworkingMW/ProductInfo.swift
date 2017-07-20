@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class ProductInfo: Mappable {
+public class ProductInfo: Mappable {
     
     public var ratingCount: Float?
     public var images: Images?

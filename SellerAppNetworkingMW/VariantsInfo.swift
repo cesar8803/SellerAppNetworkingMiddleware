@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class VariantsInfo: Mappable {
+public class VariantsInfo: Mappable {
     
     public var sku: String?
     public var sizeSequence: String?

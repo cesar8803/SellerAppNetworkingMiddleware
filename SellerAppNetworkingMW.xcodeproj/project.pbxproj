@@ -51,6 +51,7 @@
 		A96A696B1F20787500407A82 /* SapInventario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A696A1F20787500407A82 /* SapInventario.swift */; };
 		A96A696D1F20797100407A82 /* SapSkuInventario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A696C1F20797100407A82 /* SapSkuInventario.swift */; };
 		A96A696F1F207B7600407A82 /* VariantsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A696E1F207B7600407A82 /* VariantsInfo.swift */; };
+		A96A69731F21057C00407A82 /* PDPParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A69721F21057C00407A82 /* PDPParameters.swift */; };
 		A9A0EE111F0C528D0092DA45 /* GiftRegistryParamaters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0EE101F0C528D0092DA45 /* GiftRegistryParamaters.swift */; };
 		A9A0EE131F0CAB260092DA45 /* GiftRegistryPLPLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0EE121F0CAB260092DA45 /* GiftRegistryPLPLevel.swift */; };
 		A9A0EE161F0CAC190092DA45 /* ListaEventoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0EE151F0CAC190092DA45 /* ListaEventoResponse.swift */; };
@@ -117,6 +118,7 @@
 		A96A696A1F20787500407A82 /* SapInventario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SapInventario.swift; sourceTree = "<group>"; };
 		A96A696C1F20797100407A82 /* SapSkuInventario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SapSkuInventario.swift; sourceTree = "<group>"; };
 		A96A696E1F207B7600407A82 /* VariantsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariantsInfo.swift; sourceTree = "<group>"; };
+		A96A69721F21057C00407A82 /* PDPParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDPParameters.swift; sourceTree = "<group>"; };
 		A9A0EE101F0C528D0092DA45 /* GiftRegistryParamaters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftRegistryParamaters.swift; sourceTree = "<group>"; };
 		A9A0EE121F0CAB260092DA45 /* GiftRegistryPLPLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftRegistryPLPLevel.swift; sourceTree = "<group>"; };
 		A9A0EE151F0CAC190092DA45 /* ListaEventoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaEventoResponse.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 		A96A694B1F20676600407A82 /* PDP */ = {
 			isa = PBXGroup;
 			children = (
+				A96A69721F21057C00407A82 /* PDPParameters.swift */,
 				A96A69491F20676100407A82 /* PDPLevel.swift */,
 				A96A694C1F2068FB00407A82 /* CarruselDummy.swift */,
 				A96A694E1F20693600407A82 /* RecommendedItems.swift */,
@@ -473,6 +476,7 @@
 				A96A696F1F207B7600407A82 /* VariantsInfo.swift in Sources */,
 				A96A696D1F20797100407A82 /* SapSkuInventario.swift in Sources */,
 				2B7FD14E1F01C46700232C66 /* PLPParameters.swift in Sources */,
+				A96A69731F21057C00407A82 /* PDPParameters.swift in Sources */,
 				2B11985B1F01AE5900C7A1FC /* Records.swift in Sources */,
 				A9A0EE1A1F0CACDA0092DA45 /* ListaFestejados.swift in Sources */,
 				A9A0EE181F0CAC810092DA45 /* ListaDirecciones.swift in Sources */,

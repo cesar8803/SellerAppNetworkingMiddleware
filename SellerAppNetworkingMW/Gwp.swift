@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Gwp: Mappable {
+public class Gwp: Mappable {
     
     public var exclusiveOnlineMessage: NSObject?
     public var promotionalGiftKey: NSObject?

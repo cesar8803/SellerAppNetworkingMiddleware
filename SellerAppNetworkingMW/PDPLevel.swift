@@ -9,7 +9,8 @@
 import Foundation
 import ObjectMapper
 
-class PDPLevel: Mappable{
+public class PDPLevel: Mappable{
+    
     public var carruselDummy: CarruselDummy?
     public var buscaProducto: BuscaProducto?
     public var productInfo: ProductInfo?

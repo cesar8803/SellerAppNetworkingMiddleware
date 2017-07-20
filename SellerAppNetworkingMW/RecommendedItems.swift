@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class RecommendedItems: Mappable {
+public class RecommendedItems: Mappable {
     
     public var groupType: String?
     public var minimumListPrice: Int?

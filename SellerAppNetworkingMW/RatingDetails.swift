@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class RatingDetails: Mappable {
+public class RatingDetails: Mappable {
     
     public var threeStarRatingCount: Float?
     public var oneStarRatingCount: Float?

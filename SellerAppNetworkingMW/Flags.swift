@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Flags: Mappable {
+public class Flags: Mappable {
     
     public var name: String?
     public var value: Int?

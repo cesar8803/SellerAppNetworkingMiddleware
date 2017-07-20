@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Images: Mappable {
+public class Images: Mappable {
     
     public var lg: String?
     public var sm: String?

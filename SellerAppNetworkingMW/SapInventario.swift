@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class SapInventario: Mappable {
+public class SapInventario: Mappable {
     
     public var sap_Sku_Inventario: [SapSkuInventario]?
     

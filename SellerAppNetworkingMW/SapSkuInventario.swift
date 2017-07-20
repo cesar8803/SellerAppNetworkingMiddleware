@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class SapSkuInventario: Mappable{
+public class SapSkuInventario: Mappable{
     
     public var Disp: String?
     public var Sku: String?
@@ -27,7 +27,7 @@ class SapSkuInventario: Mappable{
     public required init?(map: Map){
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         Disp <- map["Disp"]
         Sku <- map["Sku"]
         Piso <- map["Piso"]

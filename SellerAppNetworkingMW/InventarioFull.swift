@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class InventarioFull: Mappable {
+public class InventarioFull: Mappable {
     
     public var consultaSku_InventarioResponse: ConsultaSkuInventarioResponse?
     public var isSuccessful: Int?

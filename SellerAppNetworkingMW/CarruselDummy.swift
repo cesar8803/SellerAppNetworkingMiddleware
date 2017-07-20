@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class CarruselDummy: Mappable {
+public class CarruselDummy: Mappable {
     
     public var maximumNumRecords: Float?
     public var name: String?

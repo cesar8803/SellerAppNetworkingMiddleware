@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class BuscaProducto: Mappable {
+public class BuscaProducto: Mappable {
     
     public var buscaBarcode: String?
     public var buscaDepartment: String?

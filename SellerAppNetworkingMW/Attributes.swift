@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Attributes: Mappable {
+public class Attributes: Mappable {
     
     public var marca: String?
     

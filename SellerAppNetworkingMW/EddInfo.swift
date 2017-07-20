@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class EddInfo: Mappable {
+public class EddInfo: Mappable {
     
     public var isSpecialSale: Int?
     public var edd: String?

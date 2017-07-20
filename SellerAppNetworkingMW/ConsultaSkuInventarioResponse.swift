@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class ConsultaSkuInventarioResponse: Mappable {
+public class ConsultaSkuInventarioResponse: Mappable {
     
     public var sap_inventario: SapInventario?
     
@@ -19,4 +19,5 @@ class ConsultaSkuInventarioResponse: Mappable {
     public func mapping(map: Map) {
         sap_inventario <- map["Sap_inventario"]
     }
+    
 }

@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Promotions: Mappable {
+public class Promotions: Mappable {
     
     public var lpPromotions: [String]?
     public var otherPromotions: [String]?

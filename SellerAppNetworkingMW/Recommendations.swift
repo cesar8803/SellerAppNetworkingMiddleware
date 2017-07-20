@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Recommendations: Mappable {
+public class Recommendations: Mappable {
     
     public var maximumNumRecords: Float?
     public var name: String?
@@ -21,7 +21,7 @@ class Recommendations: Mappable {
     public required init?(map: Map) {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         maximumNumRecords <- map["maximumNumRecords"]
         name <- map["name"]
         minNumRecords <- map["minNumRecords"]

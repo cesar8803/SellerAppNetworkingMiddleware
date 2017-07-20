@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Inventario: Mappable {
+public class Inventario: Mappable {
     
     public var bodegaCentral: Int?
     public var tienda: Int?
@@ -18,7 +18,7 @@ class Inventario: Mappable {
     public required init?(map: Map) {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         bodegaCentral <- map["BodegaCentral"]
         tienda <- map["Tienda"]
         otrasTiendas <- map["OtrasTiendas"]
