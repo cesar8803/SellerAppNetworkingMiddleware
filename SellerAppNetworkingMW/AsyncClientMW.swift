@@ -109,12 +109,11 @@ public class AsyncClientMW
             }
         }
         
-        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.pdp, completion: { (PDP_level: PDPLevel) in
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.pdp, parameters: params, completion: { (PDP_level: PDPLevel) in
             completion(PDP_level)
         }) { (message) in
             completionError(message)
         }
-
         
     }
     
