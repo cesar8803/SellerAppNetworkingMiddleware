@@ -18,6 +18,7 @@ public class Results: Mappable{
     public var categoryId: String?
     public var image: String?
     public var navigationState: String?
+    public var productId: String?
     
     public required init?(map: Map){
     }
@@ -30,5 +31,6 @@ public class Results: Mappable{
         categoryId <- map["categoryId"]
         image <- map["image"]
         navigationState <- map["navigationState"]
+        productId <- map["productId"]
     }
 }
