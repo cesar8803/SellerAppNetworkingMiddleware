@@ -29,6 +29,18 @@ public class AsyncClientMW
         }
     }
     
+    //Request for search product
+    
+    public class func getProductWithString(_ text: String, completion: @escaping (_ dataResponse: MiddlewaReresponse) -> Void, completionError: @escaping ErrorStringHandler){
+    
+        let params: Parameters = ["search-string" : text]
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.typeahead, parameters: params, completion: { (response) in
+            completion(response)
+        }) { (errorMessage) in
+            completionError(errorMessage)
+        }
+    }
+    
     // Request a list of categoryInfo for categoryId
     // - parameter categoryId:        id for the categegory. Default value is root and return the first level .
     public class func getMenuLevel(categoryId:String = "root", completion:@escaping (_ dataResponse:MenuLevel) -> Void, completionError:@escaping ErrorStringHandler)

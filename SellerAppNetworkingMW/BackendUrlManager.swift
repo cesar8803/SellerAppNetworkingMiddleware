@@ -18,6 +18,7 @@ class BackendUrlManager : NSObject{
         case home
         case plp
         case giftRegistryPLP
+        case typeahead
         case orders
         case pdp
     }
@@ -29,7 +30,8 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/menu?",                                        //Menu
         "Middleware/rest/service/home",                                         //Home
         "Middleware/rest/service/plp?",                                         //plp
-        "Middleware/rest/service/lista-evento",                                 //GiftRegistryPLP
+        "Middleware/rest/service/lista-evento",                                  //GiftRegistryPLP
+        "Middleware/rest/service/type-ahead?",                                  //Type ahead
         "Middleware/rest/service/consultar-imagenes-skus?",                     //orders
         "Middleware/rest/service/pdp"                                           // PDP
     ]

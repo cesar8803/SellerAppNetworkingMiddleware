@@ -18,6 +18,7 @@ public class PLPState: Mappable{
     public var lastRecNum: Int?
     public var currentFilters: String?
     public var categoryId: String?
+    public var suggestedSearchTerm: String?
     
     required public init?(map: Map){
     }
@@ -31,5 +32,6 @@ public class PLPState: Mappable{
         lastRecNum <- map["lastRecNum"]
         currentFilters <- map["currentFilters"]
         categoryId <- map["categoryId"]
+        suggestedSearchTerm <- map["suggestedSearchTerm"]
     }
 }

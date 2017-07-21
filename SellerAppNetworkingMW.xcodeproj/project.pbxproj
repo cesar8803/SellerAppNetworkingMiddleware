@@ -30,6 +30,8 @@
 		2BE72FD51EFDFDA9009AC510 /* SellerAppNetworkingMWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE72FD41EFDFDA9009AC510 /* SellerAppNetworkingMWTests.swift */; };
 		2BE72FD71EFDFDA9009AC510 /* SellerAppNetworkingMW.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE72FC91EFDFDA9009AC510 /* SellerAppNetworkingMW.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BE72FE11EFE0014009AC510 /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE72FE01EFE0014009AC510 /* Greeting.swift */; };
+		71C31D8A1F1980C0003E7449 /* MiddlewareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C31D891F1980C0003E7449 /* MiddlewareResponse.swift */; };
+		71C31D8C1F1980D0003E7449 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C31D8B1F1980D0003E7449 /* Results.swift */; };
 		552B99421F1D1E4100F1E622 /* OrdersLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B99411F1D1E4100F1E622 /* OrdersLevel.swift */; };
 		552B99441F1D1E8F00F1E622 /* Skuarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B99431F1D1E8F00F1E622 /* Skuarray.swift */; };
 		A96A694A1F20676100407A82 /* PDPLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A69491F20676100407A82 /* PDPLevel.swift */; };
@@ -97,6 +99,8 @@
 		2BE72FD41EFDFDA9009AC510 /* SellerAppNetworkingMWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerAppNetworkingMWTests.swift; sourceTree = "<group>"; };
 		2BE72FD61EFDFDA9009AC510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BE72FE01EFE0014009AC510 /* Greeting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Greeting.swift; sourceTree = "<group>"; };
+		71C31D891F1980C0003E7449 /* MiddlewareResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareResponse.swift; sourceTree = "<group>"; };
+		71C31D8B1F1980D0003E7449 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		552B99411F1D1E4100F1E622 /* OrdersLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersLevel.swift; sourceTree = "<group>"; };
 		552B99431F1D1E8F00F1E622 /* Skuarray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skuarray.swift; sourceTree = "<group>"; };
 		A96A69491F20676100407A82 /* PDPLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDPLevel.swift; sourceTree = "<group>"; };
@@ -228,6 +232,7 @@
 		2BE72FE71EFF4AA7009AC510 /* AsyncClientMWObjects */ = {
 			isa = PBXGroup;
 			children = (
+				71C31D881F1980A8003E7449 /* Search */,
 				A96A694B1F20676600407A82 /* PDP */,
 				A9A0EE141F0CAB380092DA45 /* GiftRegistryPLP */,
 				2B1198571F01ADFF00C7A1FC /* PLP */,
@@ -240,6 +245,15 @@
 				2B1310F11F01709B00611EC9 /* Home */,
 			);
 			name = AsyncClientMWObjects;
+			sourceTree = "<group>";
+		};
+		71C31D881F1980A8003E7449 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				71C31D891F1980C0003E7449 /* MiddlewareResponse.swift */,
+				71C31D8B1F1980D0003E7449 /* Results.swift */,
+			);
+			name = Search;
 			sourceTree = "<group>";
 		};
 		A5C7F4203BD00C2377A028F1 /* Frameworks */ = {
@@ -472,6 +486,7 @@
 				A96A694A1F20676100407A82 /* PDPLevel.swift in Sources */,
 				552B99441F1D1E8F00F1E622 /* Skuarray.swift in Sources */,
 				2B3C78381F02AE9100FAB4BA /* PLPLevel.swift in Sources */,
+				71C31D8A1F1980C0003E7449 /* MiddlewareResponse.swift in Sources */,
 				2BE72FE11EFE0014009AC510 /* Greeting.swift in Sources */,
 				A96A696F1F207B7600407A82 /* VariantsInfo.swift in Sources */,
 				A96A696D1F20797100407A82 /* SapSkuInventario.swift in Sources */,
@@ -479,6 +494,7 @@
 				A96A69731F21057C00407A82 /* PDPParameters.swift in Sources */,
 				2B11985B1F01AE5900C7A1FC /* Records.swift in Sources */,
 				A9A0EE1A1F0CACDA0092DA45 /* ListaFestejados.swift in Sources */,
+				71C31D8C1F1980D0003E7449 /* Results.swift in Sources */,
 				A9A0EE181F0CAC810092DA45 /* ListaDirecciones.swift in Sources */,
 				A96A695B1F206FB300407A82 /* Promotions.swift in Sources */,
 				2B1310EF1F01704B00611EC9 /* BestSellerProducts.swift in Sources */,
