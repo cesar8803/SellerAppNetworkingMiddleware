@@ -16,6 +16,8 @@ public class Results: Mappable{
     public var showView: String?
     public var redirectsToWeb: Int?
     public var categoryId: String?
+    public var image: String?
+    public var navigationState: String?
     
     public required init?(map: Map){
     }
@@ -26,5 +28,7 @@ public class Results: Mappable{
         showView <- map["showView"]
         redirectsToWeb <- map["redirectsToWeb"]
         categoryId <- map["categoryId"]
+        image <- map["image"]
+        navigationState <- map["navigationState"]
     }
 }
