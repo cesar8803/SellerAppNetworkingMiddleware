@@ -54,6 +54,16 @@ public class AsyncClientMW
     }
     
     
+    public class func getImagesOrders(sku:String, completion:@escaping (_ dataResponse:Orderslevel) -> Void, completionError:@escaping ErrorStringHandler)
+    {
+        let params:Parameters = ["sku":sku]
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.orders, parameters: params, completion: { (orders:Orderslevel) in
+            completion(orders)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
+    
     
     public class func getPLP(mandatory:PLP_MandatoryParams, parameters:[PLP_Optional<Any>]?, completion:@escaping (_ dataResponse:PLPLevel) -> Void, completionError:@escaping ErrorStringHandler)
     {
@@ -75,6 +85,9 @@ public class AsyncClientMW
         
     }
     
+    
+    // ***** GIFT-REGISTRY ***** //
+    
     public class func getGiftRegistryPLP(mandatory: GiftRegistry_MandatoryParams, parameters: [GiftRegistry_Optional<Any>]?, completion: @escaping (_ dataResponse: GiftRegistryPLPLevel) -> Void, completionError: @escaping ErrorStringHandler) {
         
         var params = mandatory.getParameters()
@@ -94,6 +107,29 @@ public class AsyncClientMW
         }
                                         
     }
+    
+    
+    // ***** PDP ***** //
+    
+    public class func getPDP(mandatory: PDP_MandatoryParams, parameters: [PDP_Optional<Any>]?, completion: @escaping (_ dataResponse: PDPLevel) -> Void, completionError: @escaping ErrorStringHandler) {
+        
+        var params = mandatory.getParameters()
+
+        if let pdpOptionals = parameters {
+            for pdp_opt in pdpOptionals {
+                params[pdp_opt.type.rawValue] = pdp_opt.value
+            }
+        }
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.pdp, parameters: params, completion: { (PDP_level: PDPLevel) in
+            completion(PDP_level)
+        }) { (message) in
+            completionError(message)
+        }
+        
+    }
+    
+    //public class func getPDP
     
     
     /************** Petición GET con Parametros **********************/
@@ -193,6 +229,7 @@ public class AsyncClientMW
     }
     
     /**********************************PETICION DELETE***********************************/
+    
     class func deleteRequestExecute<T:Mappable>(_ _Type:BackendUrlManager.ServiceUrlsId, _Parameters: Parameters!, _Completion:@escaping (_ _postRequest: T) -> Void, _ErrorCompletition: @escaping (_ errorString:String) -> Void)
     {
         let url = URL(string: BackendUrlManager.Current.getUrl(_Type))
@@ -212,6 +249,7 @@ public class AsyncClientMW
             }
         }
     }
+    
     
     /*
      //MARK: Login
