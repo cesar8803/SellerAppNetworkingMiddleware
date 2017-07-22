@@ -34,6 +34,7 @@ public class ProductInfo: Mappable {
     public var gwp: Gwp?
     public var salePrice: Int?
     public var listPrice: Int?
+    public var videoLink: String?
     
     public required init?(map: Map) {
     }
@@ -62,6 +63,7 @@ public class ProductInfo: Mappable {
         gwp <- map["gwp"]
         salePrice <- map["salePrice"]
         listPrice <- map["listPrice"]
+        videoLink <- map["videoLink"]
     }
     
 }
