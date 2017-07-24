@@ -39,7 +39,7 @@ public class PDPLevel: Mappable{
         numberInWarehouse <- map["numberInWarehouse"]
         availableToShip <- map["availableToShip"]
         InventarioFull <- map["InventarioFull"]
-        variantsInfo <- map["public variantsInfo"]
+        variantsInfo <- map["variantsInfo"]
     }
     
 }
