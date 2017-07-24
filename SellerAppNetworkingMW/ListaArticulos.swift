@@ -22,6 +22,9 @@ public class MWListaArticulos: Mappable {
     public var initialOrder: Int?
     public var smImage: String?
     public var fecEntrega: String?
+    public var fecConfirmado: String?
+    public var fecCaminoModulo: String?
+    public var fecPreparando: String?
     public var descEstado: String?
     public var descripcion: String?
     public var estado: String?
@@ -48,6 +51,9 @@ public class MWListaArticulos: Mappable {
         estado <- map["estado"]
         lgImage <- map["lgImage"]
         importe <- map["importe"]
+        fecConfirmado <- map["fecConfirmado"]
+        fecCaminoModulo <- map["fecCaminoModulo"]
+        fecPreparando <- map["fecPreparando"]
     }
     
 }
