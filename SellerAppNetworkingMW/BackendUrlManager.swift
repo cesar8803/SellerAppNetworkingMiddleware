@@ -31,10 +31,9 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/home",                                         //Home
         "Middleware/rest/service/plp?",                                         //plp
         "Middleware/rest/service/lista-evento",                                  //GiftRegistryPLP
+        "Middleware/rest/service/type-ahead?",                      //type-ahead
         "Middleware/rest/service/remisiones?",                      //orders
-        "Middleware/rest/service/type-ahead?",                                  //Type ahead
-        "Middleware/rest/service/consultar-imagenes-skus?",                     //orders
-        "Middleware/rest/service/pdp"                                           // PDP
+        "Middleware/rest/service/pdp"                                         // PDP
     ]
     
     // The array of all the services url's.
