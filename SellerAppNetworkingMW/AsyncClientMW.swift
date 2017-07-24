@@ -53,6 +53,18 @@ public class AsyncClientMW
         }
     }
     
+    public class func getOrdersComplet(orden:String, completion:@escaping (_ dataResponse:Productlistorder) -> Void, completionError:@escaping ErrorStringHandler)
+    {
+        let orderType: String = (orden.hasPrefix("90") ? "OV" : "RM")
+        let params:Parameters = ["orden":orden, "indicador":orderType]
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.orders, parameters: params, completion: { (orders:Productlistorder) in
+            completion(orders)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
+    
     
     public class func getImagesOrders(sku:String, completion:@escaping (_ dataResponse:Orderslevel) -> Void, completionError:@escaping ErrorStringHandler)
     {
