@@ -22,6 +22,7 @@ public class VariantsInfo: Mappable {
     public var texture: String?
     public var material: String?
     public var size: String?
+    public var colorImage: String?
     
     public required init?(map: Map){
     }
@@ -38,6 +39,7 @@ public class VariantsInfo: Mappable {
         texture <- map["texture"]
         material <- map["material"]
         size <- map["size"]
+        colorImage <- map["colorImage"]
     }
     
 }
