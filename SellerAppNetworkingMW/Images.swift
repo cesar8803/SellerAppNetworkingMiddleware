@@ -14,6 +14,7 @@ public class Images: Mappable {
     public var lg: String?
     public var sm: String?
     public var xl: String?
+    public var galleryImages: [String]?
     
     public required init?(map: Map) {
     }
@@ -22,6 +23,7 @@ public class Images: Mappable {
         lg <- map["lg"]
         sm <- map["sm"]
         xl <- map["xl"]
+        galleryImages <- ["galleryImages"]
     }
     
 }
