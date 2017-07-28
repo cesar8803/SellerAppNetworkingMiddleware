@@ -27,6 +27,9 @@ public class Records: Mappable{
     public var lgImage: String?
     public var listPrice: Int?
     public var productId: String?
+    public var largeImage: String?
+    public var salePrice: String?
+    public var displayName: String?
     
     required public init?(map: Map){
     }
@@ -48,5 +51,8 @@ public class Records: Mappable{
         lgImage <- map["lgImage"]
         listPrice <- map["listPrice"]
         productId <- map["productId"]
+        largeImage <- map["largeImage"]
+        salePrice <- map ["salePrice"]
+        displayName <- map["displayName"]
     }
 }

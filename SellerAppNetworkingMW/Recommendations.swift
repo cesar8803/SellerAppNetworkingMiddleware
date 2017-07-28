@@ -16,7 +16,7 @@ public class Recommendations: Mappable {
     public var minNumRecords: Float?
     public var moreLinkCategory: String?
     public var moreLinkStaticTextField: String?
-    public var recommendedItems: [RecommendedItems]?
+    public var recommendedItems: [Records]?
     
     public required init?(map: Map) {
     }
