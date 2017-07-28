@@ -23,7 +23,7 @@ public class Images: Mappable {
         lg <- map["lg"]
         sm <- map["sm"]
         xl <- map["xl"]
-        galleryImages <- ["galleryImages"]
+        galleryImages <- map["galleryImages"]
     }
     
 }
