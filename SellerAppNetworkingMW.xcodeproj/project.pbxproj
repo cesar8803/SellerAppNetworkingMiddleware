@@ -30,13 +30,14 @@
 		2BE72FD51EFDFDA9009AC510 /* SellerAppNetworkingMWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE72FD41EFDFDA9009AC510 /* SellerAppNetworkingMWTests.swift */; };
 		2BE72FD71EFDFDA9009AC510 /* SellerAppNetworkingMW.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE72FC91EFDFDA9009AC510 /* SellerAppNetworkingMW.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BE72FE11EFE0014009AC510 /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE72FE01EFE0014009AC510 /* Greeting.swift */; };
-		71C31D8A1F1980C0003E7449 /* MiddlewareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C31D891F1980C0003E7449 /* MiddlewareResponse.swift */; };
-		71C31D8C1F1980D0003E7449 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C31D8B1F1980D0003E7449 /* Results.swift */; };
 		552B99421F1D1E4100F1E622 /* OrdersLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B99411F1D1E4100F1E622 /* OrdersLevel.swift */; };
 		552B99441F1D1E8F00F1E622 /* Skuarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B99431F1D1E8F00F1E622 /* Skuarray.swift */; };
 		5593FE001F1FBBD80012E8B2 /* ProductListOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593FDFF1F1FBBD80012E8B2 /* ProductListOrder.swift */; };
 		5593FE021F1FBBE40012E8B2 /* RemisionesConsultaOrdenresponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593FE011F1FBBE40012E8B2 /* RemisionesConsultaOrdenresponse.swift */; };
 		5593FE041F1FBBF20012E8B2 /* direccionDestinatario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593FE031F1FBBF20012E8B2 /* direccionDestinatario.swift */; };
+		71C31D8A1F1980C0003E7449 /* MiddlewareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C31D891F1980C0003E7449 /* MiddlewareResponse.swift */; };
+		71C31D8C1F1980D0003E7449 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C31D8B1F1980D0003E7449 /* Results.swift */; };
+		A95358001F2BDDCA00369111 /* DynamicAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95357FF1F2BDDCA00369111 /* DynamicAttributes.swift */; };
 		A96A694A1F20676100407A82 /* PDPLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A69491F20676100407A82 /* PDPLevel.swift */; };
 		A96A694D1F2068FB00407A82 /* CarruselDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A694C1F2068FB00407A82 /* CarruselDummy.swift */; };
 		A96A694F1F20693600407A82 /* RecommendedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A694E1F20693600407A82 /* RecommendedItems.swift */; };
@@ -102,13 +103,14 @@
 		2BE72FD41EFDFDA9009AC510 /* SellerAppNetworkingMWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerAppNetworkingMWTests.swift; sourceTree = "<group>"; };
 		2BE72FD61EFDFDA9009AC510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BE72FE01EFE0014009AC510 /* Greeting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Greeting.swift; sourceTree = "<group>"; };
-		71C31D891F1980C0003E7449 /* MiddlewareResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareResponse.swift; sourceTree = "<group>"; };
-		71C31D8B1F1980D0003E7449 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		552B99411F1D1E4100F1E622 /* OrdersLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersLevel.swift; sourceTree = "<group>"; };
 		552B99431F1D1E8F00F1E622 /* Skuarray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skuarray.swift; sourceTree = "<group>"; };
 		5593FDFF1F1FBBD80012E8B2 /* ProductListOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListOrder.swift; sourceTree = "<group>"; };
 		5593FE011F1FBBE40012E8B2 /* RemisionesConsultaOrdenresponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemisionesConsultaOrdenresponse.swift; sourceTree = "<group>"; };
 		5593FE031F1FBBF20012E8B2 /* direccionDestinatario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = direccionDestinatario.swift; sourceTree = "<group>"; };
+		71C31D891F1980C0003E7449 /* MiddlewareResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareResponse.swift; sourceTree = "<group>"; };
+		71C31D8B1F1980D0003E7449 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		A95357FF1F2BDDCA00369111 /* DynamicAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicAttributes.swift; sourceTree = "<group>"; };
 		A96A69491F20676100407A82 /* PDPLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDPLevel.swift; sourceTree = "<group>"; };
 		A96A694C1F2068FB00407A82 /* CarruselDummy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarruselDummy.swift; sourceTree = "<group>"; };
 		A96A694E1F20693600407A82 /* RecommendedItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendedItems.swift; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 				A96A696A1F20787500407A82 /* SapInventario.swift */,
 				A96A696C1F20797100407A82 /* SapSkuInventario.swift */,
 				A96A696E1F207B7600407A82 /* VariantsInfo.swift */,
+				A95357FF1F2BDDCA00369111 /* DynamicAttributes.swift */,
 			);
 			name = PDP;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				A96A695F1F20703300407A82 /* Gwp.swift in Sources */,
 				A9A0EE161F0CAC190092DA45 /* ListaEventoResponse.swift in Sources */,
 				2B1198611F01B06D00C7A1FC /* Refinement.swift in Sources */,
+				A95358001F2BDDCA00369111 /* DynamicAttributes.swift in Sources */,
 				A96A694D1F2068FB00407A82 /* CarruselDummy.swift in Sources */,
 				2B1310E91F016EAB00611EC9 /* CarousalBanners.swift in Sources */,
 				A96A69611F20766A00407A82 /* Recommendations.swift in Sources */,

@@ -17,6 +17,8 @@ public class CarruselDummy: Mappable {
     public var moreLinkCategory: String?
     public var moreLinkStaticTextField: String?
     public var recommendedItems: [RecommendedItems]?
+    public var carruselDummy: [RecommendedItems]?
+
     
     public required init?(map: Map) {
     }
@@ -28,6 +30,7 @@ public class CarruselDummy: Mappable {
         moreLinkCategory <- map["moreLinkCategory"]
         moreLinkStaticTextField <- map["moreLinkStaticTextField"]
         recommendedItems <- map["recommendedItems"]
+        carruselDummy <- map["carruselDummy"]
     }
     
 }

@@ -11,7 +11,7 @@ import ObjectMapper
 
 public class PDPLevel: Mappable{
     
-    public var carruselDummy: CarruselDummy?
+    public var carruselDummy: Recommendations?
     public var buscaProducto: BuscaProducto?
     public var productInfo: ProductInfo?
     public var WARNING: String?
