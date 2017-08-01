@@ -141,7 +141,20 @@ public class AsyncClientMW
         
     }
     
-    //public class func getPDP
+    
+    
+    //Public function getSKU's Images
+    // skus: String of SKUs separated by ~
+    class func getImagesFor(skus:String, completion: @escaping (_ dataResponse: SKUsImages) -> Void, completionError: @escaping ErrorStringHandler)
+    {
+        let params:Parameters = ["sku":skus]
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.imagesSKUs, parameters: params, completion: { (response) in
+            completion(response)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
     
     
     /************** Petición GET con Parametros **********************/
@@ -158,6 +171,8 @@ public class AsyncClientMW
             }
         }
     }
+    
+    
     
     /************** Petición GET **********************/
     class func getRequestExecute<T:Mappable>(_ type:BackendUrlManager.ServiceUrlsId, completion:@escaping (_ dataResponse:T) -> Void, errorCompletition: @escaping (_ errorString:String) -> Void){
