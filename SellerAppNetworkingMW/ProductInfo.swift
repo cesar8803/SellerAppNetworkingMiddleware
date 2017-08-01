@@ -37,7 +37,8 @@ public class ProductInfo: Mappable {
     public var videoLink: String?
     public var dynamicAttributes: [DynamicAttributes]?
     public var userManual: String?
-    
+    public var refundPolicy: String?
+
     public required init?(map: Map) {
     }
     
@@ -68,6 +69,7 @@ public class ProductInfo: Mappable {
         videoLink <- map["videoLink"]
         dynamicAttributes <- map["dynamicAttributes"]
         userManual <- map["userManual"]
+        refundPolicy <- map["refundPolicy"]
 
     }
     
