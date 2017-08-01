@@ -13,13 +13,15 @@ public class Promotions: Mappable {
     
     public var lpPromotions: [String]?
     public var otherPromotions: [String]?
-    
+    public var cashPromotions: [String]?
+
     public required init?(map: Map){
     }
     
     public func mapping(map: Map){
         lpPromotions <- map["lpPromotions"]
         otherPromotions <- map["otherPromotions"]
+        cashPromotions <- map["cashPromotions"]
     }
     
 }
