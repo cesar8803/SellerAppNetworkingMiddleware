@@ -36,6 +36,7 @@ public class ProductInfo: Mappable {
     public var listPrice: Int?
     public var videoLink: String?
     public var dynamicAttributes: [DynamicAttributes]?
+    public var userManual: String?
     
     public required init?(map: Map) {
     }
@@ -66,7 +67,8 @@ public class ProductInfo: Mappable {
         listPrice <- map["listPrice"]
         videoLink <- map["videoLink"]
         dynamicAttributes <- map["dynamicAttributes"]
-        
+        userManual <- map["userManual"]
+
     }
     
 }
