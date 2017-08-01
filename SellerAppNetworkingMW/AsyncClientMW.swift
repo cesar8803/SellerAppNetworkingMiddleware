@@ -145,7 +145,7 @@ public class AsyncClientMW
     
     //Public function getSKU's Images
     // skus: String of SKUs separated by ~
-    class func getImagesFor(skus:String, completion: @escaping (_ dataResponse: SKUsImages) -> Void, completionError: @escaping ErrorStringHandler)
+    public class func getImagesFor(skus:String, completion: @escaping (_ dataResponse: SKUsImages) -> Void, completionError: @escaping ErrorStringHandler)
     {
         let params:Parameters = ["sku":skus]
         
@@ -155,6 +155,8 @@ public class AsyncClientMW
             completionError(msg)
         }
     }
+    
+    
     
     
     /************** Petición GET con Parametros **********************/
