@@ -11,6 +11,7 @@ import ObjectMapper
 
 public class PDPLevel: Mappable{
     
+    public var scripts: String?
     public var carruselDummy: Recommendations?
     public var buscaProducto: BuscaProducto?
     public var productInfo: ProductInfo?
@@ -28,6 +29,7 @@ public class PDPLevel: Mappable{
     }
     
     public func mapping(map: Map){
+        scripts <- map["scripts"]
         carruselDummy <- map["carruselDummy"]
         buscaProducto <- map["buscaProducto"]
         productInfo <- map["productInfo"]
