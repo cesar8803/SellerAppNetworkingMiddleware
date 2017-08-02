@@ -33,6 +33,7 @@ public class VariantsInfo: Mappable {
         sizeSequence <- map["sizeSequence"]
         listPrice <- map["listPrice"]
         colorHex <- map["colorHex"]
+        colorImage <- map["colorImage"]
         salePrice <- map["salePrice"]
         images <- map["images"]
         promoPrice <- map["promoPrice"]
