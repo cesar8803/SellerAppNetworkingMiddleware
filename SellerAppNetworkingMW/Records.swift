@@ -31,6 +31,9 @@ public class Records: Mappable{
     public var salePrice: String?
     public var displayName: String?
     
+    public init(){
+    }
+    
     required public init?(map: Map){
     }
     public func mapping(map: Map){
