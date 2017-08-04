@@ -29,6 +29,18 @@ public class AsyncClientMW
         }
     }
     
+    //Request for search product
+    
+    public class func getProductWithString(_ text: String, completion: @escaping (_ dataResponse: MiddlewaReresponse) -> Void, completionError: @escaping ErrorStringHandler){
+    
+        let params: Parameters = ["search-string" : text]
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.typeahead, parameters: params, completion: { (response) in
+            completion(response)
+        }) { (errorMessage) in
+            completionError(errorMessage)
+        }
+    }
+    
     // Request a list of categoryInfo for categoryId
     // - parameter categoryId:        id for the categegory. Default value is root and return the first level .
     public class func getMenuLevel(categoryId:String = "root", completion:@escaping (_ dataResponse:MenuLevel) -> Void, completionError:@escaping ErrorStringHandler)
@@ -41,6 +53,28 @@ public class AsyncClientMW
         }
     }
     
+    public class func getOrdersComplet(orden:String, completion:@escaping (_ dataResponse:Productlistorder) -> Void, completionError:@escaping ErrorStringHandler)
+    {
+        let orderType: String = (orden.hasPrefix("90") ? "OV" : "RM")
+        let params:Parameters = ["orden":orden, "indicador":orderType]
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.orders, parameters: params, completion: { (orders:Productlistorder) in
+            completion(orders)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
+    
+    
+    public class func getImagesOrders(sku:String, completion:@escaping (_ dataResponse:Orderslevel) -> Void, completionError:@escaping ErrorStringHandler)
+    {
+        let params:Parameters = ["sku":sku]
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.orders, parameters: params, completion: { (orders:Orderslevel) in
+            completion(orders)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
     
     
     public class func getPLP(mandatory:PLP_MandatoryParams, parameters:[PLP_Optional<Any>]?, completion:@escaping (_ dataResponse:PLPLevel) -> Void, completionError:@escaping ErrorStringHandler)
@@ -64,6 +98,66 @@ public class AsyncClientMW
     }
     
     
+    // ***** GIFT-REGISTRY ***** //
+    
+    public class func getGiftRegistryPLP(mandatory: GiftRegistry_MandatoryParams, parameters: [GiftRegistry_Optional<Any>]?, completion: @escaping (_ dataResponse: GiftRegistryPLPLevel) -> Void, completionError: @escaping ErrorStringHandler) {
+        
+        var params = mandatory.getParameters()
+        
+        if let pOptionals = parameters {
+            
+            for gr_opt in pOptionals {
+                params[gr_opt.type.rawValue] = gr_opt.value
+            }
+            
+        }
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.giftRegistryPLP, parameters: params, completion: { (GiftRegistryPLP_level: GiftRegistryPLPLevel) in
+            completion(GiftRegistryPLP_level)
+        }) { (msg) in
+            completionError(msg)
+        }
+                                        
+    }
+    
+    
+    // ***** PDP ***** //
+    
+    public class func getPDP(mandatory: PDP_MandatoryParams, parameters: [PDP_Optional<Any>]?, completion: @escaping (_ dataResponse: PDPLevel) -> Void, completionError: @escaping ErrorStringHandler) {
+        
+        var params = mandatory.getParameters()
+
+        if let pdpOptionals = parameters {
+            for pdp_opt in pdpOptionals {
+                params[pdp_opt.type.rawValue] = pdp_opt.value
+            }
+        }
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.pdp, parameters: params, completion: { (PDP_level: PDPLevel) in
+            completion(PDP_level)
+        }) { (message) in
+            completionError(message)
+        }
+        
+    }
+    
+    
+    
+    //Public function getSKU's Images
+    // skus: String of SKUs separated by ~
+    public class func getImagesFor(skus:String, completion: @escaping (_ dataResponse: SKUsImages) -> Void, completionError: @escaping ErrorStringHandler)
+    {
+        let params:Parameters = ["sku":skus]
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.imagesSKUs, parameters: params, completion: { (response) in
+            completion(response)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
+    
+    
+    
     
     /************** Petición GET con Parametros **********************/
     class func getRequestExecute<T:Mappable>(_ type:BackendUrlManager.ServiceUrlsId, parameters: Parameters, completion:@escaping (_ dataResponse:T) -> Void, errorCompletition: @escaping (_ errorString:String) -> Void){
@@ -79,6 +173,8 @@ public class AsyncClientMW
             }
         }
     }
+    
+    
     
     /************** Petición GET **********************/
     class func getRequestExecute<T:Mappable>(_ type:BackendUrlManager.ServiceUrlsId, completion:@escaping (_ dataResponse:T) -> Void, errorCompletition: @escaping (_ errorString:String) -> Void){
@@ -145,7 +241,8 @@ public class AsyncClientMW
     
     
     /************** Petición PUT **********************/
-    class func putRequestExecute<T:Mappable>(_ _Type:BackendUrlManager.ServiceUrlsId, _Parameters: Parameters, _ViewLoader:Bool, _MsjLoader: String,_Completion:@escaping (_ _putRequest: T) -> Void, _ErrorCompletition: @escaping (_ errorString:String) -> Void){
+    class func putRequestExecute<T:Mappable>(_ _Type:BackendUrlManager.ServiceUrlsId, _Parameters: Parameters, _ViewLoader:Bool, _MsjLoader: String,_Completion:@escaping (_ putRequest: T) -> Void, _ErrorCompletition: @escaping (_ errorString:String) -> Void){
+        
         
         let _Url = BackendUrlManager.Current.getUrl(_Type)
         Alamofire.request(_Url, method: .put, parameters: _Parameters, encoding: URLEncoding.default).responseObject { (response: DataResponse<T>) in
@@ -161,6 +258,7 @@ public class AsyncClientMW
     }
     
     /**********************************PETICION DELETE***********************************/
+    
     class func deleteRequestExecute<T:Mappable>(_ _Type:BackendUrlManager.ServiceUrlsId, _Parameters: Parameters!, _Completion:@escaping (_ _postRequest: T) -> Void, _ErrorCompletition: @escaping (_ errorString:String) -> Void)
     {
         let url = URL(string: BackendUrlManager.Current.getUrl(_Type))
@@ -180,6 +278,7 @@ public class AsyncClientMW
             }
         }
     }
+    
     
     /*
      //MARK: Login

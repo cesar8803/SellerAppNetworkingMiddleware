@@ -10,13 +10,13 @@ import Foundation
 import ObjectMapper
 
 public class MacVariantsInfo: Mappable{
-    var sku: String?
-    var smImage: String?
-    var colorName: String?
-    var xlImage: String?
-    var salePrice: String?
-    var lgImage: String?
-    var listPrice: String?
+    public var sku: String?
+    public var smImage: String?
+    public var colorName: String?
+    public var xlImage: String?
+    public var salePrice: String?
+    public var lgImage: String?
+    public var listPrice: String?
     
     required public init?( map: Map){
     }

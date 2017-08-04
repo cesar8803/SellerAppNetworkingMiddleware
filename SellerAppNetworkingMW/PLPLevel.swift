@@ -10,10 +10,10 @@ import Foundation
 import ObjectMapper
 
 public class PLPLevel: Mappable{
-    var pageType: String?
-    var WARNING: String?
-    var plpResults: PLPResults?
-    var isSuccessful: Int?
+    public var pageType: String?
+    public var WARNING: String?
+    public var plpResults: PLPResults?
+    public var isSuccessful: Int?
     
     required public init?(map: Map){
     }
