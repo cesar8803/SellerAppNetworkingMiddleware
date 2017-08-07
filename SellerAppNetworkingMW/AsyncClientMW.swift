@@ -19,13 +19,12 @@ public class AsyncClientMW
 {
     
     // Request for home
-    public class func getHome(completion:@escaping (_ dataResponse: Home)-> Void, completionError: @escaping ErrorStringHandler )
+    public class func getHome(parameters: Parameters,completion:@escaping (_ dataResponse: Home)-> Void, completionError: @escaping ErrorStringHandler )
     {
-        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.home, completion: { (home) in
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.home, parameters: parameters, completion: { (home) in
             completion(home)
         }) { (msg) in
             completionError(msg)
-            
         }
     }
     
