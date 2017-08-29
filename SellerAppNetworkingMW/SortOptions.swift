@@ -11,8 +11,8 @@ import ObjectMapper
 
 public class SortOptions: Mappable
 {
-    var sortBy: String?
-    var label: String?
+    public var sortBy: String?
+    public var label: String?
     
     required public init?(map: Map)
     {
