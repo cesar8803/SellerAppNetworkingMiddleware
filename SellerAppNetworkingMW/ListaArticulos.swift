@@ -25,6 +25,7 @@ public class MWListaArticulos: Mappable {
     public var fecConfirmado: String?
     public var fecCaminoModulo: String?
     public var fecPreparando: String?
+    public var fecEntregado: String?
     public var descEstado: String?
     public var descripcion: String?
     public var estado: String?
@@ -54,6 +55,7 @@ public class MWListaArticulos: Mappable {
         fecConfirmado <- map["fecConfirmado"]
         fecCaminoModulo <- map["fecCaminoModulo"]
         fecPreparando <- map["fecPreparando"]
+        fecEntregado <- map["fecEntregado"]
     }
     
 }
