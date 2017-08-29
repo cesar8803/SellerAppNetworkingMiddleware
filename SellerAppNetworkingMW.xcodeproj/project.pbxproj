@@ -66,6 +66,7 @@
 		A9A0EE181F0CAC810092DA45 /* ListaDirecciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0EE171F0CAC810092DA45 /* ListaDirecciones.swift */; };
 		A9A0EE1A1F0CACDA0092DA45 /* ListaFestejados.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0EE191F0CACDA0092DA45 /* ListaFestejados.swift */; };
 		A9A0EE1C1F0CAD170092DA45 /* ListaArticulos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0EE1B1F0CAD170092DA45 /* ListaArticulos.swift */; };
+		F7147C071F560A7200EC2C23 /* MWUrlHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7147C061F560A7200EC2C23 /* MWUrlHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,7 @@
 		A9A0EE1B1F0CAD170092DA45 /* ListaArticulos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaArticulos.swift; sourceTree = "<group>"; };
 		D7D3AB2DC56018663124B01D /* Pods_SellerAppNetworkingMW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SellerAppNetworkingMW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED9284AA61F2EC8CF65C007 /* Pods-SellerAppNetworkingMW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellerAppNetworkingMW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SellerAppNetworkingMW/Pods-SellerAppNetworkingMW.debug.xcconfig"; sourceTree = "<group>"; };
+		F7147C061F560A7200EC2C23 /* MWUrlHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWUrlHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +270,7 @@
 				5593FE011F1FBBE40012E8B2 /* RemisionesConsultaOrdenresponse.swift */,
 				5593FE031F1FBBF20012E8B2 /* direccionDestinatario.swift */,
 				2B1310F11F01709B00611EC9 /* Home */,
+				F7147C061F560A7200EC2C23 /* MWUrlHandler.swift */,
 			);
 			name = AsyncClientMWObjects;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				A95358001F2BDDCA00369111 /* DynamicAttributes.swift in Sources */,
 				A96A694D1F2068FB00407A82 /* CarruselDummy.swift in Sources */,
 				2B1310E91F016EAB00611EC9 /* CarousalBanners.swift in Sources */,
+				F7147C071F560A7200EC2C23 /* MWUrlHandler.swift in Sources */,
 				A96A69611F20766A00407A82 /* Recommendations.swift in Sources */,
 				A96A695D1F206FF800407A82 /* Flags.swift in Sources */,
 				2B1310EB1F016ECF00611EC9 /* StackBanners.swift in Sources */,
