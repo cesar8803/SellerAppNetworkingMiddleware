@@ -8,8 +8,8 @@
 
 import Foundation
 
-public class MWUrlHandler{
+public class MiddelewareConnection{
     private init(){}
     public var url:String = ""
-    static public let sharedInstance = MWUrlHandler()
+    public static  let sharedInstance:MiddelewareConnection = MiddelewareConnection()
 }

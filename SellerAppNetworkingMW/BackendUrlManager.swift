@@ -49,7 +49,7 @@ class BackendUrlManager : NSObject{
         let servicesCount = BackendUrlManager.SERVICE_CONTEXT.count
         for index in 0..<servicesCount {
             //let nextUrl:String = "\(backendProtocol)\(backendHost)\(BackendUrlManager.SERVICE_CONTEXT[index])";
-            let nextUrl:String = "\(MWUrlHandler.sharedInstance.url)/\(BackendUrlManager.SERVICE_CONTEXT[index])"
+            let nextUrl:String = "\(MiddelewareConnection.sharedInstance.url)/\(BackendUrlManager.SERVICE_CONTEXT[index])"
             serviceUrls.append(nextUrl)
         }
     }
