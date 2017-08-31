@@ -120,6 +120,20 @@ public class AsyncClientMW
     }
     
     
+    // ******** Shopping List ***** //
+    
+    public class func getShoppingList(parameters: Parameters, completion: @escaping (_ dataResponse: ShoppingListResponse) -> Void, completionError: @escaping ErrorStringHandler) {
+
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.shoppingList, parameters: parameters, completion: { (shoppingListResponse: ShoppingListResponse) in
+            completion(shoppingListResponse)
+        }) { (msg) in
+            completionError(msg)
+        }
+        
+    }
+    
+    
     // ***** PDP ***** //
     
     public class func getPDP(mandatory: PDP_MandatoryParams, parameters: [PDP_Optional<Any>]?, completion: @escaping (_ dataResponse: PDPLevel) -> Void, completionError: @escaping ErrorStringHandler) {
