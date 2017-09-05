@@ -18,6 +18,8 @@ public class ListaSku: Mappable{
     public var minimumListPrice: Float?
     public var lgImage: String?
     public var nombreSKU: String?
+    public var productType: String?
+    public var department: String?
     
     public required init?(map: Map){
     }
@@ -30,5 +32,7 @@ public class ListaSku: Mappable{
         minimumListPrice <- map["minimumListPrice"]
         lgImage <- map["lgImage"]
         nombreSKU <- map["nombreSKU"]
+        productType <- map["productType"]
+        department <- map["department"]
     }
 }
