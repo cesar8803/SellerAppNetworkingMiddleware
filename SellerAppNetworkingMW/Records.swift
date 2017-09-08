@@ -16,6 +16,7 @@ public class Records: Mappable{
     public var smImage: String?
     public var productDisplayName: String?
     public var macVariantsInfo: [MacVariantsInfo]?
+    public var plpFlags: [PlpFlags]?
     public var maximumPromoPrice: Int?
     public var productRatingCount: Int?
     public var xlImage: String?
@@ -43,6 +44,7 @@ public class Records: Mappable{
         smImage <- map["smImage"]
         productDisplayName <- map["productDisplayName"]
         macVariantsInfo <- map["macVariantsInfo"]
+        plpFlags <- map["plpFlags"]
         maximumPromoPrice <- map["maximumPromoPrice"]
         productRatingCount <- map["productRatingCount"]
         xlImage <- map["xlImage"]
