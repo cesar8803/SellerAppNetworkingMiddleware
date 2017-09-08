@@ -28,9 +28,26 @@ public class Sku: Mappable{
         SKU <- map["SKU"]
         smImage <- map["smImage"]
         url <- map["url"]
-        maximumListPrice <- map["maximumListPrice"]
-        nombre <- map["nombre"]
-        minimumListPrice <- map["minimumListPrice"]
+        if let value = map["maximumListPrice"].currentValue as? Double{
+            
+            maximumListPrice = String(value)
+            
+        }else{
+            
+            maximumListPrice <- map["maximumListPrice"]
+            
+        }
+        
+        nombre <- map["nombre"]        
+        if let value2 = map["minimumListPrice"].currentValue as? Double{
+            
+            minimumListPrice = String(value2)
+            
+        }else{
+            
+            minimumListPrice <- map["minimumListPrice"]
+            
+        }
         lgImage <- map["lgImage"]
         productType <- map["productType"]
         department <- map["department"]
