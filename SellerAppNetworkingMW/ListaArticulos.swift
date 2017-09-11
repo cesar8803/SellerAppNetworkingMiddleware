@@ -31,6 +31,7 @@ public class MWListaArticulos: Mappable {
     public var estado: String?
     public var lgImage: String?
     public var importe: String?
+    public var productType: String?
     
     required public init?(map: Map) {
     }
@@ -56,6 +57,7 @@ public class MWListaArticulos: Mappable {
         fecCaminoModulo <- map["fecCaminoModulo"]
         fecPreparando <- map["fecPreparando"]
         fecEntregado <- map["fecEntregado"]
+        productType <- map["productType"]
     }
     
 }
