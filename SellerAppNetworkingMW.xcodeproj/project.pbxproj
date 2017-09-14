@@ -42,6 +42,7 @@
 		71992E1C1F576C3200EE35A2 /* ListaSku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71992E1B1F576C3200EE35A2 /* ListaSku.swift */; };
 		71C31D8A1F1980C0003E7449 /* MiddlewareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C31D891F1980C0003E7449 /* MiddlewareResponse.swift */; };
 		71C31D8C1F1980D0003E7449 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C31D8B1F1980D0003E7449 /* Results.swift */; };
+		834B7F411F6AFD3700146495 /* VariantsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B7F401F6AFD3700146495 /* VariantsColor.swift */; };
 		8353927C1F631F8800FD3FFC /* PlpFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353927B1F631F8800FD3FFC /* PlpFlags.swift */; };
 		A95358001F2BDDCA00369111 /* DynamicAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95357FF1F2BDDCA00369111 /* DynamicAttributes.swift */; };
 		A96A694A1F20676100407A82 /* PDPLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A69491F20676100407A82 /* PDPLevel.swift */; };
@@ -122,6 +123,7 @@
 		71992E1B1F576C3200EE35A2 /* ListaSku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaSku.swift; sourceTree = "<group>"; };
 		71C31D891F1980C0003E7449 /* MiddlewareResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareResponse.swift; sourceTree = "<group>"; };
 		71C31D8B1F1980D0003E7449 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		834B7F401F6AFD3700146495 /* VariantsColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariantsColor.swift; sourceTree = "<group>"; };
 		8353927B1F631F8800FD3FFC /* PlpFlags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlpFlags.swift; sourceTree = "<group>"; };
 		A95357FF1F2BDDCA00369111 /* DynamicAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicAttributes.swift; sourceTree = "<group>"; };
 		A96A69491F20676100407A82 /* PDPLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDPLevel.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				2B7FD14D1F01C46700232C66 /* PLPParameters.swift */,
 				2B3C78371F02AE9100FAB4BA /* PLPLevel.swift */,
 				8353927B1F631F8800FD3FFC /* PlpFlags.swift */,
+				834B7F401F6AFD3700146495 /* VariantsColor.swift */,
 			);
 			name = PLP;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				2B1310E71F016E5500611EC9 /* Home.swift in Sources */,
 				A96A69591F206E4200407A82 /* EddInfo.swift in Sources */,
 				A96A69691F20781D00407A82 /* ConsultaSkuInventarioResponse.swift in Sources */,
+				834B7F411F6AFD3700146495 /* VariantsColor.swift in Sources */,
 				A9A0EE111F0C528D0092DA45 /* GiftRegistryParamaters.swift in Sources */,
 				A96A69551F206DB800407A82 /* Images.swift in Sources */,
 				A96A69531F206D5700407A82 /* ProductInfo.swift in Sources */,
