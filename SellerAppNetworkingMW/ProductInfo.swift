@@ -38,6 +38,7 @@ public class ProductInfo: Mappable {
     public var dynamicAttributes: [DynamicAttributes]?
     public var userManual: String?
     public var refundPolicy: String?
+    public var promotionLabel: String?
 
     public required init?(map: Map) {
     }
@@ -70,6 +71,7 @@ public class ProductInfo: Mappable {
         dynamicAttributes <- map["dynamicAttributes"]
         userManual <- map["userManual"]
         refundPolicy <- map["refundPolicy"]
+        promotionLabel <- map["promotionLabel"]
 
     }
     
