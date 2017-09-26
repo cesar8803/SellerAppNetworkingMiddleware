@@ -24,8 +24,8 @@ public class VariantsInfo: Mappable {
     public var material: String?
     public var size: String?
     public var dimension: String?
-    public var minimumListPrice: String?
-    public var maximumListPrice: String?
+    public var minimumListPrice: Int?
+    public var maximumListPrice: Int?
     public var promotionLabel: String?
     
 
