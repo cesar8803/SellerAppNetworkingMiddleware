@@ -20,7 +20,10 @@ public class Sku: Mappable{
     public var productType: String?
     public var department: String?
     
-    required public  init?(map: Map){
+    public var benefits: Benefits?
+    public var promotionLabel: String?
+
+    required public init?(map: Map){
         
     }
     
@@ -28,28 +31,32 @@ public class Sku: Mappable{
         SKU <- map["SKU"]
         smImage <- map["smImage"]
         url <- map["url"]
+        
         if let value = map["maximumListPrice"].currentValue as? Double{
-            
             maximumListPrice = String(value)
-            
         }else{
-            
             maximumListPrice <- map["maximumListPrice"]
-            
         }
         
         nombre <- map["nombre"]        
         if let value2 = map["minimumListPrice"].currentValue as? Double{
-            
             minimumListPrice = String(value2)
-            
         }else{
-            
             minimumListPrice <- map["minimumListPrice"]
-            
         }
+        
         lgImage <- map["lgImage"]
         productType <- map["productType"]
         department <- map["department"]
+        
+        if let value = map["benefits"].currentValue as? Benefits {
+            benefits = value
+        }else if let value = map["promotions"].currentValue as? Benefits {
+            benefits = value
+        }
+        
+        benefits <- map["benefits"]
+        promotionLabel <- map["promotionLabel"]
+        
     }
 }
