@@ -71,6 +71,12 @@
 		A9A0EE181F0CAC810092DA45 /* ListaDirecciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0EE171F0CAC810092DA45 /* ListaDirecciones.swift */; };
 		A9A0EE1A1F0CACDA0092DA45 /* ListaFestejados.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0EE191F0CACDA0092DA45 /* ListaFestejados.swift */; };
 		A9A0EE1C1F0CAD170092DA45 /* ListaArticulos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0EE1B1F0CAD170092DA45 /* ListaArticulos.swift */; };
+		A9CA18BC1F7C4E9800F9ACBE /* Benefits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18BB1F7C4E9800F9ACBE /* Benefits.swift */; };
+		A9CA18BF1F7C4F0000F9ACBE /* Externas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18BE1F7C4F0000F9ACBE /* Externas.swift */; };
+		A9CA18C11F7C4F6700F9ACBE /* Liverpool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18C01F7C4F6700F9ACBE /* Liverpool.swift */; };
+		A9CA18C31F7C52A200F9ACBE /* Generales.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18C21F7C52A200F9ACBE /* Generales.swift */; };
+		A9CA18C51F7C536F00F9ACBE /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18C41F7C536F00F9ACBE /* Items.swift */; };
+		A9CA18C71F7C53A800F9ACBE /* Porcentaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18C61F7C53A800F9ACBE /* Porcentaje.swift */; };
 		F7147C071F560A7200EC2C23 /* MiddelewareConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7147C061F560A7200EC2C23 /* MiddelewareConnection.swift */; };
 /* End PBXBuildFile section */
 
@@ -152,6 +158,12 @@
 		A9A0EE171F0CAC810092DA45 /* ListaDirecciones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaDirecciones.swift; sourceTree = "<group>"; };
 		A9A0EE191F0CACDA0092DA45 /* ListaFestejados.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaFestejados.swift; sourceTree = "<group>"; };
 		A9A0EE1B1F0CAD170092DA45 /* ListaArticulos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaArticulos.swift; sourceTree = "<group>"; };
+		A9CA18BB1F7C4E9800F9ACBE /* Benefits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Benefits.swift; sourceTree = "<group>"; };
+		A9CA18BE1F7C4F0000F9ACBE /* Externas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Externas.swift; sourceTree = "<group>"; };
+		A9CA18C01F7C4F6700F9ACBE /* Liverpool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Liverpool.swift; sourceTree = "<group>"; };
+		A9CA18C21F7C52A200F9ACBE /* Generales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generales.swift; sourceTree = "<group>"; };
+		A9CA18C41F7C536F00F9ACBE /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		A9CA18C61F7C53A800F9ACBE /* Porcentaje.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Porcentaje.swift; sourceTree = "<group>"; };
 		D7D3AB2DC56018663124B01D /* Pods_SellerAppNetworkingMW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SellerAppNetworkingMW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED9284AA61F2EC8CF65C007 /* Pods-SellerAppNetworkingMW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellerAppNetworkingMW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SellerAppNetworkingMW/Pods-SellerAppNetworkingMW.debug.xcconfig"; sourceTree = "<group>"; };
 		F7147C061F560A7200EC2C23 /* MiddelewareConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddelewareConnection.swift; sourceTree = "<group>"; };
@@ -267,6 +279,7 @@
 		2BE72FE71EFF4AA7009AC510 /* AsyncClientMWObjects */ = {
 			isa = PBXGroup;
 			children = (
+				A9CA18BD1F7C4E9D00F9ACBE /* Benefits */,
 				71992E161F576B6F00EE35A2 /* ShoppingList */,
 				2B3BE2581F306EC300726D14 /* ImagesSKU */,
 				71C31D881F1980A8003E7449 /* Search */,
@@ -354,6 +367,19 @@
 				A9A0EE1B1F0CAD170092DA45 /* ListaArticulos.swift */,
 			);
 			name = GiftRegistryPLP;
+			sourceTree = "<group>";
+		};
+		A9CA18BD1F7C4E9D00F9ACBE /* Benefits */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA18BB1F7C4E9800F9ACBE /* Benefits.swift */,
+				A9CA18BE1F7C4F0000F9ACBE /* Externas.swift */,
+				A9CA18C01F7C4F6700F9ACBE /* Liverpool.swift */,
+				A9CA18C21F7C52A200F9ACBE /* Generales.swift */,
+				A9CA18C41F7C536F00F9ACBE /* Items.swift */,
+				A9CA18C61F7C53A800F9ACBE /* Porcentaje.swift */,
+			);
+			name = Benefits;
 			sourceTree = "<group>";
 		};
 		DDADBD590239A2CC2EC320C2 /* Pods */ = {
@@ -531,7 +557,10 @@
 				2B396EB81EFF5CEE008194C8 /* BackendUrlManager.swift in Sources */,
 				A96A696B1F20787500407A82 /* SapInventario.swift in Sources */,
 				A96A69571F206DFC00407A82 /* RatingDetails.swift in Sources */,
+				A9CA18C31F7C52A200F9ACBE /* Generales.swift in Sources */,
+				A9CA18C51F7C536F00F9ACBE /* Items.swift in Sources */,
 				A96A695F1F20703300407A82 /* Gwp.swift in Sources */,
+				A9CA18C71F7C53A800F9ACBE /* Porcentaje.swift in Sources */,
 				A9A0EE161F0CAC190092DA45 /* ListaEventoResponse.swift in Sources */,
 				2B1198611F01B06D00C7A1FC /* Refinement.swift in Sources */,
 				A95358001F2BDDCA00369111 /* DynamicAttributes.swift in Sources */,
@@ -548,11 +577,13 @@
 				2B3BE25C1F306FB900726D14 /* Sku.swift in Sources */,
 				71C31D8A1F1980C0003E7449 /* MiddlewareResponse.swift in Sources */,
 				2BE72FE11EFE0014009AC510 /* Greeting.swift in Sources */,
+				A9CA18BF1F7C4F0000F9ACBE /* Externas.swift in Sources */,
 				A96A696F1F207B7600407A82 /* VariantsInfo.swift in Sources */,
 				A96A696D1F20797100407A82 /* SapSkuInventario.swift in Sources */,
 				2B7FD14E1F01C46700232C66 /* PLPParameters.swift in Sources */,
 				A96A69731F21057C00407A82 /* PDPParameters.swift in Sources */,
 				2B11985B1F01AE5900C7A1FC /* Records.swift in Sources */,
+				A9CA18C11F7C4F6700F9ACBE /* Liverpool.swift in Sources */,
 				A9A0EE1A1F0CACDA0092DA45 /* ListaFestejados.swift in Sources */,
 				71C31D8C1F1980D0003E7449 /* Results.swift in Sources */,
 				A9A0EE181F0CAC810092DA45 /* ListaDirecciones.swift in Sources */,
@@ -567,6 +598,7 @@
 				A96A69591F206E4200407A82 /* EddInfo.swift in Sources */,
 				A96A69691F20781D00407A82 /* ConsultaSkuInventarioResponse.swift in Sources */,
 				834B7F411F6AFD3700146495 /* VariantsColor.swift in Sources */,
+				A9CA18BC1F7C4E9800F9ACBE /* Benefits.swift in Sources */,
 				A9A0EE111F0C528D0092DA45 /* GiftRegistryParamaters.swift in Sources */,
 				A96A69551F206DB800407A82 /* Images.swift in Sources */,
 				A96A69531F206D5700407A82 /* ProductInfo.swift in Sources */,
