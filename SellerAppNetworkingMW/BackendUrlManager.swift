@@ -26,7 +26,8 @@ class BackendUrlManager : NSObject{
     }
     
     fileprivate static let SERVICE_CONTEXT:[String] = [
-        "appclienteservices/services/endeca-home",                              //homeService
+        //"appclienteservices/services/endeca-home",                              //homeService
+        "Middleware/rest/service/endeca-home?",                                 //homeService
         "appclienteservices/services/account/login?",                           //logIn
         "appclienteservices/services/account/logout",                           //logOut
         "Middleware/rest/service/menu?",                                        //Menu
