@@ -10,16 +10,16 @@ import Foundation
 import ObjectMapper
 
 public class Benefits: Mappable{
-    public var Externas: [Externas]?
-    public var Liverpool: [Liverpool]?
-    public var Generales: [Generales]?
+    public var externas: [Externas]?
+    public var liverpool: [Liverpool]?
+    public var generales: [Generales]?
     
     required public init?(map: Map){
     }
     
     public func mapping(map: Map){
-        Externas <- map["Externas"]
-        Liverpool <- map["Liverpool"]
-        Generales <- map["Generales"]
+        externas <- map["externas"]
+        liverpool <- map["liverpool"]
+        generales <- map["generales"]
     }
 }
