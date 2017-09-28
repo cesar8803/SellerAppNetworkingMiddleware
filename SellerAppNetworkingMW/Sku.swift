@@ -49,13 +49,14 @@ public class Sku: Mappable{
         productType <- map["productType"]
         department <- map["department"]
         
+        /*
         if let value = map["benefits"].currentValue as? Benefits {
             benefits = value
         }else if let value = map["promotions"].currentValue as? Benefits {
             benefits = value
-        }
+        }*/
         
-        benefits <- map["benefits"]
+        benefits <- map["promotions"]
         promotionLabel <- map["promotionLabel"]
         
     }

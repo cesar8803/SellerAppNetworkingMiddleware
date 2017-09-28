@@ -10,8 +10,9 @@ import Foundation
 import ObjectMapper
 
 public class Items: Mappable{
-    public var visible: Int?
+    public var visible: Bool?
     public var desc: String?
+    public var MSI: String?
     public var Porcentaje: [Porcentaje]?
     
     required public init?(map: Map){
@@ -20,6 +21,7 @@ public class Items: Mappable{
     public func mapping(map: Map){
         visible <- map["visible"]
         desc <- map["desc"]
+        MSI <- map["MSI"]
         Porcentaje <- map["Porcentaje"]
     }
 }
