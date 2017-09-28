@@ -52,10 +52,10 @@ public class AsyncClientMW
         }
     }
     
-    public class func getOrdersComplet(orden:String, completion:@escaping (_ dataResponse:Productlistorder) -> Void, completionError:@escaping ErrorStringHandler)
+    public class func getOrdersComplet(orden:String, terminalCode: String, storeCode: String, completion:@escaping (_ dataResponse:Productlistorder) -> Void, completionError:@escaping ErrorStringHandler)
     {
         let orderType: String = (orden.hasPrefix("90") ? "OV" : "RM")
-        let params:Parameters = ["orden":orden, "indicador":orderType]
+        let params:Parameters = ["orden":orden, "indicador":orderType, "terminal-code":terminalCode, "store-code":storeCode]
         
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.orders, parameters: params, completion: { (orders:Productlistorder) in
             completion(orders)
@@ -120,6 +120,20 @@ public class AsyncClientMW
     }
     
     
+    // ******** Shopping List ***** //
+    
+    public class func getShoppingList(parameters: Parameters, completion: @escaping (_ dataResponse: ShoppingListResponse) -> Void, completionError: @escaping ErrorStringHandler) {
+
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.shoppingList, parameters: parameters, completion: { (shoppingListResponse: ShoppingListResponse) in
+            completion(shoppingListResponse)
+        }) { (msg) in
+            completionError(msg)
+        }
+        
+    }
+    
+    
     // ***** PDP ***** //
     
     public class func getPDP(mandatory: PDP_MandatoryParams, parameters: [PDP_Optional<Any>]?, completion: @escaping (_ dataResponse: PDPLevel) -> Void, completionError: @escaping ErrorStringHandler) {
@@ -144,9 +158,9 @@ public class AsyncClientMW
     
     //Public function getSKU's Images
     // skus: String of SKUs separated by ~
-    public class func getImagesFor(skus:String, completion: @escaping (_ dataResponse: SKUsImages) -> Void, completionError: @escaping ErrorStringHandler)
+    public class func getImagesFor(skus:String, terminalCode: String, storeCode: String, completion: @escaping (_ dataResponse: SKUsImages) -> Void, completionError: @escaping ErrorStringHandler)
     {
-        let params:Parameters = ["sku":skus]
+        let params:Parameters = ["sku":skus, "terminal-code":terminalCode, "store-code":storeCode]
         
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.imagesSKUs, parameters: params, completion: { (response) in
             completion(response)

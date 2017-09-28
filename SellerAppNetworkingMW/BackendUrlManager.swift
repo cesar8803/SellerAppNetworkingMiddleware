@@ -22,6 +22,7 @@ class BackendUrlManager : NSObject{
         case orders
         case pdp
         case imagesSKUs
+        case shoppingList
     }
     
     fileprivate static let SERVICE_CONTEXT:[String] = [
@@ -35,20 +36,22 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/type-ahead?",                      //type-ahead
         "Middleware/rest/service/remisiones?",                      //orders
         "Middleware/rest/service/pdp",                                         // PDP
-        "Middleware/rest/service/consultar-imagenes-skus"                       //imagesSKUs
+        "Middleware/rest/service/consultar-imagenes-skus",                       //imagesSKUs
+        "Middleware/rest/service/shopping-list"                                 //shopping list
     ]
     
     // The array of all the services url's.
     fileprivate var serviceUrls:[String] = [String]();
     
     fileprivate func createUrls() {
-        let backendHost = "172.22.209.88:9090/"
+        let backendHost = "172.22.209.218:9090/"
         
         //let backendHost = "172.22.49.66:9090/"
         let backendProtocol = "http://"
         let servicesCount = BackendUrlManager.SERVICE_CONTEXT.count
         for index in 0..<servicesCount {
-            let nextUrl:String = "\(backendProtocol)\(backendHost)\(BackendUrlManager.SERVICE_CONTEXT[index])";
+            //let nextUrl:String = "\(backendProtocol)\(backendHost)\(BackendUrlManager.SERVICE_CONTEXT[index])";
+            let nextUrl:String = "\(MiddelewareConnection.sharedInstance.url)/\(BackendUrlManager.SERVICE_CONTEXT[index])"
             serviceUrls.append(nextUrl)
         }
     }

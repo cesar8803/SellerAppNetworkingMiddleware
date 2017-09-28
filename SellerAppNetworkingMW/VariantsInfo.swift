@@ -24,6 +24,10 @@ public class VariantsInfo: Mappable {
     public var material: String?
     public var size: String?
     public var dimension: String?
+    public var minimumListPrice: Int?
+    public var maximumListPrice: Int?
+    public var promotionLabel: String?
+    
 
     public required init?(map: Map){
     }
@@ -42,6 +46,9 @@ public class VariantsInfo: Mappable {
         material <- map["material"]
         size <- map["size"]
         dimension <- map["dimension"]
+        minimumListPrice <- map["minimumListPrice"]
+        maximumListPrice <- map["maximumListPrice"]
+        promotionLabel <- map["promotionLabel"]
     }
     
 }
