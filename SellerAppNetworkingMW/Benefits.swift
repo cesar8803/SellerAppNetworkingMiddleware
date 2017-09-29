@@ -10,9 +10,9 @@ import Foundation
 import ObjectMapper
 
 public class Benefits: Mappable{
-    public var externas: [Externas]?
-    public var liverpool: [Liverpool]?
-    public var generales: [Generales]?
+    public var externas: [BenefitOptions]?
+    public var liverpool: [BenefitOptions]?
+    public var generales: [BenefitOptions]?
     
     required public init?(map: Map){
     }
