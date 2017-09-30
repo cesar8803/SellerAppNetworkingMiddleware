@@ -77,6 +77,7 @@
 		A9CA18C31F7C52A200F9ACBE /* Generales.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18C21F7C52A200F9ACBE /* Generales.swift */; };
 		A9CA18C51F7C536F00F9ACBE /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18C41F7C536F00F9ACBE /* Items.swift */; };
 		A9CA18C71F7C53A800F9ACBE /* Porcentaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18C61F7C53A800F9ACBE /* Porcentaje.swift */; };
+		A9CA18C91F7D93EE00F9ACBE /* BenefitOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18C81F7D93EE00F9ACBE /* BenefitOptions.swift */; };
 		F7147C071F560A7200EC2C23 /* MiddelewareConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7147C061F560A7200EC2C23 /* MiddelewareConnection.swift */; };
 /* End PBXBuildFile section */
 
@@ -164,6 +165,7 @@
 		A9CA18C21F7C52A200F9ACBE /* Generales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generales.swift; sourceTree = "<group>"; };
 		A9CA18C41F7C536F00F9ACBE /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		A9CA18C61F7C53A800F9ACBE /* Porcentaje.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Porcentaje.swift; sourceTree = "<group>"; };
+		A9CA18C81F7D93EE00F9ACBE /* BenefitOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitOptions.swift; sourceTree = "<group>"; };
 		D7D3AB2DC56018663124B01D /* Pods_SellerAppNetworkingMW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SellerAppNetworkingMW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED9284AA61F2EC8CF65C007 /* Pods-SellerAppNetworkingMW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellerAppNetworkingMW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SellerAppNetworkingMW/Pods-SellerAppNetworkingMW.debug.xcconfig"; sourceTree = "<group>"; };
 		F7147C061F560A7200EC2C23 /* MiddelewareConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddelewareConnection.swift; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 			isa = PBXGroup;
 			children = (
 				A9CA18BB1F7C4E9800F9ACBE /* Benefits.swift */,
+				A9CA18C81F7D93EE00F9ACBE /* BenefitOptions.swift */,
 				A9CA18BE1F7C4F0000F9ACBE /* Externas.swift */,
 				A9CA18C01F7C4F6700F9ACBE /* Liverpool.swift */,
 				A9CA18C21F7C52A200F9ACBE /* Generales.swift */,
@@ -546,6 +549,7 @@
 				71992E1C1F576C3200EE35A2 /* ListaSku.swift in Sources */,
 				A96A694F1F20693600407A82 /* RecommendedItems.swift in Sources */,
 				A96A69671F2077D700407A82 /* InventarioFull.swift in Sources */,
+				A9CA18C91F7D93EE00F9ACBE /* BenefitOptions.swift in Sources */,
 				A96A69511F206C2400407A82 /* BuscaProducto.swift in Sources */,
 				A96A69631F2076E600407A82 /* Inventario.swift in Sources */,
 				A9A0EE131F0CAB260092DA45 /* GiftRegistryPLPLevel.swift in Sources */,

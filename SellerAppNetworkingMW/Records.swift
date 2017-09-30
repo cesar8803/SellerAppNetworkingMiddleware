@@ -24,9 +24,9 @@ public class Records: Mappable{
     public var xlImage: String?
     public var minimumPromoPrice: Int?
     public var productType: String?
-    public var maximumListPrice: Int?
+    public var maximumListPrice: String?
     public var promoPrice: Int?
-    public var minimumListPrice: Int?
+    public var minimumListPrice: String?
     public var lgImage: String?
     public var listPrice: Int?
     public var productId: String?
