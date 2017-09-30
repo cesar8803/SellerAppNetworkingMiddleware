@@ -15,56 +15,81 @@ public class Home: Mappable{
     public var isSuccessful: Int?
     
     required public init?(map: Map){
-
-    func mapping(map: Map){
+    }
+    
+    public func mapping(map: Map){
         homePageContent <- map["homePageContent"]
         isSuccessful <- map["isSuccessful"]
     }
 }
 
 public class HomePageContent: Mappable{
-        public var bannerContent: BannerContent?
-        public var type: String?
-        
-        required public init?(map: Map){
-        }
-        func mapping(map: Map){
-            bannerContent <- map["bannerContent"]
-            type <- map["type"]
-        }
+    public var bannerContent: BannerContent?
+    public var carouselContent: CarouselContent?
+    public var type: String?
+    
+    required public init?(map: Map){
+    }
+    
+    public func mapping(map: Map){
+        bannerContent <- map["bannerContent"]
+        type <- map["type"]
+    }
 }
 
 public class BannerContent: Mappable{
-        public var bannerType: String?
-        public var bannerItems: [BannerItems]?
+    public var bannerType: String?
+    public var bannerItems: [BannerItems]?
+    
+    required public init?(map: Map){
+    }
+    
+    public func mapping(map: Map){
+        bannerType <- map["bannerType"]
+        bannerItems <- map["bannerItems"]
+    }
+}
+
+public class CarouselContent: Mappable{
+    public var maximumNumRecords: Float?
+    public var minNumRecords: Float?
+    public var moreLinkCategory: String?
+    public var name: String?
+    public var recommendedItems: [RecommendedItems]?
+    
+    required public init?(map: Map){
         
-        required public init?(_ map: Map){
-        }
-        func mapping(map: Map){
-            bannerType <- map["bannerType"]
-            bannerItems <- map["bannerItems"]
-        }
+    }
+    
+    public func mapping(map: Map){
+        maximumNumRecords <- map["maximumNumRecords"]
+        minNumRecords <- map["minNumRecords"]
+        moreLinkCategory <- map["moreLinkCategory"]
+        name <- map["name"]
+        recommendedItems <- map["recommendedItems"]
+    }
 }
 
 public class BannerItems: Mappable{
-        public var campaign: String?
-        public var title: String?
-        public var image: String?
-        public var position: String?
-        public var redirectsTo: String?
-        public var type: String?
-        public var view: String?
-        
-        required public init?(_ map: Map){
-        }
+    public var campaign: String?
+    public var title: String?
+    public var image: String?
+    public var position: String?
+    public var redirectsTo: String?
+    public var type: String?
+    public var view: String?
     
-        func mapping(map: Map){
-            campaign <- map["campaign"]
-            title <- map["title"]
-            image <- map["image"]
-            position <- map["position"]
-            redirectsTo <- map["redirectsTo"]
-            type <- map["type"]
-            view <- map["view"]
-        }
+    required public init?(map: Map){
+        
+    }
+    
+    public func mapping(map: Map){
+        campaign <- map["campaign"]
+        title <- map["title"]
+        image <- map["image"]
+        position <- map["position"]
+        redirectsTo <- map["redirectsTo"]
+        type <- map["type"]
+        view <- map["view"]
+    }
 }
