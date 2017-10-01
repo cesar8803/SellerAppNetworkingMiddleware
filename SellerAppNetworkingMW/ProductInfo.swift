@@ -39,6 +39,7 @@ public class ProductInfo: Mappable {
     public var userManual: String?
     public var refundPolicy: String?
     public var promotionLabel: String?
+    public var department: String?
 
     public required init?(map: Map) {
     }
@@ -72,6 +73,7 @@ public class ProductInfo: Mappable {
         userManual <- map["userManual"]
         refundPolicy <- map["refundPolicy"]
         promotionLabel <- map["promotionLabel"]
+        department <- map["department"]
 
     }
     
