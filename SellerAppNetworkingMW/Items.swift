@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 public class Items: Mappable{
+    public var position: Int?
     public var visible: Bool?
     public var desc: String?
     public var MSI: String?
@@ -19,6 +20,7 @@ public class Items: Mappable{
     }
     
     public func mapping(map: Map){
+        position <- map["position"]
         visible <- map["visible"]
         desc <- map["desc"]
         MSI <- map["MSI"]
