@@ -24,6 +24,9 @@ public class RecommendedItems: Mappable {
     public var productId: String?
     public var minimumPromoPrice: Int?
     
+    public required init?(){
+    }
+    
     public required init?(map: Map) {
     }
     

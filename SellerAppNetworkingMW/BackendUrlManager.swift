@@ -26,12 +26,11 @@ class BackendUrlManager : NSObject{
     }
     
     fileprivate static let SERVICE_CONTEXT:[String] = [
-        //"appclienteservices/services/endeca-home",                              //homeService
         "Middleware/rest/service/endeca-home?",                                 //homeService
         "appclienteservices/services/account/login?",                           //logIn
         "appclienteservices/services/account/logout",                           //logOut
         "Middleware/rest/service/menu?",                                        //Menu
-        "Middleware/rest/service/home",                                         //Home
+        "Middleware/rest/service/endeca-home?",                                         //Home
         "Middleware/rest/service/plp?",                                         //plp
         "Middleware/rest/service/lista-evento",                                  //GiftRegistryPLP
         "Middleware/rest/service/type-ahead?",                      //type-ahead
@@ -58,7 +57,8 @@ class BackendUrlManager : NSObject{
     }
     
     fileprivate func overrideUrls() {
-        serviceUrls[ServiceUrlsId.homeService.rawValue] = "https://api.myjson.com/bins/18h1dv"
+//        serviceUrls[ServiceUrlsId.home.rawValue] = "https://api.myjson.com/bins/6y62d"
+//         serviceUrls[ServiceUrlsId.home.rawValue] =  "https://api.myjson.com/bins/164vx1"
     }
     
     // Gets the indicated service url.

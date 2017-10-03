@@ -12,7 +12,7 @@ import ObjectMapper
 
 public class Home: Mappable{
     public var homePageContent: [HomePageContent]?
-    public var isSuccessful: Int?
+    public var isSuccessful: Bool?
     
     required public init?(map: Map){
     }
@@ -33,6 +33,7 @@ public class HomePageContent: Mappable{
     
     public func mapping(map: Map){
         bannerContent <- map["bannerContent"]
+        carouselContent <- map["carouselContent"]
         type <- map["type"]
     }
 }

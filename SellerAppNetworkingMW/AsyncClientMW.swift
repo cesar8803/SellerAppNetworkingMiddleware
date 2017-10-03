@@ -20,7 +20,7 @@ public class AsyncClientMW
     
     // Request for home
     public class func getHome(parameters: Parameters,completion:@escaping (_ dataResponse: Home)-> Void, completionError: @escaping ErrorStringHandler )
-    {
+    {        
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.home, parameters: parameters, completion: { (home) in
             completion(home)
         }) { (msg) in
@@ -176,8 +176,8 @@ public class AsyncClientMW
     class func getRequestExecute<T:Mappable>(_ type:BackendUrlManager.ServiceUrlsId, parameters: Parameters, completion:@escaping (_ dataResponse:T) -> Void, errorCompletition: @escaping (_ errorString:String) -> Void){
         
         let url = BackendUrlManager.Current.getUrl(type)
+        print(url)
         Alamofire.request(url, method: .get, parameters: parameters).responseObject { (response: DataResponse<T>) in
-            
             if response.result.isSuccess{
                 let responseService = response.result.value
                 completion(responseService!)
