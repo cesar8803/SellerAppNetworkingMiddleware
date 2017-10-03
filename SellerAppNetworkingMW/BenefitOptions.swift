@@ -11,7 +11,7 @@ import ObjectMapper
 
 public class BenefitOptions: Mappable{
     
-    public var items: [Items]?
+    public var items: [MWItems]?
     public var option: Int?
     public var optionPrice: String?
     

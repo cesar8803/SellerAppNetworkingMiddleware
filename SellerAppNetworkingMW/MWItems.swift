@@ -9,7 +9,8 @@
 import Foundation
 import ObjectMapper
 
-public class Items: Mappable{
+public class MWItems: Mappable{
+    
     public var position: Int?
     public var visible: Bool?
     public var desc: String?
