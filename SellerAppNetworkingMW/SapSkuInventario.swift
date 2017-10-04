@@ -23,6 +23,7 @@ public class SapSkuInventario: Mappable{
     public var Intransit: String?
     public var Bode: String?
     public var Apar: String?
+    public var storeName: String?
     
     public required init?(map: Map){
     }
