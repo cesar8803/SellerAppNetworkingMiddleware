@@ -12,16 +12,20 @@ import ObjectMapper
 public class RecommendedItems: Mappable {
     
     public var groupType: String?
-    public var minimumListPrice: Int?
-    public var displayName: String?
-    public var largeImage: String?
-    public var maximumPromoPrice: Int?
-    public var salePrice: Int?
-    public var maximumListPrice: Int?
     public var promoPrice: Int?
-    public var productId: String?
     public var listPrice: Int?
+    public var largeImage: String?
+    public var salePrice: Int?
+    public var displayName: String?
+    public var minimumListPrice: Int?
+    public var maximumPromoPrice: Int?
+    public var maximumListPrice: Int?
+    
+    public var productId: String?
     public var minimumPromoPrice: Int?
+    
+    public required init?(){
+    }
     
     public required init?(map: Map) {
     }

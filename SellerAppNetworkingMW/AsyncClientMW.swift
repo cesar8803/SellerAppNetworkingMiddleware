@@ -176,8 +176,8 @@ public class AsyncClientMW
     class func getRequestExecute<T:Mappable>(_ type:BackendUrlManager.ServiceUrlsId, parameters: Parameters, completion:@escaping (_ dataResponse:T) -> Void, errorCompletition: @escaping (_ errorString:String) -> Void){
         
         let url = BackendUrlManager.Current.getUrl(type)
+        print(url)
         Alamofire.request(url, method: .get, parameters: parameters).responseObject { (response: DataResponse<T>) in
-            
             if response.result.isSuccess{
                 let responseService = response.result.value
                 completion(responseService!)
