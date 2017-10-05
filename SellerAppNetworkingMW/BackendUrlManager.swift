@@ -44,10 +44,6 @@ class BackendUrlManager : NSObject{
     fileprivate var serviceUrls:[String] = [String]();
     
     fileprivate func createUrls() {
-        let backendHost = "172.22.209.218:9090/"
-        
-        //let backendHost = "172.22.49.66:9090/"
-        let backendProtocol = "http://"
         let servicesCount = BackendUrlManager.SERVICE_CONTEXT.count
         for index in 0..<servicesCount {
             //let nextUrl:String = "\(backendProtocol)\(backendHost)\(BackendUrlManager.SERVICE_CONTEXT[index])";
@@ -57,8 +53,6 @@ class BackendUrlManager : NSObject{
     }
     
     fileprivate func overrideUrls() {
-//        serviceUrls[ServiceUrlsId.home.rawValue] = "https://api.myjson.com/bins/6y62d"
-//         serviceUrls[ServiceUrlsId.home.rawValue] =  "https://api.myjson.com/bins/164vx1"
     }
     
     // Gets the indicated service url.
