@@ -16,9 +16,9 @@ public class MWListaArticulos: Mappable {
     public var clasificacion: String?
     public var categoryId: String?
     public var url: String?
-    public var maximumListPrice: Float?
+    public var maximumListPrice: String?
     public var nombre: String?
-    public var minimumListPrice: Float?
+    public var minimumListPrice: String?
     public var initialOrder: Int?
     public var smImage: String?
     public var fecEntrega: String?
