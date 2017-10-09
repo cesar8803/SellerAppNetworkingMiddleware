@@ -22,6 +22,7 @@ public enum PDP_Parameters_Mandatory: String {
 public enum PDP_Parameters: String {
     case terminal_code = "terminal-code"
     case user_id = "id-user"
+    case zip = "zip"
 }
 
 public struct PDP_MandatoryParams: PDP_Mandatory {
