@@ -23,6 +23,7 @@ public class RemisionesConsultaOrdenresponse: Mappable{
     public var importeTotal: String?
     public var locacionDestino: String?
     public var numeroEmpleado: String?
+    public var order: String?
     
     required  public init?(map: Map){
     }
