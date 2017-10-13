@@ -13,9 +13,9 @@ public class ListaSku: Mappable{
     public var sku: String?
     public var smImage: String?
     public var idTipoSku: String?
-    public var maximumListPrice: Float?
+    public var maximumListPrice: Double?
     public var nombre: String?
-    public var minimumListPrice: Float?
+    public var minimumListPrice: Double?
     public var lgImage: String?
     public var nombreSKU: String?
     public var productType: String?
