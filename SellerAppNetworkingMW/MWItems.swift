@@ -16,6 +16,7 @@ public class MWItems: Mappable{
     public var desc: String?
     public var MSI: String?
     public var Porcentaje: [Porcentaje]?
+    public var bold: Bool?
     
     required public init?(map: Map){
     }
@@ -26,5 +27,6 @@ public class MWItems: Mappable{
         desc <- map["desc"]
         MSI <- map["MSI"]
         Porcentaje <- map["Porcentaje"]
+        bold <- map["bold"]
     }
 }
