@@ -30,7 +30,7 @@ public class AsyncClientMW
     
     //Request for search product
     
-    public class func getProductWithString(_ text: String, completion: @escaping (_ dataResponse: MiddlewaReresponse) -> Void, completionError: @escaping ErrorStringHandler){
+    public class func getProductWithString(_ text: String, completion: @escaping (_ dataResponse: MiddlewareResponse) -> Void, completionError: @escaping ErrorStringHandler){
     
         let params: Parameters = ["search-string" : text]
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.typeahead, parameters: params, completion: { (response) in

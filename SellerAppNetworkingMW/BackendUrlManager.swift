@@ -47,12 +47,17 @@ class BackendUrlManager : NSObject{
         let servicesCount = BackendUrlManager.SERVICE_CONTEXT.count
         for index in 0..<servicesCount {
             //let nextUrl:String = "\(backendProtocol)\(backendHost)\(BackendUrlManager.SERVICE_CONTEXT[index])";
-            let nextUrl:String = "\(MiddelewareConnection.sharedInstance.url)/\(BackendUrlManager.SERVICE_CONTEXT[index])"
+            let nextUrl:String = MiddlewareConnection.sharedInstance.baseURLString + BackendUrlManager.SERVICE_CONTEXT[index]
             serviceUrls.append(nextUrl)
         }
     }
     
-    fileprivate func overrideUrls() {
+    // Updating the URLs with the new middleware IP assigned in the Middleware Connection Singleton
+    func updateUrls() {
+        if !serviceUrls.isEmpty {
+            serviceUrls.removeAll()
+        }
+        createUrls()
     }
     
     // Gets the indicated service url.
@@ -65,9 +70,9 @@ class BackendUrlManager : NSObject{
     fileprivate override init() {
         super.init()
         self.createUrls()
-        overrideUrls()
     }
     
     // Singleton intance.
     static let Current:BackendUrlManager = BackendUrlManager()
+    
 }
