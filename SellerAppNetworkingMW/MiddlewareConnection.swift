@@ -8,13 +8,16 @@
 
 import Foundation
 
-public class MiddelewareConnection{
+public class MiddlewareConnection{
     private init(){}
-    public var url:String = "" {
+    
+    public static let sharedInstance:MiddlewareConnection = MiddlewareConnection()
+    
+    public var baseURLString:String = "" {
         didSet {
+            // Updating the URLs with the new middleware IP assigned in the Middleware Connection Singleton
             BackendUrlManager.Current.updateUrls()
         }
     }
     
-    public static  let sharedInstance:MiddelewareConnection = MiddelewareConnection()
 }

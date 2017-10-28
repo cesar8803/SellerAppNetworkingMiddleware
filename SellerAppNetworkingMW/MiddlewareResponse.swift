@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-public class MiddlewaReresponse: Mappable{
+public class MiddlewareResponse: Mappable{
     public var results: [Results]?
     public var isSuccessful: Int?
     public var totalNumResults: Float?
