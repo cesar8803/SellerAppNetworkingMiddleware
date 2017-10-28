@@ -8,17 +8,6 @@
 
 import Foundation
 
-public enum MiddlewareRouter {
-    
-    /**
-     * Very important!!: This property must be changed from the outside to get the correct connection of Middleware services. Otherwise it will be assigned by default the IP 49.66
-     */
-    
-    static public var baseURLString = "http://172.22.49.66:9090"
-    
-    
-}
-
 class BackendUrlManager : NSObject{
     
     enum ServiceUrlsId : Int {
@@ -58,8 +47,7 @@ class BackendUrlManager : NSObject{
         let servicesCount = BackendUrlManager.SERVICE_CONTEXT.count
         for index in 0..<servicesCount {
             //let nextUrl:String = "\(backendProtocol)\(backendHost)\(BackendUrlManager.SERVICE_CONTEXT[index])";
-            //let nextUrl:String = "\(MiddelewareConnection.sharedInstance.url)/\(BackendUrlManager.SERVICE_CONTEXT[index])"
-            let nextUrl: String = MiddlewareRouter.baseURLString + "\(BackendUrlManager.SERVICE_CONTEXT[index])"
+            let nextUrl:String = "\(MiddelewareConnection.sharedInstance.url)/\(BackendUrlManager.SERVICE_CONTEXT[index])"
             serviceUrls.append(nextUrl)
         }
     }
