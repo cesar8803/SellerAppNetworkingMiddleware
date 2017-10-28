@@ -70,4 +70,12 @@ class BackendUrlManager : NSObject{
     
     // Singleton intance.
     static let Current:BackendUrlManager = BackendUrlManager()
+    
+    func updateUrls() {
+        if !serviceUrls.isEmpty {
+            serviceUrls.removeAll()
+        }
+        createUrls()
+    }
+    
 }

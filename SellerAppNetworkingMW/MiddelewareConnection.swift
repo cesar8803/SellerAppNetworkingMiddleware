@@ -10,6 +10,11 @@ import Foundation
 
 public class MiddelewareConnection{
     private init(){}
-    public var url:String = ""
+    public var url:String = "" {
+        didSet {
+            BackendUrlManager.Current.updateUrls()
+        }
+    }
+    
     public static  let sharedInstance:MiddelewareConnection = MiddelewareConnection()
 }
