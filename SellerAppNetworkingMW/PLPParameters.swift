@@ -32,7 +32,6 @@ public enum PLP_Parameters:String
     case force_plp = "force-plp"
     case group_type = "group-type"
     case search_string = "search-string"
-    case return_blp_products = "return-blp-products"
 }
 
 
