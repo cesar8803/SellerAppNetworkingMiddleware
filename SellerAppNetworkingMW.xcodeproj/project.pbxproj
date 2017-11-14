@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0046727E1FBBAEEF00A91A29 /* InventarioSOMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0046727D1FBBAEEF00A91A29 /* InventarioSOMS.swift */; };
-		004672801FBBB09E00A91A29 /* GetConsultaSkuPoolResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0046727F1FBBB09E00A91A29 /* GetConsultaSkuPoolResponse.swift */; };
-		004672821FBBB0D500A91A29 /* GetConsultaSkuPoolHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004672811FBBB0D500A91A29 /* GetConsultaSkuPoolHeader.swift */; };
-		004672841FBBB11200A91A29 /* GetConsultaSkuPoolRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004672831FBBB11200A91A29 /* GetConsultaSkuPoolRecord.swift */; };
 		029CB05D096F97A9AE5265C3 /* Pods_SellerAppNetworkingMW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D3AB2DC56018663124B01D /* Pods_SellerAppNetworkingMW.framework */; };
 		2B11985B1F01AE5900C7A1FC /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11985A1F01AE5900C7A1FC /* Records.swift */; };
 		2B11985D1F01AE7F00C7A1FC /* PLPState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11985C1F01AE7F00C7A1FC /* PLPState.swift */; };
@@ -94,9 +91,6 @@
 
 /* Begin PBXFileReference section */
 		0046727D1FBBAEEF00A91A29 /* InventarioSOMS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventarioSOMS.swift; sourceTree = "<group>"; };
-		0046727F1FBBB09E00A91A29 /* GetConsultaSkuPoolResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetConsultaSkuPoolResponse.swift; sourceTree = "<group>"; };
-		004672811FBBB0D500A91A29 /* GetConsultaSkuPoolHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetConsultaSkuPoolHeader.swift; sourceTree = "<group>"; };
-		004672831FBBB11200A91A29 /* GetConsultaSkuPoolRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetConsultaSkuPoolRecord.swift; sourceTree = "<group>"; };
 		0DC5EEAE2C6B7E7FD59C5B5B /* Pods-SellerAppNetworkingMW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellerAppNetworkingMW.release.xcconfig"; path = "Pods/Target Support Files/Pods-SellerAppNetworkingMW/Pods-SellerAppNetworkingMW.release.xcconfig"; sourceTree = "<group>"; };
 		2B11985A1F01AE5900C7A1FC /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
 		2B11985C1F01AE7F00C7A1FC /* PLPState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLPState.swift; sourceTree = "<group>"; };
@@ -357,9 +351,6 @@
 				A96A696E1F207B7600407A82 /* VariantsInfo.swift */,
 				A95357FF1F2BDDCA00369111 /* DynamicAttributes.swift */,
 				0046727D1FBBAEEF00A91A29 /* InventarioSOMS.swift */,
-				0046727F1FBBB09E00A91A29 /* GetConsultaSkuPoolResponse.swift */,
-				004672831FBBB11200A91A29 /* GetConsultaSkuPoolRecord.swift */,
-				004672811FBBB0D500A91A29 /* GetConsultaSkuPoolHeader.swift */,
 			);
 			name = PDP;
 			sourceTree = "<group>";
@@ -568,7 +559,6 @@
 				A9CA18C51F7C536F00F9ACBE /* MWItems.swift in Sources */,
 				A96A695F1F20703300407A82 /* Gwp.swift in Sources */,
 				A9CA18C71F7C53A800F9ACBE /* Porcentaje.swift in Sources */,
-				004672801FBBB09E00A91A29 /* GetConsultaSkuPoolResponse.swift in Sources */,
 				A9A0EE161F0CAC190092DA45 /* ListaEventoResponse.swift in Sources */,
 				2B1198611F01B06D00C7A1FC /* Refinement.swift in Sources */,
 				A95358001F2BDDCA00369111 /* DynamicAttributes.swift in Sources */,
@@ -596,7 +586,6 @@
 				A96A695B1F206FB300407A82 /* Promotions.swift in Sources */,
 				2B1310EF1F01704B00611EC9 /* BestSellerProducts.swift in Sources */,
 				A96A69651F20779800407A82 /* Attributes.swift in Sources */,
-				004672821FBBB0D500A91A29 /* GetConsultaSkuPoolHeader.swift in Sources */,
 				2B11985F1F01B02200C7A1FC /* RefinementGroups.swift in Sources */,
 				552B99421F1D1E4100F1E622 /* OrdersLevel.swift in Sources */,
 				71992E1A1F576C0200EE35A2 /* DatosCliente.swift in Sources */,
@@ -608,7 +597,6 @@
 				A9CA18BC1F7C4E9800F9ACBE /* Benefits.swift in Sources */,
 				A9A0EE111F0C528D0092DA45 /* GiftRegistryParamaters.swift in Sources */,
 				A96A69551F206DB800407A82 /* Images.swift in Sources */,
-				004672841FBBB11200A91A29 /* GetConsultaSkuPoolRecord.swift in Sources */,
 				A96A69531F206D5700407A82 /* ProductInfo.swift in Sources */,
 				2B7FD14C1F01BE5A00232C66 /* PLPResults.swift in Sources */,
 				2B1198651F01B2EC00C7A1FC /* MacVariantsInfo.swift in Sources */,
