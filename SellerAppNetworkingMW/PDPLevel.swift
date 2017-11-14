@@ -24,6 +24,8 @@ public class PDPLevel: Mappable{
     public var availableToShip: Int?
     public var InventarioFull: InventarioFull?
     public var variantsInfo: [VariantsInfo]?
+    //
+    public var InventarioSOMS:InventarioSOMS?
     
     public required init?(map: Map){
     }
