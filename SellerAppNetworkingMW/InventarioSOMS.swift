@@ -19,7 +19,7 @@ public class InventarioSOMS: Mappable
     }
     
     public func mapping(map: Map){
-        getConsultaSkuPoolResponse <- map["GetConsultaSkuPoolResponse"]
+        getConsultaSkuPoolResponse <- map["getConsultaSKUPoolResponse"]
         isSuccessful <- map["isSuccessful"]
     }
     
