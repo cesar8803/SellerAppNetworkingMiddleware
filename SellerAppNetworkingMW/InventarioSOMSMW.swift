@@ -11,7 +11,7 @@ import ObjectMapper
 
 public class InventarioSOMSMW: Mappable
 {
-    public var getConsultaSkuPoolResponse   : GetConsultaSkuPoolResponse?
+    public var getConsultaSkuPoolResponse   : GetConsultaSkuPoolResponseMW?
     public var isSuccessful                 : Bool?
     
     public required init?(map: Map)

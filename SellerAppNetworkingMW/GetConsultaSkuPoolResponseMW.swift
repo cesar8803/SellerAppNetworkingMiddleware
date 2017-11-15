@@ -10,8 +10,8 @@ import Foundation
 import ObjectMapper
 
 public class GetConsultaSkuPoolResponseMW: Mappable{
-    public var getConsultaSKUPoolRecord: [GetConsultaSkuPoolRecord]?
-    public var getConsultaSKUPoolHeader: GetConsultaSkuPoolHeader?
+    public var getConsultaSKUPoolRecord: [GetConsultaSkuPoolRecordMW]?
+    public var getConsultaSKUPoolHeader: GetConsultaSkuPoolHeaderMW?
     
     public required init?(map: Map){
     }
