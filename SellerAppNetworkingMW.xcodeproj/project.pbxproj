@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0046727E1FBBAEEF00A91A29 /* InventarioSOMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0046727D1FBBAEEF00A91A29 /* InventarioSOMS.swift */; };
+		0046727E1FBBAEEF00A91A29 /* InventarioSOMSMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0046727D1FBBAEEF00A91A29 /* InventarioSOMSMW.swift */; };
+		004672881FBBBC3500A91A29 /* GetConsultaSkuPoolRecordMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004672851FBBBC3500A91A29 /* GetConsultaSkuPoolRecordMW.swift */; };
+		004672891FBBBC3500A91A29 /* GetConsultaSkuPoolResponseMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004672861FBBBC3500A91A29 /* GetConsultaSkuPoolResponseMW.swift */; };
+		0046728A1FBBBC3500A91A29 /* GetConsultaSkuPoolHeaderMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004672871FBBBC3500A91A29 /* GetConsultaSkuPoolHeaderMW.swift */; };
 		029CB05D096F97A9AE5265C3 /* Pods_SellerAppNetworkingMW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D3AB2DC56018663124B01D /* Pods_SellerAppNetworkingMW.framework */; };
 		2B11985B1F01AE5900C7A1FC /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11985A1F01AE5900C7A1FC /* Records.swift */; };
 		2B11985D1F01AE7F00C7A1FC /* PLPState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11985C1F01AE7F00C7A1FC /* PLPState.swift */; };
@@ -90,7 +93,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0046727D1FBBAEEF00A91A29 /* InventarioSOMS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventarioSOMS.swift; sourceTree = "<group>"; };
+		0046727D1FBBAEEF00A91A29 /* InventarioSOMSMW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventarioSOMSMW.swift; sourceTree = "<group>"; };
+		004672851FBBBC3500A91A29 /* GetConsultaSkuPoolRecordMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetConsultaSkuPoolRecordMW.swift; sourceTree = "<group>"; };
+		004672861FBBBC3500A91A29 /* GetConsultaSkuPoolResponseMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetConsultaSkuPoolResponseMW.swift; sourceTree = "<group>"; };
+		004672871FBBBC3500A91A29 /* GetConsultaSkuPoolHeaderMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetConsultaSkuPoolHeaderMW.swift; sourceTree = "<group>"; };
 		0DC5EEAE2C6B7E7FD59C5B5B /* Pods-SellerAppNetworkingMW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellerAppNetworkingMW.release.xcconfig"; path = "Pods/Target Support Files/Pods-SellerAppNetworkingMW/Pods-SellerAppNetworkingMW.release.xcconfig"; sourceTree = "<group>"; };
 		2B11985A1F01AE5900C7A1FC /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
 		2B11985C1F01AE7F00C7A1FC /* PLPState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLPState.swift; sourceTree = "<group>"; };
@@ -350,7 +356,10 @@
 				A96A696C1F20797100407A82 /* SapSkuInventario.swift */,
 				A96A696E1F207B7600407A82 /* VariantsInfo.swift */,
 				A95357FF1F2BDDCA00369111 /* DynamicAttributes.swift */,
-				0046727D1FBBAEEF00A91A29 /* InventarioSOMS.swift */,
+				0046727D1FBBAEEF00A91A29 /* InventarioSOMSMW.swift */,
+				004672871FBBBC3500A91A29 /* GetConsultaSkuPoolHeaderMW.swift */,
+				004672851FBBBC3500A91A29 /* GetConsultaSkuPoolRecordMW.swift */,
+				004672861FBBBC3500A91A29 /* GetConsultaSkuPoolResponseMW.swift */,
 			);
 			name = PDP;
 			sourceTree = "<group>";
@@ -539,7 +548,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0046727E1FBBAEEF00A91A29 /* InventarioSOMS.swift in Sources */,
+				004672891FBBBC3500A91A29 /* GetConsultaSkuPoolResponseMW.swift in Sources */,
+				0046727E1FBBAEEF00A91A29 /* InventarioSOMSMW.swift in Sources */,
 				71992E181F576BB100EE35A2 /* ShoppingListResponse.swift in Sources */,
 				71992E1C1F576C3200EE35A2 /* ListaSku.swift in Sources */,
 				A96A694F1F20693600407A82 /* RecommendedItems.swift in Sources */,
@@ -551,6 +561,7 @@
 				2B1198631F01B1F100C7A1FC /* SortOptions.swift in Sources */,
 				5593FE001F1FBBD80012E8B2 /* ProductListOrder.swift in Sources */,
 				2B396EB51EFF5CEE008194C8 /* AsyncClientMW.swift in Sources */,
+				0046728A1FBBBC3500A91A29 /* GetConsultaSkuPoolHeaderMW.swift in Sources */,
 				8353927C1F631F8800FD3FFC /* PlpFlags.swift in Sources */,
 				2B396EB61EFF5CEE008194C8 /* CategoryInfo.swift in Sources */,
 				2B396EB81EFF5CEE008194C8 /* BackendUrlManager.swift in Sources */,
@@ -564,6 +575,7 @@
 				A95358001F2BDDCA00369111 /* DynamicAttributes.swift in Sources */,
 				A96A694D1F2068FB00407A82 /* CarruselDummy.swift in Sources */,
 				2B1310E91F016EAB00611EC9 /* CarousalBanners.swift in Sources */,
+				004672881FBBBC3500A91A29 /* GetConsultaSkuPoolRecordMW.swift in Sources */,
 				F7147C071F560A7200EC2C23 /* MiddlewareConnection.swift in Sources */,
 				A96A69611F20766A00407A82 /* Recommendations.swift in Sources */,
 				A96A695D1F206FF800407A82 /* Flags.swift in Sources */,

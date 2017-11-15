@@ -9,9 +9,9 @@
 import Foundation
 import ObjectMapper
 
-public class InventarioSOMS: Mappable
+public class InventarioSOMSMW: Mappable
 {
-    public var getConsultaSkuPoolResponse   : GetConsultaSkuPoolResponse?
+    public var getConsultaSkuPoolResponse   : GetConsultaSkuPoolResponseMW?
     public var isSuccessful                 : Bool?
     
     public required init?(map: Map)

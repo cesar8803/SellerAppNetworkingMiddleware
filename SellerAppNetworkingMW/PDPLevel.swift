@@ -25,7 +25,7 @@ public class PDPLevel: Mappable{
     public var InventarioFull: InventarioFull?
     public var variantsInfo: [VariantsInfo]?
     //
-    public var InventarioSOMS:InventarioSOMS?
+    public var InventarioSOMSMW:InventarioSOMSMW?
     
     public required init?(map: Map){
     }
@@ -44,6 +44,8 @@ public class PDPLevel: Mappable{
         availableToShip <- map["availableToShip"]
         InventarioFull <- map["InventarioFull"]
         variantsInfo <- map["variantsInfo"]
+        //
+        InventarioSOMSMW <- map["InventarioSOMS"]
     }
     
 }
