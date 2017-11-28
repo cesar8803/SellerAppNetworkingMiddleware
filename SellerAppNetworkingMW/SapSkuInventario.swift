@@ -26,6 +26,18 @@ public class SapSkuInventario: Mappable{
     public var storeName: String?
     
     public required init?(map: Map){
+        Disp <- map["Disp"]
+        Sku <- map["Sku"]
+        Piso <- map["Piso"]
+        Intransfer <- map["Intransfer"]
+        Pdis <- map["Pdis"]
+        Locacion <- map["Locacion"]
+        Inprocess <- map["Inprocess"]
+        Onorder <- map["Onorder"]
+        Envi <- map["Envi"]
+        Intransit <- map["Intransit"]
+        Bode <- map["Bode"]
+        Apar <- map["Apar"]
     }
     
     public func mapping(map: Map) {

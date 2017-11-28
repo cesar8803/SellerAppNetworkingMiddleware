@@ -23,6 +23,7 @@ class BackendUrlManager : NSObject{
         case pdp
         case imagesSKUs
         case shoppingList
+        case cleanCache
     }
     
     fileprivate static let SERVICE_CONTEXT:[String] = [
@@ -38,6 +39,7 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/pdp-simple",                                         // PDP
         "Middleware/rest/service/consultar-imagenes-skus",                       //imagesSKUs
         "Middleware/rest/service/shopping-list"                                 //shopping list
+        "Middleware/rest/service/flush"                         //Clean Cache
     ]
     
     // The array of all the services url's.

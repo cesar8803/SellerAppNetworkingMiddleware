@@ -155,6 +155,16 @@ public class AsyncClientMW
     }
     
     
+    // ***** Clean Cache ***** //
+    
+    public class func cleanCache(completion: @escaping (_ completion: FlushLevel) -> (), completionError: @escaping ErrorStringHandler) {
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.cleanCache, completion: { (flush_Level: FlushLevel) in
+            completion(flush_Level)
+        }) { (message) in
+            completionError(message)
+        }
+    }
+    
     
     //Public function getSKU's Images
     // skus: String of SKUs separated by ~
@@ -168,9 +178,6 @@ public class AsyncClientMW
             completionError(msg)
         }
     }
-    
-    
-    
     
     /************** Petición GET con Parametros **********************/
     class func getRequestExecute<T:Mappable>(_ type:BackendUrlManager.ServiceUrlsId, parameters: Parameters, completion:@escaping (_ dataResponse:T) -> Void, errorCompletition: @escaping (_ errorString:String) -> Void){
