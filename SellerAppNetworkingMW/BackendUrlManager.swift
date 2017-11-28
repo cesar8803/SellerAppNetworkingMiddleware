@@ -23,21 +23,23 @@ class BackendUrlManager : NSObject{
         case pdp
         case imagesSKUs
         case shoppingList
+        case cleanCache
     }
     
     fileprivate static let SERVICE_CONTEXT:[String] = [
-        "Middleware/rest/service/endeca-home?",                                 //homeService
-        "appclienteservices/services/account/login?",                           //logIn
-        "appclienteservices/services/account/logout",                           //logOut
-        "Middleware/rest/service/menu?",                                        //Menu
-        "Middleware/rest/service/endeca-home?",                                         //Home
-        "Middleware/rest/service/plp?",                                         //plp
-        "Middleware/rest/service/lista-evento",                                  //GiftRegistryPLP
-        "Middleware/rest/service/type-ahead?",                      //type-ahead
-        "Middleware/rest/service/remisiones?",                      //orders
-        "Middleware/rest/service/pdp",                                         // PDP
-        "Middleware/rest/service/consultar-imagenes-skus",                       //imagesSKUs
-        "Middleware/rest/service/shopping-list"                                 //shopping list
+        "Middleware/rest/service/endeca-home?",                 //homeService
+        "appclienteservices/services/account/login?",           //logIn
+        "appclienteservices/services/account/logout",           //logOut
+        "Middleware/rest/service/menu?",                        //Menu
+        "Middleware/rest/service/endeca-home?",                 //Home
+        "Middleware/rest/service/plp?",                         //plp
+        "Middleware/rest/service/lista-evento",                 //GiftRegistryPLP
+        "Middleware/rest/service/type-ahead?",                  //type-ahead
+        "Middleware/rest/service/remisiones?",                  //orders
+        "Middleware/rest/service/pdp",                          //PDP
+        "Middleware/rest/service/consultar-imagenes-skus",      //imagesSKUs
+        "Middleware/rest/service/shopping-list",                //shopping list
+        "Middleware/rest/service/flush"                         //Clean Cache
     ]
     
     // The array of all the services url's.
