@@ -38,7 +38,7 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/remisiones?",                      //orders
         "Middleware/rest/service/pdp-simple",                                         // PDP
         "Middleware/rest/service/consultar-imagenes-skus",                       //imagesSKUs
-        "Middleware/rest/service/shopping-list"                                 //shopping list
+        "Middleware/rest/service/shopping-list",                                //shopping list
         "Middleware/rest/service/flush"                         //Clean Cache
     ]
     
