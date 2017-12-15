@@ -20,7 +20,17 @@ public class Results: Mappable{
     public var navigationState: String?
     public var productId: String?
     
-    public required init?(map: Map){
+    public required init?(map: Map)
+    {
+        type <- map["type"]
+        label <- map["label"]
+        breadCrumb <- map["breadCrumb"]
+        showView <- map["showView"]
+        redirectsToWeb <- map["redirectsToWeb"]
+        categoryId <- map["categoryId"]
+        image <- map["image"]
+        navigationState <- map["navigationState"]
+        productId <- map["productId"]
     }
     public func mapping(map: Map){
         type <- map["type"]
