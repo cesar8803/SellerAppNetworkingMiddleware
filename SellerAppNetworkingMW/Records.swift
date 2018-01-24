@@ -33,6 +33,7 @@ public class Records: Mappable{
     public var largeImage: String?
     public var salePrice: String?
     public var displayName: String?
+    public var scanProduct: Bool?
     
     public init(){
     }
