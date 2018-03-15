@@ -80,13 +80,13 @@
 		A9CA18C51F7C536F00F9ACBE /* MWItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18C41F7C536F00F9ACBE /* MWItems.swift */; };
 		A9CA18C71F7C53A800F9ACBE /* Porcentaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18C61F7C53A800F9ACBE /* Porcentaje.swift */; };
 		A9CA18C91F7D93EE00F9ACBE /* BenefitOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18C81F7D93EE00F9ACBE /* BenefitOptions.swift */; };
-		F4A85573205B37F200715A3A /* MiddlewareShippingProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8556C205B37F200715A3A /* MiddlewareShippingProduct.swift */; };
-		F4A85574205B37F200715A3A /* WorklightShippingAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8556D205B37F200715A3A /* WorklightShippingAddress.swift */; };
-		F4A85575205B37F200715A3A /* CreaActualizaOVREMResponseMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8556E205B37F200715A3A /* CreaActualizaOVREMResponseMW.swift */; };
-		F4A85576205B37F200715A3A /* ResponseCrearOrdenMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8556F205B37F200715A3A /* ResponseCrearOrdenMW.swift */; };
-		F4A85577205B37F200715A3A /* ResponseCreaActualizaOVREMMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A85570205B37F200715A3A /* ResponseCreaActualizaOVREMMW.swift */; };
-		F4A85578205B37F200715A3A /* ResponseMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A85571205B37F200715A3A /* ResponseMiddleware.swift */; };
-		F4A85579205B37F200715A3A /* ResponseCreaActualizaOVREMSterlingMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A85572205B37F200715A3A /* ResponseCreaActualizaOVREMSterlingMW.swift */; };
+		F45069E2205B3C3C001D2864 /* MiddlewareShippingProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069DB205B3C3C001D2864 /* MiddlewareShippingProduct.swift */; };
+		F45069E3205B3C3C001D2864 /* WorklightShippingAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069DC205B3C3C001D2864 /* WorklightShippingAddress.swift */; };
+		F45069E4205B3C3C001D2864 /* CreaActualizaOVREMResponseMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069DD205B3C3C001D2864 /* CreaActualizaOVREMResponseMW.swift */; };
+		F45069E5205B3C3C001D2864 /* ResponseCrearOrdenMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069DE205B3C3C001D2864 /* ResponseCrearOrdenMW.swift */; };
+		F45069E6205B3C3C001D2864 /* ResponseCreaActualizaOVREMMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069DF205B3C3C001D2864 /* ResponseCreaActualizaOVREMMW.swift */; };
+		F45069E7205B3C3C001D2864 /* ResponseMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069E0205B3C3C001D2864 /* ResponseMiddleware.swift */; };
+		F45069E8205B3C3C001D2864 /* ResponseCreaActualizaOVREMSterlingMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069E1205B3C3C001D2864 /* ResponseCreaActualizaOVREMSterlingMW.swift */; };
 		F7147C071F560A7200EC2C23 /* MiddlewareConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7147C061F560A7200EC2C23 /* MiddlewareConnection.swift */; };
 /* End PBXBuildFile section */
 
@@ -179,13 +179,13 @@
 		A9CA18C81F7D93EE00F9ACBE /* BenefitOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitOptions.swift; sourceTree = "<group>"; };
 		D7D3AB2DC56018663124B01D /* Pods_SellerAppNetworkingMW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SellerAppNetworkingMW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED9284AA61F2EC8CF65C007 /* Pods-SellerAppNetworkingMW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellerAppNetworkingMW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SellerAppNetworkingMW/Pods-SellerAppNetworkingMW.debug.xcconfig"; sourceTree = "<group>"; };
-		F4A8556C205B37F200715A3A /* MiddlewareShippingProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareShippingProduct.swift; sourceTree = "<group>"; };
-		F4A8556D205B37F200715A3A /* WorklightShippingAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorklightShippingAddress.swift; sourceTree = "<group>"; };
-		F4A8556E205B37F200715A3A /* CreaActualizaOVREMResponseMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreaActualizaOVREMResponseMW.swift; sourceTree = "<group>"; };
-		F4A8556F205B37F200715A3A /* ResponseCrearOrdenMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCrearOrdenMW.swift; sourceTree = "<group>"; };
-		F4A85570205B37F200715A3A /* ResponseCreaActualizaOVREMMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCreaActualizaOVREMMW.swift; sourceTree = "<group>"; };
-		F4A85571205B37F200715A3A /* ResponseMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMiddleware.swift; sourceTree = "<group>"; };
-		F4A85572205B37F200715A3A /* ResponseCreaActualizaOVREMSterlingMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCreaActualizaOVREMSterlingMW.swift; sourceTree = "<group>"; };
+		F45069DB205B3C3C001D2864 /* MiddlewareShippingProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareShippingProduct.swift; sourceTree = "<group>"; };
+		F45069DC205B3C3C001D2864 /* WorklightShippingAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorklightShippingAddress.swift; sourceTree = "<group>"; };
+		F45069DD205B3C3C001D2864 /* CreaActualizaOVREMResponseMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreaActualizaOVREMResponseMW.swift; sourceTree = "<group>"; };
+		F45069DE205B3C3C001D2864 /* ResponseCrearOrdenMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCrearOrdenMW.swift; sourceTree = "<group>"; };
+		F45069DF205B3C3C001D2864 /* ResponseCreaActualizaOVREMMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCreaActualizaOVREMMW.swift; sourceTree = "<group>"; };
+		F45069E0205B3C3C001D2864 /* ResponseMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMiddleware.swift; sourceTree = "<group>"; };
+		F45069E1205B3C3C001D2864 /* ResponseCreaActualizaOVREMSterlingMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCreaActualizaOVREMSterlingMW.swift; sourceTree = "<group>"; };
 		F7147C061F560A7200EC2C23 /* MiddlewareConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -291,7 +291,6 @@
 		2BE72FE21EFEF52C009AC510 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				F4A8556B205B37F200715A3A /* Remissions */,
 				2BE72FE71EFF4AA7009AC510 /* AsyncClientMWObjects */,
 			);
 			name = Services;
@@ -300,6 +299,7 @@
 		2BE72FE71EFF4AA7009AC510 /* AsyncClientMWObjects */ = {
 			isa = PBXGroup;
 			children = (
+				F45069DA205B3C3C001D2864 /* Remissions */,
 				A94093FC1FCDE9080077C430 /* Cache */,
 				A9CA18BD1F7C4E9D00F9ACBE /* Benefits */,
 				71992E161F576B6F00EE35A2 /* ShoppingList */,
@@ -423,19 +423,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F4A8556B205B37F200715A3A /* Remissions */ = {
+		F45069DA205B3C3C001D2864 /* Remissions */ = {
 			isa = PBXGroup;
 			children = (
-				F4A8556C205B37F200715A3A /* MiddlewareShippingProduct.swift */,
-				F4A8556D205B37F200715A3A /* WorklightShippingAddress.swift */,
-				F4A8556E205B37F200715A3A /* CreaActualizaOVREMResponseMW.swift */,
-				F4A8556F205B37F200715A3A /* ResponseCrearOrdenMW.swift */,
-				F4A85570205B37F200715A3A /* ResponseCreaActualizaOVREMMW.swift */,
-				F4A85571205B37F200715A3A /* ResponseMiddleware.swift */,
-				F4A85572205B37F200715A3A /* ResponseCreaActualizaOVREMSterlingMW.swift */,
+				F45069DB205B3C3C001D2864 /* MiddlewareShippingProduct.swift */,
+				F45069DC205B3C3C001D2864 /* WorklightShippingAddress.swift */,
+				F45069DD205B3C3C001D2864 /* CreaActualizaOVREMResponseMW.swift */,
+				F45069DE205B3C3C001D2864 /* ResponseCrearOrdenMW.swift */,
+				F45069DF205B3C3C001D2864 /* ResponseCreaActualizaOVREMMW.swift */,
+				F45069E0205B3C3C001D2864 /* ResponseMiddleware.swift */,
+				F45069E1205B3C3C001D2864 /* ResponseCreaActualizaOVREMSterlingMW.swift */,
 			);
 			path = Remissions;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -588,22 +588,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4A85577205B37F200715A3A /* ResponseCreaActualizaOVREMMW.swift in Sources */,
-				F4A85574205B37F200715A3A /* WorklightShippingAddress.swift in Sources */,
 				004672891FBBBC3500A91A29 /* GetConsultaSkuPoolResponseMW.swift in Sources */,
 				0046727E1FBBAEEF00A91A29 /* InventarioSOMSMW.swift in Sources */,
 				71992E181F576BB100EE35A2 /* ShoppingListResponse.swift in Sources */,
 				71992E1C1F576C3200EE35A2 /* ListaSku.swift in Sources */,
 				A96A694F1F20693600407A82 /* RecommendedItems.swift in Sources */,
 				A96A69671F2077D700407A82 /* InventarioFull.swift in Sources */,
+				F45069E8205B3C3C001D2864 /* ResponseCreaActualizaOVREMSterlingMW.swift in Sources */,
 				A94093FE1FCDE9620077C430 /* Flush.swift in Sources */,
 				A9CA18C91F7D93EE00F9ACBE /* BenefitOptions.swift in Sources */,
 				A96A69511F206C2400407A82 /* BuscaProducto.swift in Sources */,
+				F45069E2205B3C3C001D2864 /* MiddlewareShippingProduct.swift in Sources */,
 				A96A69631F2076E600407A82 /* Inventario.swift in Sources */,
 				A9A0EE131F0CAB260092DA45 /* GiftRegistryPLPLevel.swift in Sources */,
 				2B1198631F01B1F100C7A1FC /* SortOptions.swift in Sources */,
 				5593FE001F1FBBD80012E8B2 /* ProductListOrder.swift in Sources */,
-				F4A85573205B37F200715A3A /* MiddlewareShippingProduct.swift in Sources */,
 				2B396EB51EFF5CEE008194C8 /* AsyncClientMW.swift in Sources */,
 				0046728A1FBBBC3500A91A29 /* GetConsultaSkuPoolHeaderMW.swift in Sources */,
 				8353927C1F631F8800FD3FFC /* PlpFlags.swift in Sources */,
@@ -619,14 +618,16 @@
 				A95358001F2BDDCA00369111 /* DynamicAttributes.swift in Sources */,
 				A96A694D1F2068FB00407A82 /* CarruselDummy.swift in Sources */,
 				2B1310E91F016EAB00611EC9 /* CarousalBanners.swift in Sources */,
-				F4A85579205B37F200715A3A /* ResponseCreaActualizaOVREMSterlingMW.swift in Sources */,
+				F45069E6205B3C3C001D2864 /* ResponseCreaActualizaOVREMMW.swift in Sources */,
 				004672881FBBBC3500A91A29 /* GetConsultaSkuPoolRecordMW.swift in Sources */,
 				F7147C071F560A7200EC2C23 /* MiddlewareConnection.swift in Sources */,
+				F45069E5205B3C3C001D2864 /* ResponseCrearOrdenMW.swift in Sources */,
 				A96A69611F20766A00407A82 /* Recommendations.swift in Sources */,
 				A96A695D1F206FF800407A82 /* Flags.swift in Sources */,
 				2B1310EB1F016ECF00611EC9 /* StackBanners.swift in Sources */,
 				A96A694A1F20676100407A82 /* PDPLevel.swift in Sources */,
 				552B99441F1D1E8F00F1E622 /* Skuarray.swift in Sources */,
+				F45069E3205B3C3C001D2864 /* WorklightShippingAddress.swift in Sources */,
 				2B3BE25A1F306F8C00726D14 /* SKUsImages.swift in Sources */,
 				2B3C78381F02AE9100FAB4BA /* PLPLevel.swift in Sources */,
 				2B3BE25C1F306FB900726D14 /* Sku.swift in Sources */,
@@ -642,14 +643,15 @@
 				A9A0EE181F0CAC810092DA45 /* ListaDirecciones.swift in Sources */,
 				A96A695B1F206FB300407A82 /* Promotions.swift in Sources */,
 				2B1310EF1F01704B00611EC9 /* BestSellerProducts.swift in Sources */,
-				F4A85576205B37F200715A3A /* ResponseCrearOrdenMW.swift in Sources */,
 				A96A69651F20779800407A82 /* Attributes.swift in Sources */,
 				2B11985F1F01B02200C7A1FC /* RefinementGroups.swift in Sources */,
 				552B99421F1D1E4100F1E622 /* OrdersLevel.swift in Sources */,
 				71992E1A1F576C0200EE35A2 /* DatosCliente.swift in Sources */,
 				5593FE021F1FBBE40012E8B2 /* RemisionesConsultaOrdenresponse.swift in Sources */,
 				2B1310E71F016E5500611EC9 /* Home.swift in Sources */,
+				F45069E7205B3C3C001D2864 /* ResponseMiddleware.swift in Sources */,
 				A96A69591F206E4200407A82 /* EddInfo.swift in Sources */,
+				F45069E4205B3C3C001D2864 /* CreaActualizaOVREMResponseMW.swift in Sources */,
 				A96A69691F20781D00407A82 /* ConsultaSkuInventarioResponse.swift in Sources */,
 				834B7F411F6AFD3700146495 /* VariantsColor.swift in Sources */,
 				A9CA18BC1F7C4E9800F9ACBE /* Benefits.swift in Sources */,
@@ -658,12 +660,10 @@
 				A96A69531F206D5700407A82 /* ProductInfo.swift in Sources */,
 				2B7FD14C1F01BE5A00232C66 /* PLPResults.swift in Sources */,
 				2B1198651F01B2EC00C7A1FC /* MacVariantsInfo.swift in Sources */,
-				F4A85575205B37F200715A3A /* CreaActualizaOVREMResponseMW.swift in Sources */,
 				2B11985D1F01AE7F00C7A1FC /* PLPState.swift in Sources */,
 				A9A0EE1C1F0CAD170092DA45 /* ListaArticulos.swift in Sources */,
 				5593FE041F1FBBF20012E8B2 /* direccionDestinatario.swift in Sources */,
 				2B1310ED1F016F2F00611EC9 /* NewProducts.swift in Sources */,
-				F4A85578205B37F200715A3A /* ResponseMiddleware.swift in Sources */,
 				2B396EB71EFF5CEE008194C8 /* MenuLevel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
