@@ -24,6 +24,9 @@ class BackendUrlManager : NSObject{
         case imagesSKUs
         case shoppingList
         case cleanCache
+        case remissionCE
+        case remissionCC
+        case remissionMDR
     }
     
     fileprivate static let SERVICE_CONTEXT:[String] = [
@@ -31,15 +34,18 @@ class BackendUrlManager : NSObject{
         "appclienteservices/services/account/login?",                           //logIn
         "appclienteservices/services/account/logout",                           //logOut
         "Middleware/rest/service/menu?",                                        //Menu
-        "Middleware/rest/service/endeca-home?",                                         //Home
+        "Middleware/rest/service/endeca-home?",                                 //Home
         "Middleware/rest/service/plp?",                                         //plp
-        "Middleware/rest/service/lista-evento",                                  //GiftRegistryPLP
-        "Middleware/rest/service/type-ahead?",                      //type-ahead
-        "Middleware/rest/service/remisiones?",                      //orders
-        "Middleware/rest/service/pdp-simple",                                         // PDP
-        "Middleware/rest/service/consultar-imagenes-skus",                       //imagesSKUs
+        "Middleware/rest/service/lista-evento",                                 //GiftRegistryPLP
+        "Middleware/rest/service/type-ahead?",                                  //type-ahead
+        "Middleware/rest/service/remisiones?",                                  //orders
+        "Middleware/rest/service/pdp-simple",                                   // PDP
+        "Middleware/rest/service/consultar-imagenes-skus",                      //imagesSKUs
         "Middleware/rest/service/shopping-list",                                //shopping list
-        "Middleware/rest/service/flush"                         //Clean Cache
+        "Middleware/rest/service/flush",                                        //Clean Cache
+        "Middleware/rest/service/remision-domicilio",                           //RemissionCE
+        "Middleware/rest/service/remision-click-collect",                       //RemissionCC
+        "Middleware/rest/service/remision-mesa-regalos",                        //RemissionMDR
     ]
     
     // The array of all the services url's.
@@ -78,3 +84,4 @@ class BackendUrlManager : NSObject{
     static let Current:BackendUrlManager = BackendUrlManager()
     
 }
+

@@ -80,6 +80,13 @@
 		A9CA18C51F7C536F00F9ACBE /* MWItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18C41F7C536F00F9ACBE /* MWItems.swift */; };
 		A9CA18C71F7C53A800F9ACBE /* Porcentaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18C61F7C53A800F9ACBE /* Porcentaje.swift */; };
 		A9CA18C91F7D93EE00F9ACBE /* BenefitOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA18C81F7D93EE00F9ACBE /* BenefitOptions.swift */; };
+		F4A6B0D1205B2FFF0054E6F4 /* CreaActualizaOVREMResponseMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6B0CA205B2FFE0054E6F4 /* CreaActualizaOVREMResponseMW.swift */; };
+		F4A6B0D2205B2FFF0054E6F4 /* ResponseCrearOrdenMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6B0CB205B2FFE0054E6F4 /* ResponseCrearOrdenMW.swift */; };
+		F4A6B0D3205B2FFF0054E6F4 /* ResponseMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6B0CC205B2FFE0054E6F4 /* ResponseMiddleware.swift */; };
+		F4A6B0D4205B2FFF0054E6F4 /* WorklightShippingAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6B0CD205B2FFE0054E6F4 /* WorklightShippingAddress.swift */; };
+		F4A6B0D5205B2FFF0054E6F4 /* ResponseCreaActualizaOVREMMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6B0CE205B2FFE0054E6F4 /* ResponseCreaActualizaOVREMMW.swift */; };
+		F4A6B0D6205B2FFF0054E6F4 /* ResponseCreaActualizaOVREMSterlingMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6B0CF205B2FFE0054E6F4 /* ResponseCreaActualizaOVREMSterlingMW.swift */; };
+		F4A6B0D7205B2FFF0054E6F4 /* MiddlewareShippingProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6B0D0205B2FFF0054E6F4 /* MiddlewareShippingProduct.swift */; };
 		F7147C071F560A7200EC2C23 /* MiddlewareConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7147C061F560A7200EC2C23 /* MiddlewareConnection.swift */; };
 /* End PBXBuildFile section */
 
@@ -172,6 +179,13 @@
 		A9CA18C81F7D93EE00F9ACBE /* BenefitOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitOptions.swift; sourceTree = "<group>"; };
 		D7D3AB2DC56018663124B01D /* Pods_SellerAppNetworkingMW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SellerAppNetworkingMW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED9284AA61F2EC8CF65C007 /* Pods-SellerAppNetworkingMW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellerAppNetworkingMW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SellerAppNetworkingMW/Pods-SellerAppNetworkingMW.debug.xcconfig"; sourceTree = "<group>"; };
+		F4A6B0CA205B2FFE0054E6F4 /* CreaActualizaOVREMResponseMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreaActualizaOVREMResponseMW.swift; path = Remissions/CreaActualizaOVREMResponseMW.swift; sourceTree = SOURCE_ROOT; };
+		F4A6B0CB205B2FFE0054E6F4 /* ResponseCrearOrdenMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseCrearOrdenMW.swift; path = Remissions/ResponseCrearOrdenMW.swift; sourceTree = SOURCE_ROOT; };
+		F4A6B0CC205B2FFE0054E6F4 /* ResponseMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseMiddleware.swift; path = Remissions/ResponseMiddleware.swift; sourceTree = SOURCE_ROOT; };
+		F4A6B0CD205B2FFE0054E6F4 /* WorklightShippingAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorklightShippingAddress.swift; path = Remissions/WorklightShippingAddress.swift; sourceTree = SOURCE_ROOT; };
+		F4A6B0CE205B2FFE0054E6F4 /* ResponseCreaActualizaOVREMMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseCreaActualizaOVREMMW.swift; path = Remissions/ResponseCreaActualizaOVREMMW.swift; sourceTree = SOURCE_ROOT; };
+		F4A6B0CF205B2FFE0054E6F4 /* ResponseCreaActualizaOVREMSterlingMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseCreaActualizaOVREMSterlingMW.swift; path = Remissions/ResponseCreaActualizaOVREMSterlingMW.swift; sourceTree = SOURCE_ROOT; };
+		F4A6B0D0205B2FFF0054E6F4 /* MiddlewareShippingProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MiddlewareShippingProduct.swift; path = Remissions/MiddlewareShippingProduct.swift; sourceTree = SOURCE_ROOT; };
 		F7147C061F560A7200EC2C23 /* MiddlewareConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -277,6 +291,7 @@
 		2BE72FE21EFEF52C009AC510 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F4D89E8520588E7A0059ED79 /* Remissions */,
 				2BE72FE71EFF4AA7009AC510 /* AsyncClientMWObjects */,
 			);
 			name = Services;
@@ -406,6 +421,20 @@
 				0DC5EEAE2C6B7E7FD59C5B5B /* Pods-SellerAppNetworkingMW.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4D89E8520588E7A0059ED79 /* Remissions */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6B0CA205B2FFE0054E6F4 /* CreaActualizaOVREMResponseMW.swift */,
+				F4A6B0D0205B2FFF0054E6F4 /* MiddlewareShippingProduct.swift */,
+				F4A6B0CE205B2FFE0054E6F4 /* ResponseCreaActualizaOVREMMW.swift */,
+				F4A6B0CF205B2FFE0054E6F4 /* ResponseCreaActualizaOVREMSterlingMW.swift */,
+				F4A6B0CB205B2FFE0054E6F4 /* ResponseCrearOrdenMW.swift */,
+				F4A6B0CC205B2FFE0054E6F4 /* ResponseMiddleware.swift */,
+				F4A6B0CD205B2FFE0054E6F4 /* WorklightShippingAddress.swift */,
+			);
+			path = Remissions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,6 +588,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A6B0D6205B2FFF0054E6F4 /* ResponseCreaActualizaOVREMSterlingMW.swift in Sources */,
+				F4A6B0D5205B2FFF0054E6F4 /* ResponseCreaActualizaOVREMMW.swift in Sources */,
 				004672891FBBBC3500A91A29 /* GetConsultaSkuPoolResponseMW.swift in Sources */,
 				0046727E1FBBAEEF00A91A29 /* InventarioSOMSMW.swift in Sources */,
 				71992E181F576BB100EE35A2 /* ShoppingListResponse.swift in Sources */,
@@ -587,12 +618,15 @@
 				A95358001F2BDDCA00369111 /* DynamicAttributes.swift in Sources */,
 				A96A694D1F2068FB00407A82 /* CarruselDummy.swift in Sources */,
 				2B1310E91F016EAB00611EC9 /* CarousalBanners.swift in Sources */,
+				F4A6B0D2205B2FFF0054E6F4 /* ResponseCrearOrdenMW.swift in Sources */,
 				004672881FBBBC3500A91A29 /* GetConsultaSkuPoolRecordMW.swift in Sources */,
 				F7147C071F560A7200EC2C23 /* MiddlewareConnection.swift in Sources */,
+				F4A6B0D3205B2FFF0054E6F4 /* ResponseMiddleware.swift in Sources */,
 				A96A69611F20766A00407A82 /* Recommendations.swift in Sources */,
 				A96A695D1F206FF800407A82 /* Flags.swift in Sources */,
 				2B1310EB1F016ECF00611EC9 /* StackBanners.swift in Sources */,
 				A96A694A1F20676100407A82 /* PDPLevel.swift in Sources */,
+				F4A6B0D1205B2FFF0054E6F4 /* CreaActualizaOVREMResponseMW.swift in Sources */,
 				552B99441F1D1E8F00F1E622 /* Skuarray.swift in Sources */,
 				2B3BE25A1F306F8C00726D14 /* SKUsImages.swift in Sources */,
 				2B3C78381F02AE9100FAB4BA /* PLPLevel.swift in Sources */,
@@ -613,6 +647,7 @@
 				2B11985F1F01B02200C7A1FC /* RefinementGroups.swift in Sources */,
 				552B99421F1D1E4100F1E622 /* OrdersLevel.swift in Sources */,
 				71992E1A1F576C0200EE35A2 /* DatosCliente.swift in Sources */,
+				F4A6B0D7205B2FFF0054E6F4 /* MiddlewareShippingProduct.swift in Sources */,
 				5593FE021F1FBBE40012E8B2 /* RemisionesConsultaOrdenresponse.swift in Sources */,
 				2B1310E71F016E5500611EC9 /* Home.swift in Sources */,
 				A96A69591F206E4200407A82 /* EddInfo.swift in Sources */,
@@ -623,6 +658,7 @@
 				A96A69551F206DB800407A82 /* Images.swift in Sources */,
 				A96A69531F206D5700407A82 /* ProductInfo.swift in Sources */,
 				2B7FD14C1F01BE5A00232C66 /* PLPResults.swift in Sources */,
+				F4A6B0D4205B2FFF0054E6F4 /* WorklightShippingAddress.swift in Sources */,
 				2B1198651F01B2EC00C7A1FC /* MacVariantsInfo.swift in Sources */,
 				2B11985D1F01AE7F00C7A1FC /* PLPState.swift in Sources */,
 				A9A0EE1C1F0CAD170092DA45 /* ListaArticulos.swift in Sources */,
