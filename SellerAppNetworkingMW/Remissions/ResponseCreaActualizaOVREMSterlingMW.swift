@@ -12,10 +12,12 @@ import ObjectMapper
 public class ResponseCreaActualizaOVREMSterlingMW: Mappable{
     public var responseCrearOrden: ResponseCrearOrdenMW?
     public var responseCreaActualizaOVREM: ResponseCreaActualizaOVREMMW?
+    public var isSuccessful: Int?
     
     public required init?(map: Map){
     }
     public func mapping(map: Map){
+        isSuccessful <- map["isSuccessful"]
         responseCrearOrden <- map["responseCrearOrden"]
         responseCreaActualizaOVREM <- map["responseCreaActualizaOVREM"]
     }

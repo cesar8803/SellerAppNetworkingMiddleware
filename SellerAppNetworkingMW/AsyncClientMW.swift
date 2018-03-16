@@ -31,7 +31,7 @@ public class AsyncClientMW
     //Request for search product
     
     public class func getProductWithString(_ text: String, completion: @escaping (_ dataResponse: MiddlewareResponse) -> Void, completionError: @escaping ErrorStringHandler){
-    
+        
         let params: Parameters = ["search-string" : text]
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.typeahead, parameters: params, completion: { (response) in
             completion(response)
@@ -116,14 +116,14 @@ public class AsyncClientMW
         }) { (msg) in
             completionError(msg)
         }
-                                        
+        
     }
     
     
     // ******** Shopping List ***** //
     
     public class func getShoppingList(parameters: Parameters, completion: @escaping (_ dataResponse: ShoppingListResponse) -> Void, completionError: @escaping ErrorStringHandler) {
-
+        
         
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.shoppingList, parameters: parameters, completion: { (shoppingListResponse: ShoppingListResponse) in
             completion(shoppingListResponse)
@@ -139,7 +139,7 @@ public class AsyncClientMW
     public class func getPDP(mandatory: PDP_MandatoryParams, parameters: [PDP_Optional<Any>]?, completion: @escaping (_ dataResponse: PDPLevel) -> Void, completionError: @escaping ErrorStringHandler) {
         
         var params = mandatory.getParameters()
-
+        
         if let pdpOptionals = parameters {
             for pdp_opt in pdpOptionals {
                 params[pdp_opt.type.rawValue] = pdp_opt.value
@@ -363,7 +363,7 @@ public class AsyncClientMW
         parameters: [AnyObject],
         storeCode:String,
         terminalCode:String,
-        completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMSterlingMW)-> Void,
+        completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMMW)-> Void,
         completionError: @escaping ErrorStringHandler )
     {
         let params : String = getRequestUrlForAdapter( parameters: parameters as AnyObject, isArray:true)
@@ -379,10 +379,8 @@ public class AsyncClientMW
         AsyncClientMW.getRequestExecute(
             BackendUrlManager.ServiceUrlsId.remissionCC,
             parameters: paramsRequest,
-            completion:
-            { (Response : ResponseCreaActualizaOVREMSterlingMW) in
-                completion(Response)
-        }) { (msg) in
+            completion: { (Response : ResponseCreaActualizaOVREMMW) in completion(Response) })
+        { (msg) in
             completionError(msg)
         }
     }
@@ -390,9 +388,9 @@ public class AsyncClientMW
     
     //MARK: RemissionCE
     class public func  createOrderCE(
-        parameters:[Any],
-        storeCode:String?,
-        terminalCode:String?,
+        parameters: [AnyObject],
+        storeCode:String,
+        terminalCode:String,
         completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMSterlingMW)-> Void,
         completionError: @escaping ErrorStringHandler )
     {
@@ -416,12 +414,12 @@ public class AsyncClientMW
             completionError(msg)
         }
     }
-
+    
     //MARK: RemissionMDR
     class public func  createOrderMDR(
         parameters:[Any],
-        storeCode:String?,
-        terminalCode:String?,
+        storeCode:String,
+        terminalCode:String,
         completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMSterlingMW)-> Void,
         completionError: @escaping ErrorStringHandler )
     {
@@ -436,7 +434,7 @@ public class AsyncClientMW
         print(paramsRequest)
         
         AsyncClientMW.getRequestExecute(
-            BackendUrlManager.ServiceUrlsId.remissionCC,
+            BackendUrlManager.ServiceUrlsId.remissionMDR,
             parameters: paramsRequest,
             completion:
             { (Response : ResponseCreaActualizaOVREMSterlingMW) in
@@ -477,3 +475,4 @@ public class AsyncClientMW
         return jsonString as String
     }
 }
+
