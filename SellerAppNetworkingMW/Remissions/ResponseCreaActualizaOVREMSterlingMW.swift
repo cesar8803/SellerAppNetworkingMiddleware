@@ -12,7 +12,7 @@ import ObjectMapper
 public class ResponseCreaActualizaOVREMSterlingMW: Mappable{
     public var responseCrearOrden: ResponseCrearOrdenMW?
     public var responseCreaActualizaOVREM: ResponseCreaActualizaOVREMMW?
-    public var isSuccessful: Int?
+    public var isSuccessful: Bool?
     
     public required init?(map: Map){
     }
