@@ -14,11 +14,19 @@ public class MiddlewareResponse: Mappable{
     public var isSuccessful: Int?
     public var totalNumResults: Float?
     
+    public var responseCreaActualizaOVREMSterling: ResponseCreaActualizaOVREMSterlingMW?
+    public var responseCrearOrden: ResponseCrearOrdenMW?
+    public var responseCreaActualizaOVREM: ResponseCreaActualizaOVREMMW?
+    
     public required init?(map: Map){
     }
     public func mapping(map: Map){
         results <- map["results"]
         isSuccessful <- map["isSuccessful"]
         totalNumResults <- map["totalNumResults"]
+        
+        responseCreaActualizaOVREMSterling <- map["responseCreaActualizaOVREMSterling"]
+        responseCrearOrden <- map["responseCrearOrden"]
+        responseCreaActualizaOVREM <- map["responseCreaActualizaOVREM"]
     }
 }

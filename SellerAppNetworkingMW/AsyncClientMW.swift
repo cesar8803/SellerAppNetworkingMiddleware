@@ -31,7 +31,7 @@ public class AsyncClientMW
     //Request for search product
     
     public class func getProductWithString(_ text: String, completion: @escaping (_ dataResponse: MiddlewareResponse) -> Void, completionError: @escaping ErrorStringHandler){
-    
+        
         let params: Parameters = ["search-string" : text]
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.typeahead, parameters: params, completion: { (response) in
             completion(response)
@@ -116,14 +116,14 @@ public class AsyncClientMW
         }) { (msg) in
             completionError(msg)
         }
-                                        
+        
     }
     
     
     // ******** Shopping List ***** //
     
     public class func getShoppingList(parameters: Parameters, completion: @escaping (_ dataResponse: ShoppingListResponse) -> Void, completionError: @escaping ErrorStringHandler) {
-
+        
         
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.shoppingList, parameters: parameters, completion: { (shoppingListResponse: ShoppingListResponse) in
             completion(shoppingListResponse)
@@ -139,7 +139,7 @@ public class AsyncClientMW
     public class func getPDP(mandatory: PDP_MandatoryParams, parameters: [PDP_Optional<Any>]?, completion: @escaping (_ dataResponse: PDPLevel) -> Void, completionError: @escaping ErrorStringHandler) {
         
         var params = mandatory.getParameters()
-
+        
         if let pdpOptionals = parameters {
             for pdp_opt in pdpOptionals {
                 params[pdp_opt.type.rawValue] = pdp_opt.value
@@ -153,7 +153,6 @@ public class AsyncClientMW
         }
         
     }
-    
     
     // ***** Clean Cache ***** //
     
@@ -184,6 +183,7 @@ public class AsyncClientMW
         
         let url = BackendUrlManager.Current.getUrl(type)
         print(url)
+        print(parameters)
         Alamofire.request(url, method: .get, parameters: parameters).responseObject { (response: DataResponse<T>) in
             if response.result.isSuccess{
                 let responseService = response.result.value
@@ -358,4 +358,121 @@ public class AsyncClientMW
         viewController.present(alert, animated: true, completion: nil)
     }
     
+    //MARK: RemissionCC
+    class public func  createOrderCC(
+        parameters: [AnyObject],
+        storeCode:String,
+        terminalCode:String,
+        completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMMW)-> Void,
+        completionError: @escaping ErrorStringHandler )
+    {
+        let params : String = getRequestUrlForAdapter( parameters: parameters as AnyObject, isArray:true)
+        print(params)
+        
+        
+        let paramsRequest:Parameters = ["objeto": params as Any,
+                                        "terminal-code": terminalCode as Any,
+                                        "store-code": storeCode as Any]
+        
+        print(paramsRequest)
+        
+        AsyncClientMW.getRequestExecute(
+            BackendUrlManager.ServiceUrlsId.remissionCC,
+            parameters: paramsRequest,
+            completion: { (Response : ResponseCreaActualizaOVREMMW) in completion(Response) })
+        { (msg) in
+            completionError(msg)
+        }
+    }
+    
+    
+    //MARK: RemissionCE
+    class public func  createOrderCE(
+        parameters: [AnyObject],
+        storeCode:String,
+        terminalCode:String,
+        completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMSterlingMW)-> Void,
+        completionError: @escaping ErrorStringHandler )
+    {
+        let params : String = getRequestUrlForAdapter( parameters: parameters as AnyObject, isArray:true)
+        print(params)
+        
+        
+        let paramsRequest:Parameters = ["objeto": params as Any,
+                                        "terminal-code": terminalCode as Any,
+                                        "store-code": storeCode as Any]
+        
+        print(paramsRequest)
+        
+        AsyncClientMW.getRequestExecute(
+            BackendUrlManager.ServiceUrlsId.remissionCE,
+            parameters: paramsRequest,
+            completion:
+            { (Response : ResponseCreaActualizaOVREMSterlingMW) in
+                completion(Response)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
+    
+    //MARK: RemissionMDR
+    class public func  createOrderMDR(
+        parameters:[Any],
+        storeCode:String,
+        terminalCode:String,
+        completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMSterlingMW)-> Void,
+        completionError: @escaping ErrorStringHandler )
+    {
+        let params : String = getRequestUrlForAdapter( parameters: parameters as AnyObject, isArray:true)
+        print(params)
+        
+        
+        let paramsRequest:Parameters = ["objeto": params as Any,
+                                        "terminal-code": terminalCode as Any,
+                                        "store-code": storeCode as Any]
+        
+        print(paramsRequest)
+        
+        AsyncClientMW.getRequestExecute(
+            BackendUrlManager.ServiceUrlsId.remissionMDR,
+            parameters: paramsRequest,
+            completion:
+            { (Response : ResponseCreaActualizaOVREMSterlingMW) in
+                completion(Response)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
+    
+    //MARK: urlRequest adapter
+    class func getRequestUrlForAdapter( parameters: AnyObject, isArray:Bool = false) -> String
+    {
+        let encodedParameters = MiddlewareEncodedParameterDictionary(parameters: parameters, isArray: isArray)
+        return  "\(encodedParameters)"
+    }
+    class func MiddlewareEncodedParameterDictionary(parameters: AnyObject , isArray: Bool = false) -> String
+    {
+        var data:NSData!
+        do {
+            data = try JSONSerialization.data(withJSONObject: parameters, options: JSONSerialization.WritingOptions()) as NSData
+        }
+        catch {
+            return ""
+        }
+        var jsonString = NSString(data: data as Data, encoding: String.Encoding.utf8.rawValue)!
+        //jsonString = jsonString.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)! as NSString
+        
+        // BEFORE
+        //jsonString = jsonString.addingPercentEscapes(using: String.Encoding.utf8.rawValue)! as NSString
+        
+        
+        //There must be a better way to handle the URL expecting a plus sign to be encoded, even when a string value
+        //jsonString = jsonString.replacingOccurrences(of: "+", with: "%2B") as NSString
+        //Need to wrap the JSON in [] for the Middleware server
+        if !isArray {
+            jsonString = "[\(jsonString)]" as NSString
+        }
+        return jsonString as String
+    }
 }
+
