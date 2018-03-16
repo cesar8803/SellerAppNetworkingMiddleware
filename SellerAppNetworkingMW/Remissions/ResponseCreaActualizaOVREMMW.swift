@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 public class ResponseCreaActualizaOVREMMW: Mappable{
-    public var isSuccessful: Int?
+    public var isSuccessful: Bool?
     public var CreaActualizaOVREMResponse: CreaActualizaOVREMResponseMW?
     
     public required init?( map: Map){
