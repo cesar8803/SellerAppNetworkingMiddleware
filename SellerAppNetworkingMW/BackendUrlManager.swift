@@ -36,7 +36,7 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/menu?",                                        //Menu
         "Middleware/rest/service/endeca-home?",                                 //Home
         "Middleware/rest/service/plp?",                                         //plp
-        "Middleware/rest/service/lista-evento",                                 //GiftRegistryPLP
+        "Middleware/rest/service/v2/lista-evento",                              //GiftRegistryPLP
         "Middleware/rest/service/type-ahead?",                                  //type-ahead
         "Middleware/rest/service/remisiones?",                                  //orders
         "Middleware/rest/service/pdp-simple",                                   // PDP
