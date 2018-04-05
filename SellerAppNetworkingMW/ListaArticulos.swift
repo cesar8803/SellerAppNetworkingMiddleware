@@ -32,6 +32,7 @@ public class MWListaArticulos: Mappable {
     public var lgImage: String?
     public var importe: String?
     public var productType: String?
+    public var xlImage: String?
     
     required public init?(map: Map) {
     }
@@ -58,6 +59,7 @@ public class MWListaArticulos: Mappable {
         fecPreparando <- map["fecPreparando"]
         fecEntregado <- map["fecEntregado"]
         productType <- map["productType"]
+        xlImage <- map["xlImage"]
     }
     
 }
