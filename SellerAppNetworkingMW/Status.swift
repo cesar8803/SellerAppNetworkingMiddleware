@@ -6,8 +6,22 @@
 //  Copyright © 2018 Liverpool. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import ObjectMapper
 
-class Status: NSObject {
-
+public class Status: Mappable {
+    public var status : String?
+    public var errorDescription : String?
+    public var detailedErrorDescription : String?
+    public var statusCode : Int?
+    
+    public required init?(map: Map){
+    }
+    
+    public func mapping(map: Map){
+        status <- map["status"]
+        errorDescription <- map["errorDescription"]
+        detailedErrorDescription <- map["detailedErrorDescription"]
+        statusCode <- map["statusCode"]
+    }
 }

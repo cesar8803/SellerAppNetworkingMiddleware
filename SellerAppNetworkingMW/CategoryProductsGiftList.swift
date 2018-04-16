@@ -6,8 +6,21 @@
 //  Copyright © 2018 Liverpool. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import ObjectMapper
 
-class CategoryProductsGiftList: NSObject {
-
+public class CategoryProductsGiftList: Mappable {
+    
+    public var departmentId : String?
+    public var departmentName : String?
+    public var giftListItems : [GiftListItems]?
+    
+    public required init?(map: Map){
+    }
+    
+    public func mapping(map: Map){
+        departmentId <- map["departmentId"]
+        departmentName <- map["departmentName"]
+        giftListItems <- map["giftListItems"]
+    }
 }
