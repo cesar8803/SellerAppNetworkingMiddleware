@@ -474,5 +474,18 @@ public class AsyncClientMW
         }
         return jsonString as String
     }
+    
+    // ***** GET NEW GIFT REGISTRY ***** //
+    
+    public class func getNewPLPGiftRegistry(eventNumber:String, searchType: String, filter: String, orderBy: String, completion:@escaping (_ dataResponse:EventDetail) -> Void, completionError:@escaping ErrorStringHandler)
+    {
+        let params:Parameters = [searchType:eventNumber, "filterByCategory":filter, "orderBy":orderBy]
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.newGiftRegistryPLP, parameters: params, completion: { (eventList:EventDetail) in
+            completion(eventList)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
 }
 
