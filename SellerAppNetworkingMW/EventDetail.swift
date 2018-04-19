@@ -12,22 +12,22 @@ import ObjectMapper
 public class EventDetail: Mappable {
     
     public var status : Status?
-    public var errorCode : String?
-    public var eventId : String?
-    public var siteId : String?
+    public var errorCode : Int?
+    public var eventId : Int?
     public var eventName : String?
     public var eventDate : String?
     public var eventCreatedDate : String?
     public var eventCategory : String?
     public var eventType : String?
     public var eventStatus : String?
-    public var preferredStoreId : String?
+    public var preferredStoreId : Int?
     public var preferredStoreName : String?
     public var eventWebSiteURL : String?
     public var eventImageURL : String?
     public var lastModifiedDate : String?
     public var eventOwners : [EventOwners]?
     public var categoryProductsGiftList : [CategoryProductsGiftList]?
+    public var listOfCategories : [String]?
     
     public required init?(map: Map){
     }
@@ -36,7 +36,6 @@ public class EventDetail: Mappable {
         status <- map["status"]
         errorCode <- map["errorCode"]
         eventId <- map["eventId"]
-        siteId <- map["siteId"]
         eventName <- map["eventName"]
         eventDate <- map["eventDate"]
         eventCreatedDate <- map["eventCreatedDate"]
@@ -50,6 +49,7 @@ public class EventDetail: Mappable {
         lastModifiedDate <- map["lastModifiedDate"]
         eventOwners <- map["eventOwners"]
         categoryProductsGiftList <- map["categoryProductsGiftList"]
+        listOfCategories <- map["listOfCategories"]
     }
     
 }
