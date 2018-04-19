@@ -28,6 +28,7 @@ class BackendUrlManager : NSObject{
         case remissionCC
         case remissionMDR
         case newGiftRegistryPLP
+        case searchAdvance
     }
     
     fileprivate static let SERVICE_CONTEXT:[String] = [
@@ -47,7 +48,8 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/remision-domicilio",                           //RemissionCE
         "Middleware/rest/service/remision-click-collect",                       //RemissionCC
         "Middleware/rest/service/remision-mesa-regalos",                        //RemissionMDR
-        "appclienteservices/services/v2/gifttable/search/getEventDetail?",       //NewGiftRegsitryPLP
+        "appclienteservices/services/v2/gifttable/search/getEventDetail?",      //NewGiftRegsitryPLP
+        "appclienteservices/services/v2/gifttable/search/getEventsBySearchableAdvance?", //SearchAdvance
     ]
     
     // The array of all the services url's.

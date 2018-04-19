@@ -487,5 +487,28 @@ public class AsyncClientMW
             completionError(msg)
         }
     }
+    
+    public class func getEventList(parameters:[String:Any], completion:@escaping (_ dataResponse:EventSearch) -> Void, completionError:@escaping ErrorStringHandler)
+    {
+        let nombre = "nombre"
+        let apellido = "apellido"
+        let apellido2 = "apellido2"
+        let tipoDeEvento = "tipoDeEvento"
+        let fechaDeEvento = "fechaDeEvento"
+        
+        var params:Parameters = []
+        params["firstNameOrNickName"] = parameters[nombre]
+        params["lastNameOrPaternalName"] = parameters[apellido]
+        params["motherName"] = parameters[apellido2]
+        params["eventDate"] = parameters[fechaDeEvento] // yyyy/MM/dd HH:mm:ss
+        params["eventType"] = parameters[tipoDeEvento]
+        params["pageNum"] = "1"
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.searchAdvance, parameters: params, completion: { (eventsList:EventSearch) in
+            completion(eventsList)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
 }
 
