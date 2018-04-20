@@ -488,20 +488,21 @@ public class AsyncClientMW
         }
     }
     
-    public class func getEventList(parameters:[String:Any], completion:@escaping (_ dataResponse:EventSearch) -> Void, completionError:@escaping ErrorStringHandler)
+    public class func getEventList(
+        name : String,
+        lastName : String,
+        lastName2 : String?,
+        eventType : String?,
+        eventDate : String?,
+        completion:@escaping (_ dataResponse:EventSearch) -> Void,
+        completionError:@escaping ErrorStringHandler)
     {
-        let nombre = "nombre"
-        let apellido = "apellido"
-        let apellido2 = "apellido2"
-        let tipoDeEvento = "tipoDeEvento"
-        let fechaDeEvento = "fechaDeEvento"
-        
         var params:Parameters = [:]
-        params["firstNameOrNickName"] = parameters[nombre]
-        params["lastNameOrPaternalName"] = parameters[apellido]
-        params["motherName"] = parameters[apellido2]
-        params["eventDate"] = parameters[fechaDeEvento] // yyyy/MM/dd HH:mm:ss
-        params["eventType"] = parameters[tipoDeEvento]
+        params["firstNameOrNickName"] = name
+        params["lastNameOrPaternalName"] = lastName
+        params["motherName"] = lastName2 ?? ""
+        params["eventDate"] = eventType ?? "" // yyyy/MM/dd HH:mm:ss
+        params["eventType"] = eventDate ?? ""
         params["pageNum"] = "1"
         
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.searchAdvance, parameters: params, completion: { (eventsList:EventSearch) in
