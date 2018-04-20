@@ -501,8 +501,8 @@ public class AsyncClientMW
         params["firstNameOrNickName"] = name
         params["lastNameOrPaternalName"] = lastName
         params["motherName"] = lastName2 ?? ""
-        params["eventDate"] = eventType ?? "" // yyyy/MM/dd HH:mm:ss
-        params["eventType"] = eventDate ?? ""
+        params["eventDate"] = eventDate ?? "" // yyyy/MM/dd HH:mm:ss
+        params["eventType"] = eventType ?? ""
         params["pageNum"] = "1"
         
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.searchAdvance, parameters: params, completion: { (eventsList:EventSearch) in
