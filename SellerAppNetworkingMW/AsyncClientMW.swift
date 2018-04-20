@@ -496,7 +496,7 @@ public class AsyncClientMW
         let tipoDeEvento = "tipoDeEvento"
         let fechaDeEvento = "fechaDeEvento"
         
-        var params:Parameters = []
+        var params:Parameters = [:]
         params["firstNameOrNickName"] = parameters[nombre]
         params["lastNameOrPaternalName"] = parameters[apellido]
         params["motherName"] = parameters[apellido2]
