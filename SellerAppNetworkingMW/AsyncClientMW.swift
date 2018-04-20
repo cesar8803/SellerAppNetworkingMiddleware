@@ -488,12 +488,13 @@ public class AsyncClientMW
         }
     }
     
+    //MARK: - Get Events List Advance
     public class func getEventList(
         name : String,
         lastName : String,
         lastName2 : String?,
         eventType : String?,
-        eventDate : String?,
+        eventDate : String?,  // yyyy/MM/dd
         completion:@escaping (_ dataResponse:EventSearch) -> Void,
         completionError:@escaping ErrorStringHandler)
     {
@@ -501,7 +502,7 @@ public class AsyncClientMW
         params["firstNameOrNickName"] = name
         params["lastNameOrPaternalName"] = lastName
         params["motherName"] = lastName2 ?? ""
-        params["eventDate"] = eventDate ?? "" // yyyy/MM/dd HH:mm:ss
+        params["eventDate"] = eventDate ?? "" // yyyy/MM/dd
         params["eventType"] = eventType ?? ""
         params["pageNum"] = "1"
         
