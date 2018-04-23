@@ -13,7 +13,7 @@ public class EventDetail: Mappable {
     
     public var status : Status?
     public var errorCode : Int?
-    public var eventId : Int?
+    public var eventId : String?
     public var eventName : String?
     public var eventDate : String?
     public var eventCreatedDate : String?
