@@ -477,7 +477,7 @@ public class AsyncClientMW
     
     // ***** GET NEW GIFT REGISTRY ***** //
     
-    public class func getNewPLPGiftRegistry(eventNumber:String, searchType: String, filter: String, orderBy: String, completion:@escaping (_ dataResponse:EventDetail) -> Void, completionError:@escaping ErrorStringHandler)
+    public class func getNewPLPGiftRegistry(eventNumber:String, searchType: String, filter: [String], orderBy: String, completion:@escaping (_ dataResponse:EventDetail) -> Void, completionError:@escaping ErrorStringHandler)
     {
         let params:Parameters = [searchType:eventNumber, "filterByCategory":filter, "orderBy":orderBy]
         
