@@ -477,9 +477,9 @@ public class AsyncClientMW
     
     // ***** GET NEW GIFT REGISTRY ***** //
     
-    public class func getNewPLPGiftRegistry(eventNumber:String, searchType: String, filter: String, orderBy: String, completion:@escaping (_ dataResponse:EventDetail) -> Void, completionError:@escaping ErrorStringHandler)
+    public class func getNewPLPGiftRegistry(eventNumber:String, searchType: String, filter: String, orderBy: String, terminalCode: String, storeCode: String, completion:@escaping (_ dataResponse:EventDetail) -> Void, completionError:@escaping ErrorStringHandler)
     {
-        let params:Parameters = [searchType:eventNumber, "filterByCategory":filter, "orderBy":orderBy]
+        let params:Parameters = [searchType:eventNumber, "filterByCategory":filter, "orderBy":orderBy, "terminal-code":terminalCode, "store-code":storeCode]
         
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.newGiftRegistryPLP, parameters: params, completion: { (eventList:EventDetail) in
             completion(eventList)
@@ -494,7 +494,7 @@ public class AsyncClientMW
         lastName : String,
         lastName2 : String?,
         eventType : String?,
-        eventDate : String?,  // yyyy/MM/dd
+        eventDate : String?,terminalCode: String, storeCode: String,  // yyyy/MM/dd
         completion:@escaping (_ dataResponse:EventSearch) -> Void,
         completionError:@escaping ErrorStringHandler)
     {
@@ -505,6 +505,8 @@ public class AsyncClientMW
         params["eventDate"] = eventDate ?? "" // yyyy/MM/dd
         params["eventType"] = eventType ?? ""
         params["pageNum"] = "1"
+        params["terminal-code"] = terminalCode
+        params["store-code"] = storeCode
         
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.searchAdvance, parameters: params, completion: { (eventsList:EventSearch) in
             completion(eventsList)

@@ -48,8 +48,8 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/remision-domicilio",                           //RemissionCE
         "Middleware/rest/service/remision-click-collect",                       //RemissionCC
         "Middleware/rest/service/remision-mesa-regalos",                        //RemissionMDR
-        "appclienteservices/services/v2/gifttable/search/getEventDetail?",      //NewGiftRegsitryPLP
-        "appclienteservices/services/v2/gifttable/search/getEventsBySearchableAdvance?", //SearchAdvance
+        "Middleware/rest/service/v1/gifttable/getEventDetail?",                 //NewGiftRegsitryPLP
+        "Middleware/rest/service/v1/gifttable/getEventsBySearchableAdvance?",   //SearchAdvance
     ]
     
     // The array of all the services url's.
