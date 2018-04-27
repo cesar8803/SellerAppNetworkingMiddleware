@@ -489,7 +489,7 @@ public class AsyncClientMW
     }
     
     //MARK: - Get Event Detail passing from MiddleWare
-    public class func getNewPLPGiftRegistry(
+    public class func getEventDetail(
         eventId     : String,
         categoryId  : String,
         priceRange  : String,
@@ -507,7 +507,7 @@ public class AsyncClientMW
                                  "terminal-code":terminalCode,
                                  "store-code":storeCode]
         
-        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.newGiftRegistryPLP, parameters: params, completion: { (eventList:EventSearchDetail) in
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.newSearchDetail, parameters: params, completion: { (eventList:EventSearchDetail) in
             completion(eventList)
         }) { (msg) in
             completionError(msg)
@@ -515,7 +515,7 @@ public class AsyncClientMW
     }
     
     //MARK: - Get Event Detail by-passing MiddleWare
-    public class func getNewPLPGiftRegistry(
+    public class func getEventDetail(
         eventId     : String,
         categoryId  : String,
         priceRange  : String,
@@ -529,7 +529,7 @@ public class AsyncClientMW
                                  "currentPage":currentPage ?? "1",
                                  "isShowAll":isShowAll]
         
-        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.newGiftRegistryPLP, parameters: params, completion: { (eventList:EventSearchDetail) in
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.newSearchDetail, parameters: params, completion: { (eventList:EventSearchDetail) in
             completion(eventList)
         }) { (msg) in
             completionError(msg)
