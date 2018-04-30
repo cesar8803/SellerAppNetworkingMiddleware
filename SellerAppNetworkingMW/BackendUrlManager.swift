@@ -50,7 +50,7 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/remision-click-collect",                       //RemissionCC
         "Middleware/rest/service/remision-mesa-regalos",                        //RemissionMDR
         "Middleware/rest/service/v1/gifttable/getEventDetail?",                 //NewGiftRegsitryPLP
-        "Middleware/rest/service/v1/gifttable/search/getGiftListGuestView?",    //newSearchDetail
+        "Middleware/rest/service/v1/gifttable/getGiftListGuestView?",           //newSearchDetail
         "Middleware/rest/service/v1/gifttable/getEventsBySearchableAdvance?",   //SearchAdvance
     ]
     
