@@ -28,6 +28,7 @@ public class EventDetail: Mappable {
     public var eventOwners : [EventOwners]?
     public var categoryProductsGiftList : [CategoryProductsGiftList]?
     public var listOfCategories : [String]?
+    public var addressInfo : [AddressInfo]?
     
     public required init?(map: Map){
     }
@@ -50,6 +51,7 @@ public class EventDetail: Mappable {
         eventOwners <- map["eventOwners"]
         categoryProductsGiftList <- map["categoryProductsGiftList"]
         listOfCategories <- map["listOfCategories"]
+        addressInfo <- map["addressInfo"]
     }
     
 }
