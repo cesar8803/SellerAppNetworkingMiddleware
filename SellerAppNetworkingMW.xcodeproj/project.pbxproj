@@ -87,6 +87,7 @@
 		B517F27B20850EAF00194972 /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517F27A20850EAF00194972 /* EventDetail.swift */; };
 		B517F27D2085112500194972 /* EventSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517F27C2085112500194972 /* EventSearch.swift */; };
 		B517F27F2085122B00194972 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517F27E2085122B00194972 /* Events.swift */; };
+		B51B56512097CD5800C6102A /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B56502097CD5800C6102A /* Address.swift */; };
 		F41CBB6620938F200002452B /* EventSearchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CBB5B20938F1F0002452B /* EventSearchDetail.swift */; };
 		F41CBB6720938F200002452B /* EventInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CBB5C20938F1F0002452B /* EventInfo.swift */; };
 		F41CBB6820938F200002452B /* CelebratedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CBB5D20938F200002452B /* CelebratedList.swift */; };
@@ -201,6 +202,7 @@
 		B517F27A20850EAF00194972 /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
 		B517F27C2085112500194972 /* EventSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSearch.swift; sourceTree = "<group>"; };
 		B517F27E2085122B00194972 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		B51B56502097CD5800C6102A /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		D7D3AB2DC56018663124B01D /* Pods_SellerAppNetworkingMW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SellerAppNetworkingMW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED9284AA61F2EC8CF65C007 /* Pods-SellerAppNetworkingMW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellerAppNetworkingMW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SellerAppNetworkingMW/Pods-SellerAppNetworkingMW.debug.xcconfig"; sourceTree = "<group>"; };
 		F41CBB5B20938F1F0002452B /* EventSearchDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSearchDetail.swift; sourceTree = "<group>"; };
@@ -460,6 +462,7 @@
 				B517F27A20850EAF00194972 /* EventDetail.swift */,
 				B517F27C2085112500194972 /* EventSearch.swift */,
 				B517F27E2085122B00194972 /* Events.swift */,
+				B51B56502097CD5800C6102A /* Address.swift */,
 			);
 			name = NewGiftRegistry;
 			sourceTree = "<group>";
@@ -679,6 +682,7 @@
 				F41CBB6A20938F200002452B /* PurchaseInfo.swift in Sources */,
 				0046728A1FBBBC3500A91A29 /* GetConsultaSkuPoolHeaderMW.swift in Sources */,
 				F41CBB6C20938F200002452B /* CategoryList.swift in Sources */,
+				B51B56512097CD5800C6102A /* Address.swift in Sources */,
 				8353927C1F631F8800FD3FFC /* PlpFlags.swift in Sources */,
 				2B396EB61EFF5CEE008194C8 /* CategoryInfo.swift in Sources */,
 				2B396EB81EFF5CEE008194C8 /* BackendUrlManager.swift in Sources */,
