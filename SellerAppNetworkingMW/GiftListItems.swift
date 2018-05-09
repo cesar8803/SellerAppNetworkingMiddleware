@@ -13,7 +13,7 @@ public class GiftListItems: Mappable {
  
     public var giftListItemId : String?
     public var skuId : String?
-    public var eventRecipientIndex : Int?
+    public var eventRecipientIndex : String?
     public var siteId : String?
     public var displayName : String?
     public var description : String?
