@@ -16,7 +16,7 @@ public class EventOwners: Mappable {
     public var lastName : String?
     public var profileId : String?
     public var ownerId : String?
-    public var addressArray : [Address]?
+    public var address : [Address]?
     
     public required init?(map: Map){
     }
@@ -27,6 +27,6 @@ public class EventOwners: Mappable {
         lastName <- map["lastName"]
         profileId <- map["profileId"]
         ownerId <- map["ownerId"]
-        addressArray <- map["addressArray"]
+        address <- map["address"]
     }
 }
