@@ -187,6 +187,7 @@ public class AsyncClientMW
         Alamofire.request(url, method: .get, parameters: parameters).responseObject { (response: DataResponse<T>) in
             if response.result.isSuccess{
                 let responseService = response.result.value
+                print(response.description)
                 completion(responseService!)
             } else {
                 errorCompletition((response.result.error?.localizedDescription)!)
@@ -482,18 +483,32 @@ public class AsyncClientMW
         let params:Parameters = [searchType:eventNumber, "filterByCategory":filter, "orderBy":orderBy, "terminal-code":terminalCode, "store-code":storeCode]
         
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.newGiftRegistryPLP, parameters: params, completion: { (eventList:EventDetail) in
-            completion(eventList)
+            if eventList.status != nil && eventList.status!.statusCode == 0{
+                completion(eventList)
+            }else {
+                completionError("Error")
+            }
+            
         }) { (msg) in
             completionError(msg)
         }
     }
     
-    public class func getNewPLPGiftRegistry(eventNumber:String, searchType: String, filter: String, orderBy: String, completion:@escaping (_ dataResponse:EventDetail) -> Void, completionError:@escaping ErrorStringHandler)
+    public class func getNewPLPGiftRegistry(
+        eventNumber:String,
+        searchType: String,
+        filter: String,
+        orderBy: String,
+        completion: @escaping (_ dataResponse:EventDetail) -> Void,
+        completionError: @escaping ErrorStringHandler)
     {
         let params:Parameters = [searchType:eventNumber, "filterByCategory":filter, "orderBy":orderBy]
         
-        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.newGiftRegistryPLP, parameters: params, completion: { (eventList:EventDetail) in
-            completion(eventList)
+        AsyncClientMW.getRequestExecute(
+            BackendUrlManager.ServiceUrlsId.newGiftRegistryPLP,
+            parameters: params,
+            completion: { (eventList:EventDetail) in
+                completion(eventList)
         }) { (msg) in
             completionError(msg)
         }
@@ -518,8 +533,12 @@ public class AsyncClientMW
                                  "terminal-code":terminalCode,
                                  "store-code":storeCode]
         
-        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.newSearchDetail, parameters: params, completion: { (eventList:EventSearchDetail) in
-            completion(eventList)
+        AsyncClientMW.getRequestExecute(
+            BackendUrlManager.ServiceUrlsId.newSearchDetail,
+            parameters: params,
+            completion: {
+                (eventList:EventSearchDetail) in
+                completion(eventList)
         }) { (msg) in
             completionError(msg)
         }
@@ -571,7 +590,7 @@ public class AsyncClientMW
         params["resultsPerPage"]            = resultsPerpage != nil && resultsPerpage != "" ? resultsPerpage! :"30"
         params["terminal-code"] = terminalCode
         params["store-code"] = storeCode
-
+        
         
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.searchAdvance, parameters: params, completion: { (eventsList:EventSearch) in
             completion(eventsList)
