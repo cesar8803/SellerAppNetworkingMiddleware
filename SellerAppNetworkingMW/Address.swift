@@ -11,7 +11,7 @@ import ObjectMapper
 
 public class Address: Mappable {
 
-    public var firstName : Bool?
+    public var firstName : String?
     public var middleName : String?
     public var lastName : String?
     public var address1 : String?
