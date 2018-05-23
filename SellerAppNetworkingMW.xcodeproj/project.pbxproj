@@ -99,7 +99,7 @@
 		F41CBB6F20938F200002452B /* ItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CBB6420938F200002452B /* ItemInfo.swift */; };
 		F41CBB7020938F200002452B /* CompanionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CBB6520938F200002452B /* CompanionInfo.swift */; };
 		F45069E2205B3C3C001D2864 /* MiddlewareShippingProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069DB205B3C3C001D2864 /* MiddlewareShippingProduct.swift */; };
-		F45069E3205B3C3C001D2864 /* WorklightShippingAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069DC205B3C3C001D2864 /* WorklightShippingAddress.swift */; };
+		F45069E3205B3C3C001D2864 /* MiddlewareShippingAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069DC205B3C3C001D2864 /* MiddlewareShippingAddress.swift */; };
 		F45069E4205B3C3C001D2864 /* CreaActualizaOVREMResponseMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069DD205B3C3C001D2864 /* CreaActualizaOVREMResponseMW.swift */; };
 		F45069E5205B3C3C001D2864 /* ResponseCrearOrdenMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069DE205B3C3C001D2864 /* ResponseCrearOrdenMW.swift */; };
 		F45069E6205B3C3C001D2864 /* ResponseCreaActualizaOVREMMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069DF205B3C3C001D2864 /* ResponseCreaActualizaOVREMMW.swift */; };
@@ -216,7 +216,7 @@
 		F41CBB6420938F200002452B /* ItemInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemInfo.swift; sourceTree = "<group>"; };
 		F41CBB6520938F200002452B /* CompanionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanionInfo.swift; sourceTree = "<group>"; };
 		F45069DB205B3C3C001D2864 /* MiddlewareShippingProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareShippingProduct.swift; sourceTree = "<group>"; };
-		F45069DC205B3C3C001D2864 /* WorklightShippingAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorklightShippingAddress.swift; sourceTree = "<group>"; };
+		F45069DC205B3C3C001D2864 /* MiddlewareShippingAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareShippingAddress.swift; sourceTree = "<group>"; };
 		F45069DD205B3C3C001D2864 /* CreaActualizaOVREMResponseMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreaActualizaOVREMResponseMW.swift; sourceTree = "<group>"; };
 		F45069DE205B3C3C001D2864 /* ResponseCrearOrdenMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCrearOrdenMW.swift; sourceTree = "<group>"; };
 		F45069DF205B3C3C001D2864 /* ResponseCreaActualizaOVREMMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCreaActualizaOVREMMW.swift; sourceTree = "<group>"; };
@@ -497,7 +497,7 @@
 			isa = PBXGroup;
 			children = (
 				F45069DB205B3C3C001D2864 /* MiddlewareShippingProduct.swift */,
-				F45069DC205B3C3C001D2864 /* WorklightShippingAddress.swift */,
+				F45069DC205B3C3C001D2864 /* MiddlewareShippingAddress.swift */,
 				F45069DD205B3C3C001D2864 /* CreaActualizaOVREMResponseMW.swift */,
 				F45069DE205B3C3C001D2864 /* ResponseCrearOrdenMW.swift */,
 				F45069DF205B3C3C001D2864 /* ResponseCreaActualizaOVREMMW.swift */,
@@ -708,7 +708,7 @@
 				2B1310EB1F016ECF00611EC9 /* StackBanners.swift in Sources */,
 				A96A694A1F20676100407A82 /* PDPLevel.swift in Sources */,
 				552B99441F1D1E8F00F1E622 /* Skuarray.swift in Sources */,
-				F45069E3205B3C3C001D2864 /* WorklightShippingAddress.swift in Sources */,
+				F45069E3205B3C3C001D2864 /* MiddlewareShippingAddress.swift in Sources */,
 				2B3BE25A1F306F8C00726D14 /* SKUsImages.swift in Sources */,
 				2B3C78381F02AE9100FAB4BA /* PLPLevel.swift in Sources */,
 				2B3BE25C1F306FB900726D14 /* Sku.swift in Sources */,
