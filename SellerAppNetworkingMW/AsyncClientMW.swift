@@ -188,7 +188,7 @@ public class AsyncClientMW
             if response.result.isSuccess{
                 let responseService = response.result.value
                 print(response.description)
-                if let mwResponse  = response as MWResponse{
+                if let mwResponse  = MWResponse(response) {
                     // Caso la respuesta es de tipo MWResponse
                     if mwResponse.errors.count > 0{
                         // Caso la respuesta tiene error middleware
