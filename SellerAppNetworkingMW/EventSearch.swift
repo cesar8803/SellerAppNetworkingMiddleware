@@ -19,10 +19,11 @@ public class EventSearch: MWResponse {
     public var status : Status?
     
     public required init?(map: Map){
-         super.init(map: map)
+        super.init(map: map)
     }
     
-    public func mapping(map: Map){
+    override public func mapping(map: Map){
+        self.mapping(map: map)
         errorCode <- map["errorCode"]
         totalResultsMatchedCount <- map["totalResultsMatchedCount"]
         currentPageNumber <- map["currentPageNumber"]
@@ -31,3 +32,4 @@ public class EventSearch: MWResponse {
         status <- map["status"]
     }
 }
+

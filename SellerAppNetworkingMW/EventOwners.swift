@@ -21,8 +21,7 @@ public class EventOwners: Mappable {
     public required init?(map: Map){
     }
     
-    override public func mapping(map: Map){
-        super.mapping(map:map)
+    public func mapping(map: Map){
         primaryOwner <- map["primaryOwner"]
         firstName <- map["firstName"]
         lastName <- map["lastName"]
