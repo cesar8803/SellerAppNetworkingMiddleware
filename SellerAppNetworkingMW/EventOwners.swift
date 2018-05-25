@@ -18,8 +18,9 @@ public class EventOwners: MWResponse {
     public var ownerId : String?
     public var address : [Address]?
     
-//    public required init?(map: Map){
-//    }
+    public required init?(map: Map){
+        super.init(map: map)
+    }
     
     override public func mapping(map: Map){
         super.mapping(map:map)

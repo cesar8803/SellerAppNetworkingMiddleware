@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class MWResponse: Mappable {
+public class MWResponse: Mappable {
     
     public var errors: [MWError]?
     
@@ -20,7 +20,7 @@ class MWResponse: Mappable {
     }
 }
 
-class MWError : Mappable {
+public class MWError : Mappable {
     public var  descError, codError: String?
     
     required  public init?(map: Map){
