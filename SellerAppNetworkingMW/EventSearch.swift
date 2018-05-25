@@ -23,7 +23,7 @@ public class EventSearch: MWResponse {
     }
     
     override public func mapping(map: Map){
-        self.mapping(map: map)
+        super.mapping(map: map)
         errorCode <- map["errorCode"]
         totalResultsMatchedCount <- map["totalResultsMatchedCount"]
         currentPageNumber <- map["currentPageNumber"]

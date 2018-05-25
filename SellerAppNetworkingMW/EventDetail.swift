@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-public class EventDetail: Mappable {
+public class EventDetail: MWResponse {
     
     public var status : Status?
     public var errorCode : Int?
@@ -30,9 +30,11 @@ public class EventDetail: Mappable {
     public var listOfCategories : [String]?
     
     public required init?(map: Map){
+        super.init(map: map)
     }
     
     public func mapping(map: Map){
+        super.mapping(map: map)
         status <- map["status"]
         errorCode <- map["errorCode"]
         eventId <- map["eventId"]
