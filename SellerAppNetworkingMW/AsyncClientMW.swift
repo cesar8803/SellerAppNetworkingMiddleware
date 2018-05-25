@@ -191,7 +191,7 @@ public class AsyncClientMW
                 if responseService is MWResponse  {
                     // Caso la respuesta es de tipo MWResponse
                     let mwResponse : MWResponse = responseService as! MWResponse
-                    if if mwResponse.errors != nil && mwResponse.errors!.count > 0{
+                    if mwResponse.errors != nil && mwResponse.errors!.count > 0{
                         // Caso la respuesta tiene error middleware
                         var errorsString : String = ""
                         for mwError in mwResponse.errors!{
