@@ -187,7 +187,26 @@ public class AsyncClientMW
         Alamofire.request(url, method: .get, parameters: parameters).responseObject { (response: DataResponse<T>) in
             if response.result.isSuccess{
                 let responseService = response.result.value
-                completion(responseService!)
+                print(response.description)
+                if responseService is MWResponse  {
+                    // Caso la respuesta es de tipo MWResponse
+                    let mwResponse : MWResponse = responseService as! MWResponse
+                    if mwResponse.errors != nil && mwResponse.errors!.count > 0{
+                        // Caso la respuesta tiene error middleware
+                        var errorsString : String = ""
+                        for mwError in mwResponse.errors!{
+                            errorsString = (errorsString == "" ? "":"\n") + errorsString  + mwError.descError!
+                        }
+                        errorCompletition(errorsString)
+                    }else{
+                        // Caso la respuesta no tiene error middleware
+                        completion(responseService!)
+                    }
+                }else{
+                    // Caso la respuesta no es de tipo MWResponse
+                    completion(responseService!)
+                }
+                
             } else {
                 errorCompletition((response.result.error?.localizedDescription)!)
             }
@@ -473,6 +492,158 @@ public class AsyncClientMW
             jsonString = "[\(jsonString)]" as NSString
         }
         return jsonString as String
+    }
+    
+    // ***** GET NEW GIFT REGISTRY ***** //
+    
+    public class func getNewPLPGiftRegistry(eventNumber:String, searchType: String, filter: String, orderBy: String, terminalCode: String, storeCode: String, completion:@escaping (_ dataResponse:EventDetail) -> Void, completionError:@escaping ErrorStringHandler)
+    {
+        let params:Parameters = [searchType:eventNumber, "filterByCategory":filter, "orderBy":orderBy, "terminal-code":terminalCode, "store-code":storeCode]
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.newGiftRegistryPLP, parameters: params, completion: { (eventList:EventDetail) in
+            if eventList.status != nil && eventList.status!.statusCode == 0{
+                completion(eventList)
+            }else {
+                completionError("Error")
+            }
+            
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
+    
+    public class func getNewPLPGiftRegistry(
+        eventNumber:String,
+        searchType: String,
+        filter: String,
+        orderBy: String,
+        completion: @escaping (_ dataResponse:EventDetail) -> Void,
+        completionError: @escaping ErrorStringHandler)
+    {
+        let params:Parameters = [searchType:eventNumber, "filterByCategory":filter, "orderBy":orderBy]
+        
+        AsyncClientMW.getRequestExecute(
+            BackendUrlManager.ServiceUrlsId.newGiftRegistryPLP,
+            parameters: params,
+            completion: { (eventList:EventDetail) in
+                completion(eventList)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
+    
+    //MARK: - Get Event Detail passing from MiddleWare
+    public class func getEventDetail(
+        eventId     : String,
+        categoryId  : String,
+        priceRange  : String,
+        currentPage : String?,
+        isShowAll   : Bool,
+        terminalCode: String,
+        storeCode   : String,
+        completion  :@escaping (_ dataResponse:EventSearchDetail) -> Void, completionError:@escaping ErrorStringHandler)
+    {
+        let params:Parameters = ["eventId":eventId,
+                                 "categoryId":categoryId,
+                                 "priceRange":priceRange,
+                                 "currentPage":currentPage ?? "1",
+                                 "isShowAll":isShowAll,
+                                 "terminal-code":terminalCode,
+                                 "store-code":storeCode]
+        
+        AsyncClientMW.getRequestExecute(
+            BackendUrlManager.ServiceUrlsId.newSearchDetail,
+            parameters: params,
+            completion: {
+                (eventList:EventSearchDetail) in
+                completion(eventList)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
+    
+    //MARK: - Get Event Detail by-passing MiddleWare
+    public class func getEventDetail(
+        eventId     : String,
+        categoryId  : String,
+        priceRange  : String,
+        currentPage : String?,
+        isShowAll   : Bool,
+        completion  :@escaping (_ dataResponse:EventSearchDetail) -> Void, completionError:@escaping ErrorStringHandler)
+    {
+        let params:Parameters = ["eventId":eventId,
+                                 "categoryId":categoryId,
+                                 "priceRange":priceRange,
+                                 "currentPage":currentPage ?? "1",
+                                 "isShowAll":isShowAll]
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.newSearchDetail, parameters: params, completion: { (eventList:EventSearchDetail) in
+            completion(eventList)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
+    
+    //MARK: - Get Events List Advance passing from MiddleWare
+    public class func getEventList(
+        name                : String,
+        lastName            : String,
+        lastName2           : String?,
+        eventType           : String?,
+        eventDate           : String?,  // yyyy/MM/dd
+        pageNum             : String?,
+        resultsPerpage      : String?,
+        terminalCode        : String,
+        storeCode           : String,
+        completion:@escaping (_ dataResponse:EventSearch) -> Void,
+        completionError:@escaping ErrorStringHandler)
+    {
+        var params:Parameters = [:]
+        params["firstNameOrNickName"]       = name
+        params["lastNameOrPaternalName"]    = lastName
+        params["motherName"]                = lastName2 ?? ""
+        params["eventDate"]                 = eventDate ?? "" // yyyy/MM/dd
+        params["eventType"]                 = eventType ?? ""
+        params["pageNum"]                   = pageNum != nil && pageNum != "" ? pageNum :"1"
+        params["resultsPerPage"]            = resultsPerpage != nil && resultsPerpage != "" ? resultsPerpage! :"30"
+        params["terminal-code"] = terminalCode
+        params["store-code"] = storeCode
+        
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.searchAdvance, parameters: params, completion: { (eventsList:EventSearch) in
+            completion(eventsList)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
+    
+    //MARK: - Get Events List Advance by-passing MiddleWare
+    public class func getEventList(
+        name                : String,
+        lastName            : String,
+        lastName2           : String?,
+        eventType           : String?,
+        eventDate           : String?,  // yyyy/MM/dd
+        pageNum             : String?,
+        resultsPerpage      : String?,
+        completion:@escaping (_ dataResponse:EventSearch) -> Void,
+        completionError:@escaping ErrorStringHandler)
+    {
+        var params:Parameters = [:]
+        params["firstNameOrNickName"]       = name
+        params["lastNameOrPaternalName"]    = lastName
+        params["motherName"]                = lastName2 ?? ""
+        params["eventDate"]                 = eventDate ?? "" // yyyy/MM/dd
+        params["eventType"]                 = eventType ?? ""
+        params["pageNum"]                   = pageNum != nil && pageNum != "" ? pageNum :"1"
+        params["resultsPerPage"]            = resultsPerpage != nil && resultsPerpage != "" ? resultsPerpage! :"30"
+        
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.searchAdvance, parameters: params, completion: { (eventsList:EventSearch) in
+            completion(eventsList)
+        }) { (msg) in
+            completionError(msg)
+        }
     }
 }
 
