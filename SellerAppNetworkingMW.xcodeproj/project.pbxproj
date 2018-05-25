@@ -88,6 +88,7 @@
 		B517F27D2085112500194972 /* EventSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517F27C2085112500194972 /* EventSearch.swift */; };
 		B517F27F2085122B00194972 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517F27E2085122B00194972 /* Events.swift */; };
 		B51B56512097CD5800C6102A /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B56502097CD5800C6102A /* Address.swift */; };
+		F41A637220B74F2C00917538 /* MWResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A637120B74F2C00917538 /* MWResponse.swift */; };
 		F41CBB6620938F200002452B /* EventSearchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CBB5B20938F1F0002452B /* EventSearchDetail.swift */; };
 		F41CBB6720938F200002452B /* EventInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CBB5C20938F1F0002452B /* EventInfo.swift */; };
 		F41CBB6820938F200002452B /* CelebratedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CBB5D20938F200002452B /* CelebratedList.swift */; };
@@ -205,6 +206,7 @@
 		B51B56502097CD5800C6102A /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		D7D3AB2DC56018663124B01D /* Pods_SellerAppNetworkingMW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SellerAppNetworkingMW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED9284AA61F2EC8CF65C007 /* Pods-SellerAppNetworkingMW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellerAppNetworkingMW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SellerAppNetworkingMW/Pods-SellerAppNetworkingMW.debug.xcconfig"; sourceTree = "<group>"; };
+		F41A637120B74F2C00917538 /* MWResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWResponse.swift; sourceTree = "<group>"; };
 		F41CBB5B20938F1F0002452B /* EventSearchDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSearchDetail.swift; sourceTree = "<group>"; };
 		F41CBB5C20938F1F0002452B /* EventInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInfo.swift; sourceTree = "<group>"; };
 		F41CBB5D20938F200002452B /* CelebratedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelebratedList.swift; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 				5593FE031F1FBBF20012E8B2 /* direccionDestinatario.swift */,
 				2B1310F11F01709B00611EC9 /* Home */,
 				F7147C061F560A7200EC2C23 /* MiddlewareConnection.swift */,
+				F41A637120B74F2C00917538 /* MWResponse.swift */,
 			);
 			name = AsyncClientMWObjects;
 			sourceTree = "<group>";
@@ -694,6 +697,7 @@
 				A9CA18C71F7C53A800F9ACBE /* Porcentaje.swift in Sources */,
 				A9A0EE161F0CAC190092DA45 /* ListaEventoResponse.swift in Sources */,
 				B517F2712085081800194972 /* EventOwners.swift in Sources */,
+				F41A637220B74F2C00917538 /* MWResponse.swift in Sources */,
 				2B1198611F01B06D00C7A1FC /* Refinement.swift in Sources */,
 				A95358001F2BDDCA00369111 /* DynamicAttributes.swift in Sources */,
 				A96A694D1F2068FB00407A82 /* CarruselDummy.swift in Sources */,

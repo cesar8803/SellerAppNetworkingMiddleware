@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-public class EventOwners: Mappable {
+public class EventOwners: MWResponse {
     
     public var primaryOwner : Bool?
     public var firstName : String?
@@ -18,10 +18,11 @@ public class EventOwners: Mappable {
     public var ownerId : String?
     public var address : [Address]?
     
-    public required init?(map: Map){
-    }
+//    public required init?(map: Map){
+//    }
     
-    public func mapping(map: Map){
+    override public func mapping(map: Map){
+        super.mapping(map:map)
         primaryOwner <- map["primaryOwner"]
         firstName <- map["firstName"]
         lastName <- map["lastName"]
