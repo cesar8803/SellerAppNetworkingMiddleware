@@ -188,13 +188,14 @@ public class AsyncClientMW
             if response.result.isSuccess{
                 let responseService = response.result.value
                 print(response.description)
-                if let mwResponse  = MWResponse(response) {
+                if responseService is MWResponse  {
                     // Caso la respuesta es de tipo MWResponse
-                    if mwResponse.errors.count > 0{
+                    let mwResponse : MWResponse = responseService as! MWResponse
+                    if mwResponse.errors!.count > 0{
                         // Caso la respuesta tiene error middleware
                         var errorsString : String = ""
-                        for mwError in mwResponse.errors{
-                            errorsString = (errorsString == "" ? "":"\n") + errorsString  + mwError.descError ?? ""
+                        for mwError in mwResponse.errors!{
+                            errorsString = (errorsString == "" ? "":"\n") + errorsString  + mwError.descError!
                         }
                         errorCompletition(errorsString)
                     }else{
