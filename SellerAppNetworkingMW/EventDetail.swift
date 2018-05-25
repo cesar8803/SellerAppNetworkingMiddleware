@@ -33,7 +33,7 @@ public class EventDetail: MWResponse {
         super.init(map: map)
     }
     
-    public func mapping(map: Map){
+    override public func mapping(map: Map){
         super.mapping(map: map)
         status <- map["status"]
         errorCode <- map["errorCode"]
