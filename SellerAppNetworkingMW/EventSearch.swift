@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-public class EventSearch: Mappable {
+public class EventSearch: MWResponse {
     
     public var errorCode : String?
     public var totalResultsMatchedCount : Int?
@@ -19,6 +19,7 @@ public class EventSearch: Mappable {
     public var status : Status?
     
     public required init?(map: Map){
+         super.init(map: map)
     }
     
     public func mapping(map: Map){

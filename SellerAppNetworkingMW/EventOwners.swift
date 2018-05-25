@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-public class EventOwners: MWResponse {
+public class EventOwners: Mappable {
     
     public var primaryOwner : Bool?
     public var firstName : String?
@@ -19,7 +19,6 @@ public class EventOwners: MWResponse {
     public var address : [Address]?
     
     public required init?(map: Map){
-        super.init(map: map)
     }
     
     override public func mapping(map: Map){
