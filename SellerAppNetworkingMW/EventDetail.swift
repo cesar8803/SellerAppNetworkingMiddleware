@@ -12,7 +12,7 @@ import ObjectMapper
 public class EventDetail: MWResponse {
     
     public var status : Status?
-    public var errorCode : Sting?
+    public var errorCode : String?
     public var eventId : String?
     public var eventName : String?
     public var eventDate : String?
