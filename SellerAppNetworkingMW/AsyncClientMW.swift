@@ -195,7 +195,7 @@ public class AsyncClientMW
                         // Caso la respuesta tiene error middleware
                         var errorsString : String = ""
                         for mwError in mwResponse.errors!{
-                            errorsString = (errorsString == "" ? "":"\n") + errorsString  + mwError.descError!
+                            errorsString = (errorsString == ""  ? "":"\n") + errorsString  + (mwError.descError ?? "Error servicio.")
                         }
                         errorCompletition(errorsString)
                     }else{
