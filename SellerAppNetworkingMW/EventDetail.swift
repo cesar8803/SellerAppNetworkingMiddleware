@@ -12,7 +12,7 @@ import ObjectMapper
 public class EventDetail: MWResponse {
     
     public var status : Status?
-    public var errorCode : Int?
+    public var errorCode : Sting?
     public var eventId : String?
     public var eventName : String?
     public var eventDate : String?
@@ -36,7 +36,23 @@ public class EventDetail: MWResponse {
     override public func mapping(map: Map){
         super.mapping(map: map)
         status <- map["status"]
+        
         errorCode <- map["errorCode"]
+        if map["errorCode"].currentValue != nil
+        {
+            switch map["errorCode"].currentValue {
+            case (let v as String):
+                errorCode = v
+            case (let v as Int):
+                errorCode = String(v)
+            case (let v as Double):
+                errorCode = String(v)
+            default:
+                debugPrint("You should add another kind of data")
+            }
+            
+        }
+        
         eventId <- map["eventId"]
         eventName <- map["eventName"]
         eventDate <- map["eventDate"]
