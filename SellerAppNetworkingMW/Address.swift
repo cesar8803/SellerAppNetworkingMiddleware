@@ -64,7 +64,14 @@ public class Address: Mappable {
         businessPhoneCode <- map["businessPhoneCode"]
         otherColony <- map["otherColony"]
         nickName <- map["nickName"]
-        eventRecipientIndex <- map["eventRecipientIndex"]
+        switch map["eventRecipientIndex"].currentValue {
+        case (let v as String):
+            eventRecipientIndex = v
+        case (let v as Int):
+            eventRecipientIndex = String(v)
+        default:
+            debugPrint("You should add another kind of data")
+        }
         cellular <- map["cellular"]
         assignedToEvent <- map["assignedToEvent"]
         lastModifiedDate <- map["lastModifiedDate"]

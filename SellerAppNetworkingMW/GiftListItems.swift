@@ -36,7 +36,14 @@ public class GiftListItems: Mappable {
     public func mapping(map: Map){
         giftListItemId <- map["giftListItemId"]
         skuId <- map["skuId"]
-        eventRecipientIndex <- map["eventRecipientIndex"]
+        switch map["eventRecipientIndex"].currentValue {
+        case (let v as String):
+            eventRecipientIndex = v
+        case (let v as Int):
+            eventRecipientIndex = String(v)
+        default:
+            debugPrint("You should add another kind of data")
+        }
         siteId <- map["siteId"]
         displayName <- map["displayName"]
         description <- map["description"]

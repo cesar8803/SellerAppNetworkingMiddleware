@@ -116,7 +116,14 @@ public class ItemInfo: Mappable {
 		 material <- map["materiaL"]
 		 texture <- map["texture"]
 		 deliveryStatus <- map["deliveryStatus"]
-		 eventRecipientIndex <- map["eventRecipientIndex"]
+        switch map["eventRecipientIndex"].currentValue {
+        case (let v as String):
+            eventRecipientIndex = v
+        case (let v as Int):
+            eventRecipientIndex = String(v)
+        default:
+            debugPrint("You should add another kind of data")
+        }
 		 guestInfo <- map["guestInfo"]
 		 purchaseInfo <- map["purchaseInfo"]
 		 totalExpAmount <- map["totalExpAmount"]
