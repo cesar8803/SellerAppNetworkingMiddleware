@@ -19,6 +19,7 @@ public class GiftListItems: Mappable {
     public var description : String?
     public var quantityDesired : String?
     public var unitPrice : String?
+    public var maximumListPrice : String?
     public var favoriteChoice : String?
     public var giftType : String?
     public var createdDate : String?
@@ -49,6 +50,7 @@ public class GiftListItems: Mappable {
         description <- map["description"]
         quantityDesired <- map["quantityDesired"]
         unitPrice <- map["unitPrice"]
+        maximumListPrice <- map["maximumListPrice"]
         favoriteChoice <- map["favoriteChoice"]
         giftType <- map["giftType"]
         createdDate <- map["createdDate"]
