@@ -11,7 +11,7 @@ import ObjectMapper
 
 public class Records: Mappable{
     public var groupType: String?
-    public var productAvgRating: Int?
+    public var productAvgRating: Float?
     public var skuRepositoryId: String?
     public var smImage: String?
     public var promotionLabel: String?
