@@ -19,7 +19,7 @@ public class Sku: Mappable{
     public var lgImage: String?
     public var productType: String?
     public var department: String?
-    
+    public var productInfo : ProductInfo?
     public var benefits: Benefits?
     public var promotionLabel: String?
     public var xlImage: String?
@@ -53,6 +53,6 @@ public class Sku: Mappable{
         benefits <- map["benefits"]
         promotionLabel <- map["promotionLabel"]
         xlImage <- map["lgImage"]
-        
+        productInfo <- map["productInfo"]
     }
 }
