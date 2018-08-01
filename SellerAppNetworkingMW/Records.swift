@@ -35,7 +35,7 @@ public class Records: Mappable{
     public var displayName: String?
     public var scanProduct: Bool?
     public var productBestSeller: String?
-    public var isMarketPlace: String?
+    public var isMarketPlace: Bool?
     
     public init(){
     }
