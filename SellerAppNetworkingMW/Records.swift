@@ -34,6 +34,8 @@ public class Records: Mappable{
     public var salePrice: String?
     public var displayName: String?
     public var scanProduct: Bool?
+    public var productBestSeller: String?
+    public var isMarketPlace: String?
     
     public init(){
     }
@@ -47,6 +49,9 @@ public class Records: Mappable{
         smImage <- map["smImage"]
         promotionLabel <- map["promotionLabel"]
         productDisplayName <- map["productDisplayName"]
+        productBestSeller <- map["productBestSeller"]
+        isMarketPlace <- map["isMarketPlace"]
+        
         macVariantsInfo <- map["macVariantsInfo"]
         plpFlags <- map["plpFlags"]
         variantsColor <- map["variantsColor"]
