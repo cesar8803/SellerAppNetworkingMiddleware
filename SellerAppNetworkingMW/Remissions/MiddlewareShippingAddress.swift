@@ -9,6 +9,9 @@
 import UIKit
 
 public class MiddlewareShippingAddress: NSObject {
+    
+    public var firstName        : String = ""
+    public var lastName         : String = ""
     public var street           : String = ""
     public var number           : String = ""
     public var interiorNumber   : String = ""
@@ -37,6 +40,12 @@ public class MiddlewareShippingAddress: NSObject {
     }
     
     public init(address: [String : Any]) {
+        if let firstName = address["firstName"] as? String {
+            self.firstName = firstName
+        }
+        if let lastName = address["lastName"] as? String {
+            self.lastName = lastName
+        }
         if let street = address["calle"] as? String {
             self.street = street
         }
