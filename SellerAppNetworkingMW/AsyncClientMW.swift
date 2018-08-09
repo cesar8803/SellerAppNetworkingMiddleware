@@ -382,6 +382,10 @@ public class AsyncClientMW
         parameters: [AnyObject],
         storeCode:String,
         terminalCode:String,
+        remision:String,
+        documento:String,
+        vendedor:String,
+        fecha:String,
         completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMMW)-> Void,
         completionError: @escaping ErrorStringHandler )
     {
@@ -410,6 +414,10 @@ public class AsyncClientMW
         parameters: [AnyObject],
         storeCode:String,
         terminalCode:String,
+        remision:String,
+        documento:String,
+        vendedor:String,
+        fecha:String,
         completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMSterlingMW)-> Void,
         completionError: @escaping ErrorStringHandler )
     {
@@ -439,6 +447,10 @@ public class AsyncClientMW
         parameters:[Any],
         storeCode:String,
         terminalCode:String,
+        remision:String,
+        documento:String,
+        vendedor:String,
+        fecha:String,
         completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMSterlingMW)-> Void,
         completionError: @escaping ErrorStringHandler )
     {
