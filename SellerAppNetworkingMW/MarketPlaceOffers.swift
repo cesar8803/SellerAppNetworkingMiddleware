@@ -23,7 +23,7 @@ public class MarketPlaceOffers: Mappable{
     public var estimatedDeliveryBTMessage: String?
     public var marketplaceBTMessage: String?
     public var marketplaceSLMessage: String?
-    public var links: [String?] // GET ALL OFFERS PDP
+    public var links: [String?]? // GET ALL OFFERS PDP
     public var status: String? // ???? used or not
     
     

@@ -13,7 +13,7 @@ public class SkuOffers: Mappable{
     
     public var  skuId               : String?
     public var  bestSeller          : String?
-    public var  sellersCount        : Int
+    public var  sellersCount        : Int?
     public var  leadtimeToShip      : String?
     public var  bestListPrice       : Float?
     public var  bestSalePrice       : Float?
