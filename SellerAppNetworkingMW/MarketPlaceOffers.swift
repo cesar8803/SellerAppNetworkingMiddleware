@@ -32,20 +32,20 @@ public class MarketPlaceOffers: Mappable{
     }
     
     public func mapping(map: Map){
-        success                     <- ["s"]
-        skuOffers                   <- ["skuOffers"]
-        listPriceMin                <- ["listPriceMin"]
-        listPriceMax                <- ["listPriceMax"]
-        finalPriceMin               <- ["finalPriceMin"]
-        finalPriceMax               <- ["finalPriceMax"]
-        priceRangeFlag              <- ["priceRangeFlag"]
-        estimatedDeliveryDaysHome   <- ["estimatedDeliveryDaysHome"]
-        estimatedDeliveryDaysCnC    <- ["estimatedDeliveryDaysCnC"]
-        estimatedDeliveryBTMessage  <- ["estimatedDeliveryBTMessage"]
-        marketplaceBTMessage        <- ["marketplaceBTMessage"]
-        marketplaceSLMessage        <- ["marketplaceSLMessage"]
-        links                       <- ["links"]
-        status                      <- ["status"]
+        success                     <- map ["s"]
+        skuOffers                   <- map ["skuOffers"]
+        listPriceMin                <- map ["listPriceMin"]
+        listPriceMax                <- map ["listPriceMax"]
+        finalPriceMin               <- map ["finalPriceMin"]
+        finalPriceMax               <- map ["finalPriceMax"]
+        priceRangeFlag              <- map ["priceRangeFlag"]
+        estimatedDeliveryDaysHome   <- map ["estimatedDeliveryDaysHome"]
+        estimatedDeliveryDaysCnC    <- map ["estimatedDeliveryDaysCnC"]
+        estimatedDeliveryBTMessage  <- map ["estimatedDeliveryBTMessage"]
+        marketplaceBTMessage        <- map ["marketplaceBTMessage"]
+        marketplaceSLMessage        <- map ["marketplaceSLMessage"]
+        links                       <- map ["links"]
+        status                      <- map ["status"]
     }
 }
 

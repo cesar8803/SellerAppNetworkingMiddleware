@@ -32,20 +32,20 @@ public class SkuOffers: Mappable{
     }
     
     public func mapping(map: Map){
-        skuId               <- ["skuId"]
-        bestSeller          <- ["bestSeller"]
-        sellersCount        <- ["sellersCount"]
-        leadtimeToShip      <- ["leadtimeToShip"]
-        bestListPrice       <- ["bestListPrice"]
-        bestSalePrice       <- ["bestSalePrice"]
-        bestPromoPrice      <- ["bestPromoPrice"]
-        offerId             <- ["offerId"]
-        sellerId            <- ["sellerId"]
-        allowLPPromotions   <- ["allowLPPromotions"]
-        sellerOperatorId    <- ["sellerOperatorId"]
-        sellerSkuId         <- ["sellerSkuId"]
-        liverpoolPromotions <- ["liverpoolPromotions"]
-        otherPromotions     <- ["otherPromotions"]
+        skuId               <- map ["skuId"]
+        bestSeller          <- map ["bestSeller"]
+        sellersCount        <- map ["sellersCount"]
+        leadtimeToShip      <- map ["leadtimeToShip"]
+        bestListPrice       <- map ["bestListPrice"]
+        bestSalePrice       <- map ["bestSalePrice"]
+        bestPromoPrice      <- map ["bestPromoPrice"]
+        offerId             <- map ["offerId"]
+        sellerId            <- map ["sellerId"]
+        allowLPPromotions   <- map ["allowLPPromotions"]
+        sellerOperatorId    <- map ["sellerOperatorId"]
+        sellerSkuId         <- map ["sellerSkuId"]
+        liverpoolPromotions <- map ["liverpoolPromotions"]
+        otherPromotions     <- map ["otherPromotions"]
     }
 }
 
