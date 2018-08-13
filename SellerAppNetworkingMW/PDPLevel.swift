@@ -26,6 +26,9 @@ public class PDPLevel: Mappable{
     public var variantsInfo: [VariantsInfo]?
     //
     public var InventarioSOMSMW:InventarioSOMSMW?
+    // MKP
+    public var isMarketPlace: Bool?
+    public var marketplaceOffers: MarketPlaceOffers?
     
     public required init?(map: Map){
     }
@@ -46,6 +49,9 @@ public class PDPLevel: Mappable{
         variantsInfo <- map["variantsInfo"]
         //
         InventarioSOMSMW <- map["InventarioSOMS"]
+        // MKP
+        isMarketPlace <- map["isMarketPlace"]
+        marketplaceOffers <- map["marketplaceOffers"]
     }
     
 }
