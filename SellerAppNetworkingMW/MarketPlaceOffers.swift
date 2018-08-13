@@ -12,7 +12,7 @@ import ObjectMapper
 public class MarketPlaceOffers: Mappable{
     
     public var success: String?
-    public var skuOffers : SkuOffers?
+    public var skuOffers : [SkuOffers?]?
     public var listPriceMin: String?
     public var listPriceMax: String?
     public var finalPriceMin: String?
