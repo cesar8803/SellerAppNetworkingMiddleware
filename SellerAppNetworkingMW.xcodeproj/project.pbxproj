@@ -100,7 +100,7 @@
 		F41CBB6F20938F200002452B /* ItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CBB6420938F200002452B /* ItemInfo.swift */; };
 		F41CBB7020938F200002452B /* CompanionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CBB6520938F200002452B /* CompanionInfo.swift */; };
 		F43505752121ED0300FA4416 /* MarketPlaceOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43505742121ED0300FA4416 /* MarketPlaceOffers.swift */; };
-		F43505772122245D00FA4416 /* SkuOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43505762122245D00FA4416 /* SkuOffers.swift */; };
+		F435057921224D0000FA4416 /* SkuOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435057821224D0000FA4416 /* SkuOffers.swift */; };
 		F45069E2205B3C3C001D2864 /* MiddlewareShippingProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069DB205B3C3C001D2864 /* MiddlewareShippingProduct.swift */; };
 		F45069E3205B3C3C001D2864 /* MiddlewareShippingAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069DC205B3C3C001D2864 /* MiddlewareShippingAddress.swift */; };
 		F45069E4205B3C3C001D2864 /* CreaActualizaOVREMResponseMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45069DD205B3C3C001D2864 /* CreaActualizaOVREMResponseMW.swift */; };
@@ -220,7 +220,7 @@
 		F41CBB6420938F200002452B /* ItemInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemInfo.swift; sourceTree = "<group>"; };
 		F41CBB6520938F200002452B /* CompanionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanionInfo.swift; sourceTree = "<group>"; };
 		F43505742121ED0300FA4416 /* MarketPlaceOffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPlaceOffers.swift; sourceTree = "<group>"; };
-		F43505762122245D00FA4416 /* SkuOffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkuOffers.swift; sourceTree = "<group>"; };
+		F435057821224D0000FA4416 /* SkuOffers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkuOffers.swift; sourceTree = "<group>"; };
 		F45069DB205B3C3C001D2864 /* MiddlewareShippingProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareShippingProduct.swift; sourceTree = "<group>"; };
 		F45069DC205B3C3C001D2864 /* MiddlewareShippingAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareShippingAddress.swift; sourceTree = "<group>"; };
 		F45069DD205B3C3C001D2864 /* CreaActualizaOVREMResponseMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreaActualizaOVREMResponseMW.swift; sourceTree = "<group>"; };
@@ -405,6 +405,7 @@
 		A96A694B1F20676600407A82 /* PDP */ = {
 			isa = PBXGroup;
 			children = (
+				F435057821224D0000FA4416 /* SkuOffers.swift */,
 				A96A69721F21057C00407A82 /* PDPParameters.swift */,
 				A96A69491F20676100407A82 /* PDPLevel.swift */,
 				A96A694C1F2068FB00407A82 /* CarruselDummy.swift */,
@@ -431,7 +432,6 @@
 				004672851FBBBC3500A91A29 /* GetConsultaSkuPoolRecordMW.swift */,
 				004672861FBBBC3500A91A29 /* GetConsultaSkuPoolResponseMW.swift */,
 				F43505742121ED0300FA4416 /* MarketPlaceOffers.swift */,
-				F43505762122245D00FA4416 /* SkuOffers.swift */,
 			);
 			name = PDP;
 			sourceTree = "<group>";
@@ -675,6 +675,7 @@
 				A96A694F1F20693600407A82 /* RecommendedItems.swift in Sources */,
 				F41CBB6920938F200002452B /* GuestInfo.swift in Sources */,
 				A96A69671F2077D700407A82 /* InventarioFull.swift in Sources */,
+				F435057921224D0000FA4416 /* SkuOffers.swift in Sources */,
 				B517F27320850A2900194972 /* CategoryProductsGiftList.swift in Sources */,
 				F41CBB6720938F200002452B /* EventInfo.swift in Sources */,
 				F45069E8205B3C3C001D2864 /* ResponseCreaActualizaOVREMSterlingMW.swift in Sources */,
@@ -709,7 +710,6 @@
 				A96A694D1F2068FB00407A82 /* CarruselDummy.swift in Sources */,
 				2B1310E91F016EAB00611EC9 /* CarousalBanners.swift in Sources */,
 				F45069E6205B3C3C001D2864 /* ResponseCreaActualizaOVREMMW.swift in Sources */,
-				F43505772122245D00FA4416 /* SkuOffers.swift in Sources */,
 				004672881FBBBC3500A91A29 /* GetConsultaSkuPoolRecordMW.swift in Sources */,
 				F7147C071F560A7200EC2C23 /* MiddlewareConnection.swift in Sources */,
 				F45069E5205B3C3C001D2864 /* ResponseCrearOrdenMW.swift in Sources */,
