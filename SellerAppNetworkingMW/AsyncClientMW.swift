@@ -154,6 +154,34 @@ public class AsyncClientMW
         
     }
     
+    //Mark : PDP Market place getOffersDetails
+    public class func getPDPMKP(
+//        mandatory: PDP_MandatoryParams,
+        parameters: [PDP_Optional<Any>]?,
+        completion: @escaping (_ dataResponse: PDPLevel) -> Void,
+        completionError: @escaping ErrorStringHandler) {
+        
+        //var params = //mandatory.getParameters()
+        
+//        if let pdpOptionals = parameters {
+//            for pdp_opt in pdpOptionals {
+//                params[pdp_opt.type.rawValue] = pdp_opt.value
+//            }
+//        }
+        let sku = "07685321"
+        var params = ["skuId":sku]
+        
+        AsyncClientMW.getRequestExecute(
+            BackendUrlManager.ServiceUrlsId.pdpMarketPlaceOffers,
+            parameters: params,
+            completion: { (PDP_level: PDPLevel) in
+                completion(PDP_level)
+            }) { (message) in
+                completionError(message)
+            }
+        
+    }
+    
     // ***** Clean Cache ***** //
     
     public class func cleanCache(completion: @escaping (_ completion: FlushLevel) -> (), completionError: @escaping ErrorStringHandler) {

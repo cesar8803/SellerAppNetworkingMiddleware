@@ -15,7 +15,9 @@ public class PLPResults: Mappable{
     public var refinementGroups: [RefinementGroups]?
     public var sortOptions: [SortOptions]?
     public var label: String?
-      
+    public var marketplaceSLMessage: String?
+    public var marketplaceBTMessage: String?
+    
     required public init?(map: Map){
     }
     
@@ -25,5 +27,7 @@ public class PLPResults: Mappable{
         refinementGroups <- map["refinementGroups"]
         sortOptions <- map["sortOptions"]
         label <- map["label"]
+        marketplaceSLMessage <- map["marketplaceSLMessage"]
+        marketplaceSLMessage <- map["marketplaceBTMessage"]
     }
 }
