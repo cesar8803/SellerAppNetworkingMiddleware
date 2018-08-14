@@ -23,8 +23,8 @@ public class SkuOffers: Mappable{
     public var  allowLPPromotions   : Bool?
     public var  sellerOperatorId    : String?
     public var  sellerSkuId         : String?
-    public var  liverpoolPromotions : [String?]?
-    public var  otherPromotions     : [String?]?
+    public var  liverpoolPromotions : [String]?
+    public var  otherPromotions     : [String]?
     
     
     
