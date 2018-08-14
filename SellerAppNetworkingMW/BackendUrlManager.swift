@@ -21,6 +21,7 @@ class BackendUrlManager : NSObject{
         case typeahead
         case orders
         case pdp
+        case pdpMarketPlaceOffers
         case imagesSKUs
         case shoppingList
         case cleanCache
@@ -43,6 +44,7 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/type-ahead?",                                  //type-ahead
         "Middleware/rest/service/remisiones?",                                  //orders
         "Middleware/rest/service/pdp-simple",                                   // PDP
+        "Middleware/rest/service/v2/marketplace/pdp/getSellersOfferDetailsPdp", // PDP MKP
         "Middleware/rest/service/consultar-imagenes-skus",                      //imagesSKUs
         "Middleware/rest/service/shopping-list",                                //shopping list
         "Middleware/rest/service/flush",                                        //Clean Cache
