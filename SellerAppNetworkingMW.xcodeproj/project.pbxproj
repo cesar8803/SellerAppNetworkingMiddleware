@@ -12,6 +12,9 @@
 		004672891FBBBC3500A91A29 /* GetConsultaSkuPoolResponseMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004672861FBBBC3500A91A29 /* GetConsultaSkuPoolResponseMW.swift */; };
 		0046728A1FBBBC3500A91A29 /* GetConsultaSkuPoolHeaderMW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004672871FBBBC3500A91A29 /* GetConsultaSkuPoolHeaderMW.swift */; };
 		029CB05D096F97A9AE5265C3 /* Pods_SellerAppNetworkingMW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D3AB2DC56018663124B01D /* Pods_SellerAppNetworkingMW.framework */; };
+		1449491E2124D6C5005C6543 /* StatusOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1449491B2124D6C4005C6543 /* StatusOffer.swift */; };
+		144949202124D6C5005C6543 /* SellersOfferDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1449491D2124D6C5005C6543 /* SellersOfferDetails.swift */; };
+		144949222124D6E4005C6543 /* OfferDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144949212124D6E4005C6543 /* OfferDetailResponse.swift */; };
 		2B11985B1F01AE5900C7A1FC /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11985A1F01AE5900C7A1FC /* Records.swift */; };
 		2B11985D1F01AE7F00C7A1FC /* PLPState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11985C1F01AE7F00C7A1FC /* PLPState.swift */; };
 		2B11985F1F01B02200C7A1FC /* RefinementGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11985E1F01B02200C7A1FC /* RefinementGroups.swift */; };
@@ -127,6 +130,9 @@
 		004672861FBBBC3500A91A29 /* GetConsultaSkuPoolResponseMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetConsultaSkuPoolResponseMW.swift; sourceTree = "<group>"; };
 		004672871FBBBC3500A91A29 /* GetConsultaSkuPoolHeaderMW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetConsultaSkuPoolHeaderMW.swift; sourceTree = "<group>"; };
 		0DC5EEAE2C6B7E7FD59C5B5B /* Pods-SellerAppNetworkingMW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellerAppNetworkingMW.release.xcconfig"; path = "Pods/Target Support Files/Pods-SellerAppNetworkingMW/Pods-SellerAppNetworkingMW.release.xcconfig"; sourceTree = "<group>"; };
+		1449491B2124D6C4005C6543 /* StatusOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusOffer.swift; path = ../../../Downloads/codegen_5b74968460077/StatusOffer.swift; sourceTree = "<group>"; };
+		1449491D2124D6C5005C6543 /* SellersOfferDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellersOfferDetails.swift; sourceTree = "<group>"; };
+		144949212124D6E4005C6543 /* OfferDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailResponse.swift; sourceTree = "<group>"; };
 		2B11985A1F01AE5900C7A1FC /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
 		2B11985C1F01AE7F00C7A1FC /* PLPState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLPState.swift; sourceTree = "<group>"; };
 		2B11985E1F01B02200C7A1FC /* RefinementGroups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefinementGroups.swift; sourceTree = "<group>"; };
@@ -251,6 +257,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1449491A2124D67F005C6543 /* MarketPlace */ = {
+			isa = PBXGroup;
+			children = (
+				1449491D2124D6C5005C6543 /* SellersOfferDetails.swift */,
+				1449491B2124D6C4005C6543 /* StatusOffer.swift */,
+				144949212124D6E4005C6543 /* OfferDetailResponse.swift */,
+			);
+			name = MarketPlace;
+			sourceTree = "<group>";
+		};
 		2B1198571F01ADFF00C7A1FC /* PLP */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +357,7 @@
 		2BE72FE71EFF4AA7009AC510 /* AsyncClientMWObjects */ = {
 			isa = PBXGroup;
 			children = (
+				1449491A2124D67F005C6543 /* MarketPlace */,
 				B517F26F208506DF00194972 /* NewGiftRegistry */,
 				F45069DA205B3C3C001D2864 /* Remissions */,
 				A94093FC1FCDE9080077C430 /* Cache */,
@@ -675,7 +692,9 @@
 				A96A694F1F20693600407A82 /* RecommendedItems.swift in Sources */,
 				F41CBB6920938F200002452B /* GuestInfo.swift in Sources */,
 				A96A69671F2077D700407A82 /* InventarioFull.swift in Sources */,
+				144949202124D6C5005C6543 /* SellersOfferDetails.swift in Sources */,
 				F435057921224D0000FA4416 /* SkuOffers.swift in Sources */,
+				144949222124D6E4005C6543 /* OfferDetailResponse.swift in Sources */,
 				B517F27320850A2900194972 /* CategoryProductsGiftList.swift in Sources */,
 				F41CBB6720938F200002452B /* EventInfo.swift in Sources */,
 				F45069E8205B3C3C001D2864 /* ResponseCreaActualizaOVREMSterlingMW.swift in Sources */,
@@ -726,6 +745,7 @@
 				71C31D8A1F1980C0003E7449 /* MiddlewareResponse.swift in Sources */,
 				B517F27B20850EAF00194972 /* EventDetail.swift in Sources */,
 				2BE72FE11EFE0014009AC510 /* Greeting.swift in Sources */,
+				1449491E2124D6C5005C6543 /* StatusOffer.swift in Sources */,
 				A96A696F1F207B7600407A82 /* VariantsInfo.swift in Sources */,
 				A96A696D1F20797100407A82 /* SapSkuInventario.swift in Sources */,
 				2B7FD14E1F01C46700232C66 /* PLPParameters.swift in Sources */,

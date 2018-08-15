@@ -182,6 +182,19 @@ public class AsyncClientMW
         
     }
     
+    public class func getOffertDetail(sku:String, completion: @escaping (_ dataResponse: OfferDetailResponse) -> Void, completionError: @escaping ErrorStringHandler) {
+        
+        let params:Parameters = ["sku":sku]
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.pdpMarketPlaceOfferDetail,parameters: params, completion: { (offerResponse: OfferDetailResponse) in
+            completion(offerResponse)
+        }) { (message) in
+            completionError(message)
+        }
+        
+    }
+    
+    
     // ***** Clean Cache ***** //
     
     public class func cleanCache(completion: @escaping (_ completion: FlushLevel) -> (), completionError: @escaping ErrorStringHandler) {
