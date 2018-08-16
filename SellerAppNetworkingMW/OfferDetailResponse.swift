@@ -10,15 +10,15 @@ import Foundation
 import ObjectMapper
 
 public class OfferDetailResponse : Mappable {
-    var errorMessage : String?
-    var marketplaceSLMessage : String?
-    var estimatedDeliveryDaysCnC : String?
-    var marketplaceBTMessage : String?
-    var s : String?
-    var estimatedDeliveryBTMessage : String?
-    var status : StatusOffer?
-    var sellersOfferDetails : [SellersOfferDetails]?
-    var estimatedDeliveryDaysHome : String?
+    public var errorMessage : String?
+    public var marketplaceSLMessage : String?
+    public var estimatedDeliveryDaysCnC : String?
+    public var marketplaceBTMessage : String?
+    public var s : String?
+    public var estimatedDeliveryBTMessage : String?
+    public var status : StatusOffer?
+    public var sellersOfferDetails : [SkuOffers]?
+    public var estimatedDeliveryDaysHome : String?
     
     public required init?(map: Map) {
         

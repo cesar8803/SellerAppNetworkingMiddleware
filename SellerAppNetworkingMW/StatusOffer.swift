@@ -11,7 +11,7 @@ import Foundation
 import ObjectMapper
 
 public class StatusOffer : Mappable {
-    var statusCode : Int?
+    public var statusCode : Int?
     
     public required init?(map: Map) {
         

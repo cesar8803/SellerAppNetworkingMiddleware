@@ -10,18 +10,18 @@ import Foundation
 import ObjectMapper
 
 public class SellersOfferDetails : Mappable {
-	var sellerRating : Int?
-	var sellerSkuId : String?
-	var promoPrice : Double?
-	var listPrice : Double?
-	var sellerId : String?
-	var allowLPPromotions : Bool?
-	var salePrice : Double?
-	var totalReviews : String?
-	var leadTimeToShip : String?
-	var sellerName : String?
-	var sellerOperatorId : String?
-	var offerId : String?
+	public var sellerRating : Int?
+    public var sellerSkuId : String?
+	public var promoPrice : Double?
+	public var listPrice : Double?
+	public var sellerId : String?
+	public var allowLPPromotions : Bool?
+    public var salePrice : Double?
+	public var totalReviews : String?
+	public var leadTimeToShip : String?
+	public var sellerName : String?
+	public var sellerOperatorId : String?
+	public var offerId : String?
 
     public required init?(map: Map) {
 
