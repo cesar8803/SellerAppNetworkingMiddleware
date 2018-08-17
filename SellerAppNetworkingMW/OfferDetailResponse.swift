@@ -17,7 +17,7 @@ public class OfferDetailResponse : Mappable {
     public var s : String?
     public var estimatedDeliveryBTMessage : String?
     public var status : StatusOffer?
-    public var sellersOfferDetails : [SkuOffers]?
+    public var sellersOfferDetails : [SellersOfferDetails]?
     public var estimatedDeliveryDaysHome : String?
     
     public required init?(map: Map) {
