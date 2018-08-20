@@ -7,3 +7,22 @@
 //
 
 import Foundation
+import ObjectMapper
+
+public class InventoryMKP: Mappable{
+    
+    public var  skuId               : String?
+    public var  bestSeller          : String?
+
+    
+    
+    
+    public required init?(map: Map){
+    }
+    
+    public func mapping(map: Map){
+        skuId               <- map ["skuId"]
+        bestSeller          <- map ["bestSeller"]
+
+    }
+}
