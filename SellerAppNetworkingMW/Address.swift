@@ -37,6 +37,7 @@ public class Address: Mappable {
     public var eventRecipientIndex : String?
     public var assignedToEvent : Bool?
     public var lastModifiedDate : Int?
+    public var neighborhood : String?
     
     public required init?(map: Map){
     }
@@ -75,5 +76,6 @@ public class Address: Mappable {
         cellular <- map["cellular"]
         assignedToEvent <- map["assignedToEvent"]
         lastModifiedDate <- map["lastModifiedDate"]
+        neighborhood <- map["neighborhood"]
     }
 }

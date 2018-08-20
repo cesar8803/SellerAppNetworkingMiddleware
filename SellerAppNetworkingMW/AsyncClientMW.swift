@@ -182,6 +182,19 @@ public class AsyncClientMW
         
     }
     
+    public class func getOffertDetail(sku:String, completion: @escaping (_ dataResponse: OfferDetailResponse) -> Void, completionError: @escaping ErrorStringHandler) {
+        
+        let params:Parameters = ["skuId":sku]
+
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.pdpMarketPlaceOfferDetail,parameters: params, completion: { (offerResponse: OfferDetailResponse) in
+            completion(offerResponse)
+        }) { (message) in
+            completionError(message)
+        }
+        
+    }
+    
+    
     // ***** Clean Cache ***** //
     
     public class func cleanCache(completion: @escaping (_ completion: FlushLevel) -> (), completionError: @escaping ErrorStringHandler) {
@@ -410,6 +423,10 @@ public class AsyncClientMW
         parameters: [AnyObject],
         storeCode:String,
         terminalCode:String,
+        remision:String,
+        documento:String,
+        vendedor:String,
+        fecha:String,
         completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMMW)-> Void,
         completionError: @escaping ErrorStringHandler )
     {
@@ -438,6 +455,10 @@ public class AsyncClientMW
         parameters: [AnyObject],
         storeCode:String,
         terminalCode:String,
+        remision:String,
+        documento:String,
+        vendedor:String,
+        fecha:String,
         completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMSterlingMW)-> Void,
         completionError: @escaping ErrorStringHandler )
     {
@@ -467,6 +488,10 @@ public class AsyncClientMW
         parameters:[Any],
         storeCode:String,
         terminalCode:String,
+        remision:String,
+        documento:String,
+        vendedor:String,
+        fecha:String,
         completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMSterlingMW)-> Void,
         completionError: @escaping ErrorStringHandler )
     {

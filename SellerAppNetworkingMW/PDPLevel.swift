@@ -33,6 +33,9 @@ public class PDPLevel: Mappable{
     public required init?(map: Map){
     }
     
+    public required init?(){
+    }
+    
     public func mapping(map: Map){
         scripts <- map["scripts"]
         related <- map["related"]
