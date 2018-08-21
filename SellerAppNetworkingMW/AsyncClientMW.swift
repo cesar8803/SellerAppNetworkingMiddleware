@@ -662,7 +662,7 @@ public class AsyncClientMW
     public class func getInventoryMKP(
         skuId               : String,
         offerId             : String,
-        completionSuccess   : @escaping (_ dataResponse:EventSearch) -> Void,
+        completionSuccess   : @escaping (_ dataResponse:[InventoryMKP]) -> Void,
         completionError     : @escaping ErrorStringHandler)
     {
         var params:Parameters = [:]
@@ -670,27 +670,27 @@ public class AsyncClientMW
         
         AsyncClientMW.getRequestExecute( BackendUrlManager.ServiceUrlsId.pdpMarketPlaceInventory,
                                          parameters: params,
-                                         completion: { (eventsList:EventSearch) in
-                                            completionSuccess(eventsList) })
+                                         completion: { (skusITR:[InventoryMKP]) in
+                                            completionSuccess(skusITR) })
         { (msg) in completionError(msg) }
     }
     
     public class func getInventoriesMKP(
         skuIdOfferIdList    : [String:String],
-        completionSuccess   : @escaping (_ dataResponse:EventSearch) -> Void,
+        completionSuccess   : @escaping (_ dataResponse:InventoryMKP) -> Void,
         completionError     : @escaping ErrorStringHandler)
     {
         var params:Parameters = [:]
-        params["sku-list"]       = skuOfferList
+        params["sku-list"]       = skuIdOfferIdList
         
         AsyncClientMW.getRequestExecute( BackendUrlManager.ServiceUrlsId.pdpMarketPlaceInventory,
                                          parameters: params,
-                                         completion: { (eventsList:EventSearch) in
-                                            completionSuccess(eventsList) })
+                                         completion: { (skusITR:[InventoryMKP]) in
+                                            completionSuccess(skusITR.first()) })
         { (msg) in completionError(msg) }
     }
     
-//    {"skuList":[{"skuId":"1033866981","quantity":500,"offerId":"2040","stockStatus":"IN_STOCK","s":0},{"skuId":"1033866981","quantity":0,"offerId":"2007","stockStatus":"OUT_OF_STOCK","s":0},{"skuId":"1033245790","quantity":0,"offerId":"","stockStatus":"OUT_OF_STOCK","s":0},{"quantity":0,"s":1,"err":"Mandatory information is missing"}]}
+    //    {"skuList":[{"skuId":"1033866981","quantity":500,"offerId":"2040","stockStatus":"IN_STOCK","s":0},{"skuId":"1033866981","quantity":0,"offerId":"2007","stockStatus":"OUT_OF_STOCK","s":0},{"skuId":"1033245790","quantity":0,"offerId":"","stockStatus":"OUT_OF_STOCK","s":0},{"quantity":0,"s":1,"err":"Mandatory information is missing"}]}
     
     public class func getOffertDetail(
         sku                 : String,
@@ -701,7 +701,7 @@ public class AsyncClientMW
         
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.pdpMarketPlaceOfferDetail,
                                         parameters: params,
-                                        completion: { (offerResponse: InventoryMKP) in
+                                        completion: { (offerResponse: OfferDetailResponse) in
                                             completion(offerResponse) })
         { (message) in completionError(message) }
     }

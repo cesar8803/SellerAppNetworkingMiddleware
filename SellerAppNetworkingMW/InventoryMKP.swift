@@ -9,9 +9,10 @@
 import Foundation
 import ObjectMapper
 
-enum stockStatusEnum : String{
+public enum stockStatusEnum : String{
     case inStock = "IN_STOCK"
     case outStock = "OUT_OF_STOCK"
+    case error = "error"
 }
 
 public class InventoryMKP: Mappable{
@@ -30,8 +31,11 @@ public class InventoryMKP: Mappable{
         skuId               <- map ["skuId"]
         quantity            <- map ["quantity"]
         offerId             <- map ["offerId"]
-        let stockStatusStr  <- map ["stockStatus"]
-        stockStatus =  stockStatusEnum(stockStatusStr)
+        
+        switch map["stockStatus"].currentValue {
+        case (let v as String)  : stockStatus = stockStatusEnum(rawValue:v)
+        default                 : stockStatus = stockStatusEnum.error }
+        
         s                   <- map ["s"]
         err                 <- map ["err"]
     }
@@ -70,3 +74,4 @@ public class InventoryMKP: Mappable{
 //    }
 //    ]
 //}
+
