@@ -16,6 +16,17 @@ public enum stockStatusEnum : String{
 }
 
 public class InventoryMKP: Mappable{
+    public var  inventoryMKP    : [InventoryItemMKP]?
+    
+    public required init?(map: Map){
+    }
+    
+    public func mapping(map: Map){
+        inventoryMKP             <- map ["skuList"]
+    }
+}
+
+public class InventoryItemMKP: Mappable{
     
     public var  skuId           : String?
     public var  quantity        : Int?

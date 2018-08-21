@@ -662,7 +662,7 @@ public class AsyncClientMW
     public class func getInventoryMKP(
         skuId               : String,
         offerId             : String,
-        completionSuccess   : @escaping (_ dataResponse:[InventoryMKP]) -> Void,
+        completionSuccess   : @escaping (_ dataResponse:InventoryMKP) -> Void,
         completionError     : @escaping ErrorStringHandler)
     {
         var params:Parameters = [:]
@@ -670,7 +670,7 @@ public class AsyncClientMW
         
         AsyncClientMW.getRequestExecute( BackendUrlManager.ServiceUrlsId.pdpMarketPlaceInventory,
                                          parameters: params,
-                                         completion: { (skusITR:[InventoryMKP]) in
+                                         completion: { (skusITR:InventoryMKP) in
                                             completionSuccess(skusITR) })
         { (msg) in completionError(msg) }
     }
@@ -685,8 +685,8 @@ public class AsyncClientMW
         
         AsyncClientMW.getRequestExecute( BackendUrlManager.ServiceUrlsId.pdpMarketPlaceInventory,
                                          parameters: params,
-                                         completion: { (skusITR:[InventoryMKP]) in
-                                            completionSuccess(skusITR.first()) })
+                                         completion: { (skusITR: InventoryMKP) in
+                                            completionSuccess(skusITR) })
         { (msg) in completionError(msg) }
     }
     
