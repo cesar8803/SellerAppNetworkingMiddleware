@@ -690,6 +690,8 @@ public class AsyncClientMW
         { (msg) in completionError(msg) }
     }
     
+//    {"skuList":[{"skuId":"1033866981","quantity":500,"offerId":"2040","stockStatus":"IN_STOCK","s":0},{"skuId":"1033866981","quantity":0,"offerId":"2007","stockStatus":"OUT_OF_STOCK","s":0},{"skuId":"1033245790","quantity":0,"offerId":"","stockStatus":"OUT_OF_STOCK","s":0},{"quantity":0,"s":1,"err":"Mandatory information is missing"}]}
+    
     public class func getOffertDetail(
         sku                 : String,
         completion          : @escaping (_ dataResponse: OfferDetailResponse) -> Void,
