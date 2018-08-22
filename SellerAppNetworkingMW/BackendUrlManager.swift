@@ -32,6 +32,7 @@ class BackendUrlManager : NSObject{
         case newSearchDetail
         case searchAdvance
         case pdpMarketPlaceOfferDetail
+        case sellerDetails
     }
     
     fileprivate static let SERVICE_CONTEXT:[String] = [
@@ -56,6 +57,7 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/v1/gifttable/getGiftListGuestView?",           //newSearchDetail
         "Middleware/rest/service/v1/gifttable/getEventsBySearchableAdvance?",   //SearchAdvance
         "Middleware/rest/service/v1/marketplace/getSellersOfferDetailsPdp",    //Offers Details
+        "Middleware/rest/service/v1/marketplace/getSellerDetails",              //SellerDEtails
     ]
     
     // The array of all the services url's.

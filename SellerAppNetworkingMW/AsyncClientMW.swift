@@ -698,5 +698,9 @@ public class AsyncClientMW
             completionError(msg)
         }
     }
+    
+//    public class getSellerDetail(sku:String, offlist) {
+//
+//    }
 }
 
