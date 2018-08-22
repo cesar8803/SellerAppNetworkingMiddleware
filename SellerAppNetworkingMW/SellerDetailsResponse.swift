@@ -14,7 +14,7 @@ public class SellerDetailsResponse : Mappable {
     public var errorMessage : String?
     public var fourStarRatings : Int?
     public var oneStarRatings : Int?
-    public var status : StatusSellerDetail?
+    public var status : StatusSeller?
     public var freeShipping : Bool?
     public var warehouseInfo : WarehouseInfo?
     public var recommendation : Recommendation?
