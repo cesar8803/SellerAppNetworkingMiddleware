@@ -32,6 +32,7 @@ class BackendUrlManager : NSObject{
         case searchAdvance
         case pdpMarketPlaceOfferDetail
         case pdpMarketPlaceInventory
+        case sellerDetails
     }
     
     fileprivate static let SERVICE_CONTEXT:[String] = [
