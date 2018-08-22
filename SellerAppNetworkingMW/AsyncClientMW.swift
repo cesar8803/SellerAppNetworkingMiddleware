@@ -154,47 +154,6 @@ public class AsyncClientMW
         
     }
     
-    //Mark : PDP Market place getOffersDetails
-    public class func getPDPMKP(
-//        mandatory: PDP_MandatoryParams,
-        parameters: [PDP_Optional<Any>]?,
-        completion: @escaping (_ dataResponse: PDPLevel) -> Void,
-        completionError: @escaping ErrorStringHandler) {
-        
-        //var params = //mandatory.getParameters()
-        
-//        if let pdpOptionals = parameters {
-//            for pdp_opt in pdpOptionals {
-//                params[pdp_opt.type.rawValue] = pdp_opt.value
-//            }
-//        }
-        let sku = "07685321"
-        var params = ["skuId":sku]
-        
-        AsyncClientMW.getRequestExecute(
-            BackendUrlManager.ServiceUrlsId.pdpMarketPlaceOffers,
-            parameters: params,
-            completion: { (PDP_level: PDPLevel) in
-                completion(PDP_level)
-            }) { (message) in
-                completionError(message)
-            }
-        
-    }
-    
-    public class func getOffertDetail(sku:String, completion: @escaping (_ dataResponse: OfferDetailResponse) -> Void, completionError: @escaping ErrorStringHandler) {
-        
-        let params:Parameters = ["skuId":sku]
-
-        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.pdpMarketPlaceOfferDetail,parameters: params, completion: { (offerResponse: OfferDetailResponse) in
-            completion(offerResponse)
-        }) { (message) in
-            completionError(message)
-        }
-        
-    }
-    
-    
     // ***** Clean Cache ***** //
     
     public class func cleanCache(completion: @escaping (_ completion: FlushLevel) -> (), completionError: @escaping ErrorStringHandler) {
@@ -663,11 +622,11 @@ public class AsyncClientMW
         params["store-code"] = storeCode
         
         
-        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.searchAdvance, parameters: params, completion: { (eventsList:EventSearch) in
-            completion(eventsList)
-        }) { (msg) in
-            completionError(msg)
-        }
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.searchAdvance,
+                                        parameters: params,
+                                        completion: { (eventsList:EventSearch) in
+                                            completion(eventsList) })
+        { (msg) in completionError(msg) }
     }
     
     //MARK: - Get Events List Advance by-passing MiddleWare
@@ -692,11 +651,59 @@ public class AsyncClientMW
         params["resultsPerPage"]            = resultsPerpage != nil && resultsPerpage != "" ? resultsPerpage! :"30"
         
         
-        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.searchAdvance, parameters: params, completion: { (eventsList:EventSearch) in
-            completion(eventsList)
-        }) { (msg) in
-            completionError(msg)
-        }
+        AsyncClientMW.getRequestExecute( BackendUrlManager.ServiceUrlsId.searchAdvance,
+                                         parameters: params,
+                                         completion: { (eventsList:EventSearch) in
+                                            completion(eventsList) })
+        { (msg) in completionError(msg) }
+    }
+    
+    //MARK:- PDP Market place
+    public class func getInventoryMKP(
+        skuId               : String,
+        offerId             : String,
+        completionSuccess   : @escaping (_ dataResponse:InventoryMKP) -> Void,
+        completionError     : @escaping ErrorStringHandler)
+    {
+        var params:Parameters = [:]
+        params["sku-list"]       = [skuId:offerId]
+        
+        AsyncClientMW.getRequestExecute( BackendUrlManager.ServiceUrlsId.pdpMarketPlaceInventory,
+                                         parameters: params,
+                                         completion: { (skusITR:InventoryMKP) in
+                                            completionSuccess(skusITR) })
+        { (msg) in completionError(msg) }
+    }
+    
+    public class func getInventoriesMKP(
+        skuIdOfferIdList    : [String:String],
+        completionSuccess   : @escaping (_ dataResponse:InventoryMKP) -> Void,
+        completionError     : @escaping ErrorStringHandler)
+    {
+        var params:Parameters = [:]
+        params["sku-list"]       = skuIdOfferIdList
+        
+        AsyncClientMW.getRequestExecute( BackendUrlManager.ServiceUrlsId.pdpMarketPlaceInventory,
+                                         parameters: params,
+                                         completion: { (skusITR: InventoryMKP) in
+                                            completionSuccess(skusITR) })
+        { (msg) in completionError(msg) }
+    }
+    
+    //    {"skuList":[{"skuId":"1033866981","quantity":500,"offerId":"2040","stockStatus":"IN_STOCK","s":0},{"skuId":"1033866981","quantity":0,"offerId":"2007","stockStatus":"OUT_OF_STOCK","s":0},{"skuId":"1033245790","quantity":0,"offerId":"","stockStatus":"OUT_OF_STOCK","s":0},{"quantity":0,"s":1,"err":"Mandatory information is missing"}]}
+    
+    public class func getOffertDetail(
+        sku                 : String,
+        completion          : @escaping (_ dataResponse: OfferDetailResponse) -> Void,
+        completionError     : @escaping ErrorStringHandler)
+    {
+        let params:Parameters = ["skuId":sku]
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.pdpMarketPlaceOfferDetail,
+                                        parameters: params,
+                                        completion: { (offerResponse: OfferDetailResponse) in
+                                            completion(offerResponse) })
+        { (message) in completionError(message) }
     }
     
 //    public class getSellerDetail(sku:String, offlist) {

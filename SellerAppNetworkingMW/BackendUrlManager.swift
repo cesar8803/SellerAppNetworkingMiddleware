@@ -21,7 +21,6 @@ class BackendUrlManager : NSObject{
         case typeahead
         case orders
         case pdp
-        case pdpMarketPlaceOffers
         case imagesSKUs
         case shoppingList
         case cleanCache
@@ -32,7 +31,7 @@ class BackendUrlManager : NSObject{
         case newSearchDetail
         case searchAdvance
         case pdpMarketPlaceOfferDetail
-        case sellerDetails
+        case pdpMarketPlaceInventory
     }
     
     fileprivate static let SERVICE_CONTEXT:[String] = [
@@ -46,7 +45,6 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/type-ahead?",                                  //type-ahead
         "Middleware/rest/service/remisiones?",                                  //orders
         "Middleware/rest/service/pdp-simple",                                   // PDP
-        "Middleware/rest/service/v2/marketplace/pdp/getSellersOfferDetailsPdp", // PDP MKP
         "Middleware/rest/service/consultar-imagenes-skus",                      //imagesSKUs
         "Middleware/rest/service/shopping-list",                                //shopping list
         "Middleware/rest/service/flush",                                        //Clean Cache
@@ -56,7 +54,8 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/v1/gifttable/getEventDetail?",                 //NewGiftRegsitryPLP
         "Middleware/rest/service/v1/gifttable/getGiftListGuestView?",           //newSearchDetail
         "Middleware/rest/service/v1/gifttable/getEventsBySearchableAdvance?",   //SearchAdvance
-        "Middleware/rest/service/v1/marketplace/getSellersOfferDetailsPdp",    //Offers Details
+        "Middleware/rest/service/v1/marketplace/statusMP",                      //pdpMarketPlaceInventory
+        "Middleware/rest/service/v1/marketplace/getSellersOfferDetailsPdp",     //Offers Details
         "Middleware/rest/service/v1/marketplace/getSellerDetails",              //SellerDEtails
     ]
     
