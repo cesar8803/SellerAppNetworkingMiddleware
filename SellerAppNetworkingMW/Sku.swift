@@ -23,6 +23,7 @@ public class Sku: Mappable{
     public var benefits: Benefits?
     public var promotionLabel: String?
     public var xlImage: String?
+    public var isMarketPlace: Bool?
 
     required public init?(map: Map){
         
@@ -54,5 +55,6 @@ public class Sku: Mappable{
         promotionLabel <- map["promotionLabel"]
         xlImage <- map["lgImage"]
         productInfo <- map["productInfo"]
+        isMarketPlace <- map["isMarketPlace"]
     }
 }

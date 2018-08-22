@@ -54,8 +54,9 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/v1/gifttable/getEventDetail?",                 //NewGiftRegsitryPLP
         "Middleware/rest/service/v1/gifttable/getGiftListGuestView?",           //newSearchDetail
         "Middleware/rest/service/v1/gifttable/getEventsBySearchableAdvance?",   //SearchAdvance
-        "Middleware/rest/service/v1/marketplace/getSellersOfferDetailsPdp",     //Offers Details
         "Middleware/rest/service/v1/marketplace/statusMP",                      //pdpMarketPlaceInventory
+        "Middleware/rest/service/v1/marketplace/getSellersOfferDetailsPdp",     //Offers Details
+        "Middleware/rest/service/v1/marketplace/getSellerDetails",              //SellerDEtails
     ]
     
     // The array of all the services url's.
