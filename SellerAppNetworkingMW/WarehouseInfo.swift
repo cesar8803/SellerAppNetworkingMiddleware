@@ -10,16 +10,16 @@ import Foundation
 import ObjectMapper
 
 public class WarehouseInfo : Mappable {
-	var warehouseName : String?
-	var phone : String?
-	var countryISOCode : String?
-	var zipcode : String?
-	var state : String?
-	var address1 : String?
-	var address2 : String?
-	var wareHouseId : String?
-	var country : String?
-	var city : String?
+	public var warehouseName : String?
+	public var phone : String?
+	public var countryISOCode : String?
+	public var zipcode : String?
+	public var state : String?
+	public var address1 : String?
+	public var address2 : String?
+	public var wareHouseId : String?
+	public var country : String?
+	public var city : String?
 
 	public required init?(map: Map) {
 
