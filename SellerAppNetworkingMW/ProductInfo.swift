@@ -41,6 +41,13 @@ public class ProductInfo: Mappable {
     public var promotionLabel: String?
     public var department: String?
     public var isGRConversionEligible: Bool?
+    //PDP 3
+    public var isMarketPlace: Bool?
+    public var listPriceMin: String?
+    public var listPriceMax: String?
+    public var finalPriceMin: String?
+    public var finalPriceMax: String?
+    public var priceRangeFlag: Bool?
 
     public required init?(map: Map) {
     }
@@ -76,6 +83,13 @@ public class ProductInfo: Mappable {
         promotionLabel <- map["promotionLabel"]
         department <- map["department"]
         isGRConversionEligible <- map["isGRConversionEligible"]
+        // PDP 3
+        isMarketPlace               <- map["isMarketPlace"]
+        listPriceMin                <- map ["listPriceMin"]
+        listPriceMax                <- map ["listPriceMax"]
+        finalPriceMin               <- map ["finalPriceMin"]
+        finalPriceMax               <- map ["finalPriceMax"]
+        priceRangeFlag              <- map ["priceRangeFlag"]
     }
     
 }
