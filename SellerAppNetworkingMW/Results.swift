@@ -19,6 +19,7 @@ public class Results: Mappable{
     public var image: String?
     public var navigationState: String?
     public var productId: String?
+    public var isMarketPlace : Bool?
     
     public required init?(map: Map)
     {
@@ -31,6 +32,7 @@ public class Results: Mappable{
         image <- map["image"]
         navigationState <- map["navigationState"]
         productId <- map["productId"]
+        isMarketPlace <- map["isMarketPlace"]
     }
     public func mapping(map: Map){
         type <- map["type"]
@@ -42,5 +44,7 @@ public class Results: Mappable{
         image <- map["image"]
         navigationState <- map["navigationState"]
         productId <- map["productId"]
+        isMarketPlace <- map["isMarketPlace"]
     }
 }
+
