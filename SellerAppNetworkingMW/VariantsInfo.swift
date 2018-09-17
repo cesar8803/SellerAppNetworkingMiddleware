@@ -32,6 +32,7 @@ public class VariantsInfo: Mappable {
     public var sellersCount         : Int?      // OFFER MKP
     public var eddSLCC              : String?   // NEW
     public var eddSLHome            : String?   // NEW
+    public var eddBT                : String?   // NEW
     public var offerId              : String?   // OFFER MKP
     public var sellerId             : String?   // OFFER MKP
     public var allowLPPromotions    : Bool?     // OFFER MKP
@@ -66,6 +67,7 @@ public class VariantsInfo: Mappable {
         sellersCount        <- map ["sellersCount"]
         eddSLCC             <- map ["eddSLCC"]
         eddSLHome           <- map ["eddSLHome"]
+        eddBT               <- map ["eddBT"]
         offerId             <- map ["offerId"]
         sellerId            <- map ["sellerId"]
         allowLPPromotions   <- map ["allowLPPromotions"]
