@@ -27,8 +27,8 @@ public class PDPLevel: Mappable{
     //
     public var InventarioSOMSMW:InventarioSOMSMW?
     // MKP
-    public var isMarketPlace: Bool?
-    public var marketplaceOffers: MarketPlaceOffers?
+    public var isMarketPlace: Bool?                     // PDP 1 only
+    public var marketplaceOffers: MarketPlaceOffers?    // PDP 1 only
     
     public required init?(map: Map){
     }

@@ -154,6 +154,24 @@ public class AsyncClientMW
         
     }
     
+    public class func getPDP3(mandatory: PDP_MandatoryParams, parameters: [PDP_Optional<Any>]?, completion: @escaping (_ dataResponse: PDPLevel) -> Void, completionError: @escaping ErrorStringHandler) {
+        
+        var params = mandatory.getParameters()
+        
+        if let pdpOptionals = parameters {
+            for pdp_opt in pdpOptionals {
+                params[pdp_opt.type.rawValue] = pdp_opt.value
+            }
+        }
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.pdp3, parameters: params, completion: { (PDP_level: PDPLevel) in
+            completion(PDP_level)
+        }) { (message) in
+            completionError(message)
+        }
+        
+    }
+    
     // ***** Clean Cache ***** //
     
     public class func cleanCache(completion: @escaping (_ completion: FlushLevel) -> (), completionError: @escaping ErrorStringHandler) {

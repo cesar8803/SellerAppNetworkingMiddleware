@@ -12,6 +12,7 @@ import ObjectMapper
 public enum stockStatusEnum : String{
     case inStock = "IN_STOCK"
     case outStock = "OUT_OF_STOCK"
+    case inStockTreshold = "IN_STOCK_THRESHOLD"
     case error = "error"
 }
 
@@ -22,7 +23,7 @@ public class InventoryMKP: Mappable{
     }
     
     public func mapping(map: Map){
-        inventoryMKP             <- map ["skuList"]
+        inventoryMKP             <- map ["itrStatuses"]
     }
 }
 
