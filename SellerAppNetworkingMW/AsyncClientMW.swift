@@ -435,9 +435,6 @@ public class AsyncClientMW
         documento:String,
         vendedor:String,
         fecha:String,
-        IdSeller:String,
-        DesSeller:String,
-        Tipo:String,
         completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMSterlingMW)-> Void,
         completionError: @escaping ErrorStringHandler )
     {
