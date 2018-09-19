@@ -426,6 +426,41 @@ public class AsyncClientMW
         }
     }
     
+    //MARK: RemissionMKP
+    class public func  createOrderMKP(
+        parameters: [AnyObject],
+        storeCode:String,
+        terminalCode:String,
+        remision:String,
+        documento:String,
+        vendedor:String,
+        fecha:String,
+        IdSeller:String,
+        DesSeller:String,
+        Tipo:String,
+        completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMSterlingMW)-> Void,
+        completionError: @escaping ErrorStringHandler )
+    {
+        let params : String = getRequestUrlForAdapter( parameters: parameters as AnyObject, isArray:true)
+        print(params)
+        
+        
+        let paramsRequest:Parameters = ["objeto": params as Any,
+                                        "terminal-code": terminalCode as Any,
+                                        "store-code": storeCode as Any]
+        
+        print(paramsRequest)
+        
+        AsyncClientMW.getRequestExecute(
+            BackendUrlManager.ServiceUrlsId.remissionCE,
+            parameters: paramsRequest,
+            completion:
+            { (Response : ResponseCreaActualizaOVREMSterlingMW) in
+                completion(Response)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
     
     //MARK: RemissionCE
     class public func  createOrderCE(
