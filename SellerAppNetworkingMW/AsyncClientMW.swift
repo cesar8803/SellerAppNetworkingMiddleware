@@ -154,6 +154,24 @@ public class AsyncClientMW
         
     }
     
+    public class func getPDP3(mandatory: PDP_MandatoryParams, parameters: [PDP_Optional<Any>]?, completion: @escaping (_ dataResponse: PDPLevel) -> Void, completionError: @escaping ErrorStringHandler) {
+        
+        var params = mandatory.getParameters()
+        
+        if let pdpOptionals = parameters {
+            for pdp_opt in pdpOptionals {
+                params[pdp_opt.type.rawValue] = pdp_opt.value
+            }
+        }
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.pdp3, parameters: params, completion: { (PDP_level: PDPLevel) in
+            completion(PDP_level)
+        }) { (message) in
+            completionError(message)
+        }
+        
+    }
+    
     // ***** Clean Cache ***** //
     
     public class func cleanCache(completion: @escaping (_ completion: FlushLevel) -> (), completionError: @escaping ErrorStringHandler) {
@@ -408,6 +426,38 @@ public class AsyncClientMW
         }
     }
     
+    //MARK: RemissionMKP
+    class public func  createOrderMKP(
+        parameters: [AnyObject],
+        storeCode:String,
+        terminalCode:String,
+        remision:String,
+        documento:String,
+        vendedor:String,
+        fecha:String,
+        completion:@escaping (_ dataResponse: ResponseCreaActualizaOVREMSterlingMW)-> Void,
+        completionError: @escaping ErrorStringHandler )
+    {
+        let params : String = getRequestUrlForAdapter( parameters: parameters as AnyObject, isArray:true)
+        print(params)
+        
+        
+        let paramsRequest:Parameters = ["objeto": params as Any,
+                                        "terminal-code": terminalCode as Any,
+                                        "store-code": storeCode as Any]
+        
+        print(paramsRequest)
+        
+        AsyncClientMW.getRequestExecute(
+            BackendUrlManager.ServiceUrlsId.remissionCE,
+            parameters: paramsRequest,
+            completion:
+            { (Response : ResponseCreaActualizaOVREMSterlingMW) in
+                completion(Response)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
     
     //MARK: RemissionCE
     class public func  createOrderCE(

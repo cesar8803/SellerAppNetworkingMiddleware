@@ -27,8 +27,21 @@ public class VariantsInfo: Mappable {
     public var minimumListPrice: String?
     public var maximumListPrice: String?
     public var promotionLabel: String?
+    // PDP 3
+    public var bestSeller           : String?   // OFFER MKP
+    public var sellersCount         : Int?      // OFFER MKP
+    public var eddSLCC              : String?   // NEW
+    public var eddSLHome            : String?   // NEW
+    public var eddBT                : String?   // NEW
+    public var offerId              : String?   // OFFER MKP
+    public var sellerId             : String?   // OFFER MKP
+    public var allowLPPromotions    : Bool?     // OFFER MKP
+    public var sellerOperatorId     : String?   // OFFER MKP
+    public var sellerSkuId          : String?   // OFFER MKP
+    public var liverpoolPromotions  : [String]? // OFFER MKP
+    public var otherPromotions      : [String]? // OFFER MKP
+    public var marketPlaceMessage   : String?   // NEW
     
-
     public required init?(map: Map){
     }
     
@@ -49,6 +62,20 @@ public class VariantsInfo: Mappable {
         minimumListPrice <- map["minimumListPrice"]
         maximumListPrice <- map["maximumListPrice"]
         promotionLabel <- map["promotionLabel"]
+        
+        bestSeller          <- map ["bestSeller"]
+        sellersCount        <- map ["sellersCount"]
+        eddSLCC             <- map ["eddSLCC"]
+        eddSLHome           <- map ["eddSLHome"]
+        eddBT               <- map ["eddBT"]
+        offerId             <- map ["offerId"]
+        sellerId            <- map ["sellerId"]
+        allowLPPromotions   <- map ["allowLPPromotions"]
+        sellerOperatorId    <- map ["sellerOperatorId"]
+        sellerSkuId         <- map ["sellerSkuId"]
+        liverpoolPromotions <- map ["liverpoolPromotions"]
+        otherPromotions     <- map ["otherPromotions"]
+        marketPlaceMessage  <- map ["marketPlaceMessage"]
     }
     
 }
