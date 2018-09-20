@@ -536,13 +536,16 @@ public class AsyncClientMW
         print(params)
         
         
-        let paramsRequest:Parameters = ["objeto": params as Any]
+        let paramsRequest:Parameters = ["adapter": "MirakleServiciosBK",
+                                        "procedure" : "crearOrdenMirakle",
+                                        "compressResponse" : true,
+                                        "parameters": params]
 
         
         //TODO: Cambiar URL
         
         AsyncClientMW.getRequestExecute(
-            BackendUrlManager.ServiceUrlsId.remissionMDR,
+            BackendUrlManager.ServiceUrlsId.createOrderMirakl,
             parameters: paramsRequest,
             completion:
             { (Response : OrderMiraklResponse) in
