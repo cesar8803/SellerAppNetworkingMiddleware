@@ -475,6 +475,33 @@ public class AsyncClientMW
         }
     }
     
+    
+    
+    class public func  createOrderMkpMirakl(
+        parameters: [String : Any],
+        completion:@escaping (_ dataResponse: OrderMiraklResponse)-> Void,
+        completionError: @escaping ErrorStringHandler )
+    {
+        let params : String = getRequestUrlForAdapter( parameters: parameters as AnyObject, isArray:true)
+        print(params)
+        
+        
+        let paramsRequest:Parameters = ["objeto": params as Any]
+
+        
+        //TODO: Cambiar URL
+        
+        AsyncClientMW.getRequestExecute(
+            BackendUrlManager.ServiceUrlsId.remissionMDR,
+            parameters: paramsRequest,
+            completion:
+            { (Response : OrderMiraklResponse) in
+                completion(Response)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
+    
     //MARK: urlRequest adapter
     class func getRequestUrlForAdapter( parameters: AnyObject, isArray:Bool = false) -> String
     {
@@ -711,6 +738,14 @@ public class AsyncClientMW
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.sellerDetails, parameters: params,
                                         completion: { (sellerDetail: SellerDetailsResponse) in
                                         completionSuccess(sellerDetail) })
+        { (msg) in completionError(msg) }
+    }
+    
+    public class func  getStoreDetail(sku:String, offset:Int, completionSuccess   : @escaping (_ dataResponse:SellerDetailsResponse) -> Void, completionError: @escaping ErrorStringHandler){
+        let params:Parameters = ["skuId":sku]
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.sellerDetails, parameters: params,
+                                        completion: { (sellerDetail: SellerDetailsResponse) in
+                                            completionSuccess(sellerDetail) })
         { (msg) in completionError(msg) }
     }
 
