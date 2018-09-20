@@ -526,35 +526,6 @@ public class AsyncClientMW
     }
     
     
-    
-    class public func  createOrderMkpMirakl(
-        parameters: [String : Any],
-        completion:@escaping (_ dataResponse: OrderMiraklResponse)-> Void,
-        completionError: @escaping ErrorStringHandler )
-    {
-        let params : String = getRequestUrlForAdapter( parameters: parameters as AnyObject, isArray:true)
-        print(params)
-        
-        
-        let paramsRequest:Parameters = ["adapter": "MirakleServiciosBK",
-                                        "procedure" : "crearOrdenMirakle",
-                                        "compressResponse" : true,
-                                        "parameters": params]
-
-        
-        //TODO: Cambiar URL
-        
-        AsyncClientMW.getRequestExecute(
-            BackendUrlManager.ServiceUrlsId.createOrderMirakl,
-            parameters: paramsRequest,
-            completion:
-            { (Response : OrderMiraklResponse) in
-                completion(Response)
-        }) { (msg) in
-            completionError(msg)
-        }
-    }
-    
     //MARK: urlRequest adapter
     class func getRequestUrlForAdapter( parameters: AnyObject, isArray:Bool = false) -> String
     {
