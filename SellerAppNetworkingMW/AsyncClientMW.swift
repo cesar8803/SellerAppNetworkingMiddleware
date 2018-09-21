@@ -773,7 +773,7 @@ public class AsyncClientMW
     }
     
     // Request for Zonas Blancas
-    public class func getZonasBlancas(completion:@escaping (_ dataResponse: Home)-> Void, completionError: @escaping ErrorStringHandler )
+    public class func getZonasBlancas(completion:@escaping (_ dataResponse: ZonasBlancas)-> Void, completionError: @escaping ErrorStringHandler )
     {
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.whiteZone, parameters: nil, completion: { (zonas) in
             completion(zonas)
