@@ -62,7 +62,7 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/v1/marketplace/statusMP",                      //pdpMarketPlaceInventory
         "Middleware/rest/service/v1/marketplace/getSellersOfferDetailsPdp",     //Offers Details
         "Middleware/rest/service/v1/marketplace/getSellerDetails",              //SellerDEtails
-        "invoke?",                                                               //CreateOrderMirakle
+        "invoke?",                                                              //CreateOrderMirakle
         "Middleware/rest/service/v1/consolidacion/getBlockedCpCodeList"         //Zonas Blancas
     ]
     
