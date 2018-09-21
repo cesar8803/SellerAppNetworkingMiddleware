@@ -130,7 +130,6 @@ public class AsyncClientMW
         }) { (msg) in
             completionError(msg)
         }
-        
     }
     
     
@@ -771,6 +770,16 @@ public class AsyncClientMW
                                         completion: { (sellerDetail: SellerDetailsResponse) in
                                             completionSuccess(sellerDetail) })
         { (msg) in completionError(msg) }
+    }
+    
+    // Request for Zonas Blancas
+    public class func getZonasBlancas(completion:@escaping (_ dataResponse: Home)-> Void, completionError: @escaping ErrorStringHandler )
+    {
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.whiteZone, parameters: nil, completion: { (zonas) in
+            completion(zonas)
+        }) { (msg) in
+            completionError(msg)
+        }
     }
 
 }
