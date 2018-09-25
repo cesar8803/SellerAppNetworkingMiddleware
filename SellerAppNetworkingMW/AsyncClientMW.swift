@@ -715,8 +715,8 @@ public class AsyncClientMW
         completionSuccess   : @escaping (_ dataResponse:InventoryMKP) -> Void,
         completionError     : @escaping ErrorStringHandler)
     {
-        var params:Parameters = [:]
-        params["sku-list"]       = [skuId:offerId]
+        let skus = skuId + ":" + offerId
+        let params:Parameters = ["sku-list":skus]
         
         AsyncClientMW.getRequestExecute( BackendUrlManager.ServiceUrlsId.pdpMarketPlaceInventory,
                                          parameters: params,
@@ -726,12 +726,17 @@ public class AsyncClientMW
     }
     
     public class func getInventoriesMKP(
-        skuIdOfferIdList    : [String:String],
+        skuIdOfferIdList    : [String : String],
         completionSuccess   : @escaping (_ dataResponse:InventoryMKP) -> Void,
         completionError     : @escaping ErrorStringHandler)
     {
-        var params:Parameters = [:]
-        params["sku-list"]       = skuIdOfferIdList
+        var skus = "" //skuId + ":" + offerId
+        for sku in skuIdOfferIdList{
+            let dicKeys = skuIdOfferIdList.map{return $0.key}
+            skus = sku.key + ":" + sku.value + (sku.key == dicKeys.last ? "" : ",")
+        }
+        
+        let params:Parameters = ["sku-list":skus]
         
         AsyncClientMW.getRequestExecute( BackendUrlManager.ServiceUrlsId.pdpMarketPlaceInventory,
                                          parameters: params,
