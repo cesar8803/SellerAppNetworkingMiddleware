@@ -758,7 +758,7 @@ public class AsyncClientMW
                     let skuRes = result.filter{$0.skuId == sku["sku"]}.first
                     if (skuRes != nil){
                         dicoSku["sku"] = "\(sku["sku"] ?? ""):\(sku["offerId"] ?? "")"
-                        dicoSku["display"] = ((skuRes?.quantity)!) <= (Int(sku["cantidad"] ?? "1")!)
+                        dicoSku["display"] = ((skuRes?.quantity)!) >= (Int(sku["cantidad"] ?? "1")!)
                         dicoSku["articulosDisponibles"] = (skuRes?.quantity)!
                         output.append(dicoSku)
                     }
