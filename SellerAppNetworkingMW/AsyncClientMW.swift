@@ -709,6 +709,25 @@ public class AsyncClientMW
     }
     
     //MARK:- PDP Market place
+    public class func setInventoriesMKP(
+        skuIdOfferIdList    : [[String : Any]],
+        completionSuccess   : @escaping (InventoryMKP)->(),
+        completionError     : @escaping ErrorStringHandler)
+    {
+        
+        var objeto:[String:Any] = [String:Any]()
+        objeto["operation"] = "purchase"
+        objeto["skuInventory"] = skuIdOfferIdList
+        let params:Parameters = ["objeto":objeto]
+        let error = { (msg) in completionError(msg)}
+        
+        AsyncClientMW.getRequestExecute( BackendUrlManager.ServiceUrlsId.marketPlaceUpdateInventory,
+                                         parameters: params,
+                                         completion: completionSuccess,
+                                         errorCompletition : error)
+    }
+    
+    
     public class func getInventoryMKP(
         skuId               : String,
         offerId             : String,
@@ -726,23 +745,47 @@ public class AsyncClientMW
     }
     
     public class func getInventoriesMKP(
-        skuIdOfferIdList    : [String : String],
-        completionSuccess   : @escaping (_ dataResponse:InventoryMKP) -> Void,
+        skuIdOfferIdList    : [[String : String]],
+        completionSuccess   : @escaping ([[String: Any]]?)->(),
         completionError     : @escaping ErrorStringHandler)
     {
+        let success = { (skusITR: InventoryMKP) in
+            
+            var output = [[String:Any]]()
+            if let result = skusITR.inventoryMKP , skusITR.inventoryMKP != nil {
+                for sku in skuIdOfferIdList{
+                    var dicoSku = [String:Any]()
+                    let skuRes = result.filter{$0.skuId == sku["sku"]}.first
+                    if (skuRes != nil){
+                        dicoSku["sku"] = "\(sku["sku"] ?? ""):\(sku["offerId"] ?? "")"
+                        dicoSku["display"] = ((skuRes?.quantity)!) <= (Int(sku["cantidad"] ?? "1")!)
+                        dicoSku["articulosDisponibles"] = (skuRes?.quantity)!
+                        output.append(dicoSku)
+                    }
+                }
+                completionSuccess( output as [[String:Any]]? )
+            } else {
+                completionError("")
+            }
+            
+            } as (_ dataResponse:InventoryMKP) -> Void
+        
+        let error = { (msg) in completionError(msg) }
+        
         var skus = "" //skuId + ":" + offerId
         for sku in skuIdOfferIdList{
-            let dicKeys = skuIdOfferIdList.map{return $0.key}
-            skus = sku.key + ":" + sku.value + (sku.key == dicKeys.last ? "" : ",")
+            let last = skuIdOfferIdList.last
+            // ["sku": sku, "offerId": offerId,"cantidad": quantity]
+            skus = skus + "\(sku["sku"] ?? ""):\(sku["offerId"] ?? "")\(sku == last! ? "" : ",")"
         }
         
         let params:Parameters = ["sku-list":skus]
         
         AsyncClientMW.getRequestExecute( BackendUrlManager.ServiceUrlsId.pdpMarketPlaceInventory,
                                          parameters: params,
-                                         completion: { (skusITR: InventoryMKP) in
-                                            completionSuccess(skusITR) })
-        { (msg) in completionError(msg) }
+                                         completion: success,
+                                         errorCompletition : error)
+        
     }
     
     //    {"skuList":[{"skuId":"1033866981","quantity":500,"offerId":"2040","stockStatus":"IN_STOCK","s":0},{"skuId":"1033866981","quantity":0,"offerId":"2007","stockStatus":"OUT_OF_STOCK","s":0},{"skuId":"1033245790","quantity":0,"offerId":"","stockStatus":"OUT_OF_STOCK","s":0},{"quantity":0,"s":1,"err":"Mandatory information is missing"}]}
@@ -762,10 +805,10 @@ public class AsyncClientMW
     }
     
     public class func  getSellerDetail(sku:String, offset:Int, completionSuccess   : @escaping (_ dataResponse:SellerDetailsResponse) -> Void, completionError: @escaping ErrorStringHandler){
-         let params:Parameters = ["skuId":sku]
+        let params:Parameters = ["skuId":sku]
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.sellerDetails, parameters: params,
                                         completion: { (sellerDetail: SellerDetailsResponse) in
-                                        completionSuccess(sellerDetail) })
+                                            completionSuccess(sellerDetail) })
         { (msg) in completionError(msg) }
     }
     
@@ -786,6 +829,6 @@ public class AsyncClientMW
             completionError(msg)
         }
     }
-
+    
 }
 
