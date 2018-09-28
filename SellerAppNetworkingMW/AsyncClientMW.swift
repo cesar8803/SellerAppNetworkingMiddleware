@@ -759,12 +759,10 @@ public class AsyncClientMW
                     let sku = skuIdOfferIdList[i]
                     let skuRes = result[i]
                     
-                    if (skuRes != nil){
-                        dicoSku["sku"] = "\(sku["sku"] ?? ""):\(sku["offerId"] ?? "")"
-                        dicoSku["display"] = ((skuRes?.quantity)!) >= (Int(sku["cantidad"] ?? "1")!)
-                        dicoSku["articulosDisponibles"] = (skuRes?.quantity)!
-                        output.append(dicoSku)
-                    }
+                    dicoSku["sku"] = "\(sku["sku"] ?? ""):\(sku["offerId"] ?? "")"
+                    dicoSku["display"] = ((skuRes.quantity)!) >= (Int(sku["cantidad"] ?? "1")!)
+                    dicoSku["articulosDisponibles"] = (skuRes.quantity)!
+                    output.append(dicoSku)
                 }
                 completionSuccess( output as [[String:Any]]? )
             } else {
