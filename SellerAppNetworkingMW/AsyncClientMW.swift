@@ -715,10 +715,23 @@ public class AsyncClientMW
         completionError     : @escaping ErrorStringHandler)
     {
         
-        var objeto:[String:Any] = [String:Any]()
-        objeto["operation"] = "purchase"
-        objeto["skuInventory"] = skuIdOfferIdList
-        let params:Parameters = ["objeto":objeto]
+        var objeto = "{ \"operation\":\"purchase\",\"skuInventory\":"
+        var skus = "["
+        for sku in skuIdOfferIdList{
+            let last = skuIdOfferIdList.last
+            let isLast = "\(last!["sku"] ?? "")" == "\(sku["sku"] ?? "")" && "\(last!["offerId"] ?? "")" == "\(sku["offerId"] ?? "")"
+            skus = skus + "{"
+            skus += "\"skuId\":\"" + "\(sku["sku"] ?? "")" + "\","
+            skus += "\"offerId\":\"" + "\(sku["offerId"] ?? "")" + "\","
+            skus += "\"quantity\":" + "\(sku["quantity"] ?? "")"
+            skus = skus + "}" + "\(isLast ? "" : ",")"
+        }
+        skus = skus + "]"
+        objeto = objeto + skus + "}"
+        
+        var params:Parameters = Parameters()
+        params["objeto"] = objeto
+        
         let error = { (msg) in completionError(msg)}
         
         AsyncClientMW.getRequestExecute( BackendUrlManager.ServiceUrlsId.marketPlaceUpdateInventory,
