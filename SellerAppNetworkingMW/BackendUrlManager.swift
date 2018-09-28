@@ -61,7 +61,7 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/v1/gifttable/getGiftListGuestView?",           //newSearchDetail
         "Middleware/rest/service/v1/gifttable/getEventsBySearchableAdvance?",   //SearchAdvance
         "Middleware/rest/service/v1/marketplace/statusMP",                      //pdpMarketPlaceInventory
-        "Middleware/rest/servicev1/marketplace/updateMP",                       //marketPlaceUpdateInventory
+        "Middleware/rest/service/v1/marketplace/updateMP",                       //marketPlaceUpdateInventory
         "Middleware/rest/service/v1/marketplace/getSellersOfferDetailsPdp",     //Offers Details
         "Middleware/rest/service/v1/marketplace/getSellerDetails",              //SellerDEtails
         "invoke?",                                                              //CreateOrderMirakle
