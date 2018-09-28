@@ -753,9 +753,12 @@ public class AsyncClientMW
             
             var output = [[String:Any]]()
             if let result = skusITR.inventoryMKP , skusITR.inventoryMKP != nil {
-                for sku in skuIdOfferIdList{
+                for i in 0..<skuIdOfferIdList.count{
+                    
                     var dicoSku = [String:Any]()
-                    let skuRes = result.filter{$0.skuId == sku["sku"]}.first
+                    let sku = skuIdOfferIdList[i]
+                    let skuRes = result[i]
+                    
                     if (skuRes != nil){
                         dicoSku["sku"] = "\(sku["sku"] ?? ""):\(sku["offerId"] ?? "")"
                         dicoSku["display"] = ((skuRes?.quantity)!) >= (Int(sku["cantidad"] ?? "1")!)
