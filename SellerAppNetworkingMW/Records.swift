@@ -51,7 +51,12 @@ public class Records: Mappable{
         promotionLabel <- map["promotionLabel"]
         productDisplayName <- map["productDisplayName"]
         productBestSeller <- map["productBestSeller"]
-        isMarketPlace <- map["isMarketPlace"]
+        //isMarketPlace <- map["isMarketPlace"]
+        switch map["isMarketPlace"].currentValue{
+        case (let v as String)  : isMarketPlace = Bool(v)
+        case (let v as Bool)    : isMarketPlace = v
+        default                 : debugPrint("You should add another kind of data")
+        }
         isRange <- map["isRange"]
         macVariantsInfo <- map["macVariantsInfo"]
         plpFlags <- map["plpFlags"]

@@ -53,7 +53,12 @@ public class PDPLevel: Mappable{
         //
         InventarioSOMSMW <- map["InventarioSOMS"]
         // MKP
-        isMarketPlace <- map["isMarketPlace"]
+        //isMarketPlace <- map["isMarketPlace"]
+        switch map["isMarketPlace"].currentValue{
+        case (let v as String)  : isMarketPlace = Bool(v)
+        case (let v as Bool)    : isMarketPlace = v
+        default                 : debugPrint("You should add another kind of data")
+        }
         marketplaceOffers <- map["marketplaceOffers"]
     }
     
