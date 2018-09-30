@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 public class Payment : Mappable {
+    public var total : String?
 	public var paymentType : String?
 	public var paymentStatus : String?
 	public var paymentStatusHexColor : String?
@@ -21,7 +22,7 @@ public class Payment : Mappable {
 	public required init?(map: Map) { }
 
 	public func mapping(map: Map) {
-
+        total <- map["total"]
 		paymentType <- map["paymentType"]
 		paymentStatus <- map["paymentStatus"]
 		paymentStatusHexColor <- map["paymentStatusHexColor"]
