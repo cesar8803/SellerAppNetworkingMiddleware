@@ -52,5 +52,4 @@ public class Products : Mappable {
         sellerSkuId <- map["sellerSkuId"]
         sellerOperatorId <- map["sellerOperatorId"]
 	}
-
 }
