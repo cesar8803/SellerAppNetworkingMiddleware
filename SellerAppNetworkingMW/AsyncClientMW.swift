@@ -843,6 +843,17 @@ public class AsyncClientMW
             completionError(msg)
         }
     }
-    
+
+    // Request for Search Order
+    public class func getSearchOrder(order:String, completion:@escaping (_ dataResponse: Purchases)-> Void, completionError: @escaping ErrorStringHandler )
+    {
+        let params:Parameters = ["trackingNumber":order]
+        
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.searchOrder, parameters: params, completion: { (zonas) in
+            completion(zonas)
+        }) { (msg) in
+            completionError(msg)
+        }
+    }
 }
 

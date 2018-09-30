@@ -51,6 +51,12 @@
 		5593FE001F1FBBD80012E8B2 /* ProductListOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593FDFF1F1FBBD80012E8B2 /* ProductListOrder.swift */; };
 		5593FE021F1FBBE40012E8B2 /* RemisionesConsultaOrdenresponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593FE011F1FBBE40012E8B2 /* RemisionesConsultaOrdenresponse.swift */; };
 		5593FE041F1FBBF20012E8B2 /* direccionDestinatario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5593FE031F1FBBF20012E8B2 /* direccionDestinatario.swift */; };
+		6326E48F215EC6670034A1DF /* Purchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6326E48E215EC6670034A1DF /* Purchases.swift */; };
+		6326E493215EC6890034A1DF /* ShippingGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6326E490215EC6890034A1DF /* ShippingGroups.swift */; };
+		6326E494215EC6890034A1DF /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6326E491215EC6890034A1DF /* Delivery.swift */; };
+		6326E495215EC6890034A1DF /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6326E492215EC6890034A1DF /* Payment.swift */; };
+		6326E498215EC69F0034A1DF /* Edd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6326E496215EC69F0034A1DF /* Edd.swift */; };
+		6326E499215EC69F0034A1DF /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6326E497215EC69F0034A1DF /* Products.swift */; };
 		63690016215533AB009C4624 /* ZonasBlancas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63690015215533AB009C4624 /* ZonasBlancas.swift */; };
 		71992E181F576BB100EE35A2 /* ShoppingListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71992E171F576BB100EE35A2 /* ShoppingListResponse.swift */; };
 		71992E1A1F576C0200EE35A2 /* DatosCliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71992E191F576C0200EE35A2 /* DatosCliente.swift */; };
@@ -181,6 +187,12 @@
 		5593FDFF1F1FBBD80012E8B2 /* ProductListOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListOrder.swift; sourceTree = "<group>"; };
 		5593FE011F1FBBE40012E8B2 /* RemisionesConsultaOrdenresponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemisionesConsultaOrdenresponse.swift; sourceTree = "<group>"; };
 		5593FE031F1FBBF20012E8B2 /* direccionDestinatario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = direccionDestinatario.swift; sourceTree = "<group>"; };
+		6326E48E215EC6670034A1DF /* Purchases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Purchases.swift; sourceTree = "<group>"; };
+		6326E490215EC6890034A1DF /* ShippingGroups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShippingGroups.swift; sourceTree = "<group>"; };
+		6326E491215EC6890034A1DF /* Delivery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delivery.swift; sourceTree = "<group>"; };
+		6326E492215EC6890034A1DF /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		6326E496215EC69F0034A1DF /* Edd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edd.swift; sourceTree = "<group>"; };
+		6326E497215EC69F0034A1DF /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		63690015215533AB009C4624 /* ZonasBlancas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonasBlancas.swift; sourceTree = "<group>"; };
 		71992E171F576BB100EE35A2 /* ShoppingListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListResponse.swift; sourceTree = "<group>"; };
 		71992E191F576C0200EE35A2 /* DatosCliente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatosCliente.swift; sourceTree = "<group>"; };
@@ -408,6 +420,7 @@
 				5593FDFF1F1FBBD80012E8B2 /* ProductListOrder.swift */,
 				5593FE011F1FBBE40012E8B2 /* RemisionesConsultaOrdenresponse.swift */,
 				552B99431F1D1E8F00F1E622 /* Skuarray.swift */,
+				6326E48D215EC60B0034A1DF /* SearchOrder */,
 				63690017215533C6009C4624 /* ZonasBlancas */,
 				A9CA18BD1F7C4E9D00F9ACBE /* Benefits */,
 				A94093FC1FCDE9080077C430 /* Cache */,
@@ -423,6 +436,19 @@
 				71992E161F576B6F00EE35A2 /* ShoppingList */,
 			);
 			name = AsyncClientMWObjects;
+			sourceTree = "<group>";
+		};
+		6326E48D215EC60B0034A1DF /* SearchOrder */ = {
+			isa = PBXGroup;
+			children = (
+				6326E48E215EC6670034A1DF /* Purchases.swift */,
+				6326E491215EC6890034A1DF /* Delivery.swift */,
+				6326E492215EC6890034A1DF /* Payment.swift */,
+				6326E490215EC6890034A1DF /* ShippingGroups.swift */,
+				6326E496215EC69F0034A1DF /* Edd.swift */,
+				6326E497215EC69F0034A1DF /* Products.swift */,
+			);
+			name = SearchOrder;
 			sourceTree = "<group>";
 		};
 		63690017215533C6009C4624 /* ZonasBlancas */ = {
@@ -759,10 +785,12 @@
 				B517F27320850A2900194972 /* CategoryProductsGiftList.swift in Sources */,
 				F41CBB6720938F200002452B /* EventInfo.swift in Sources */,
 				F45069E8205B3C3C001D2864 /* ResponseCreaActualizaOVREMSterlingMW.swift in Sources */,
+				6326E495215EC6890034A1DF /* Payment.swift in Sources */,
 				A94093FE1FCDE9620077C430 /* Flush.swift in Sources */,
 				A9CA18C91F7D93EE00F9ACBE /* BenefitOptions.swift in Sources */,
 				A96A69511F206C2400407A82 /* BuscaProducto.swift in Sources */,
 				F45069E2205B3C3C001D2864 /* MiddlewareShippingProduct.swift in Sources */,
+				6326E48F215EC6670034A1DF /* Purchases.swift in Sources */,
 				A96A69631F2076E600407A82 /* Inventario.swift in Sources */,
 				A9A0EE131F0CAB260092DA45 /* GiftRegistryPLPLevel.swift in Sources */,
 				2B1198631F01B1F100C7A1FC /* SortOptions.swift in Sources */,
@@ -776,11 +804,13 @@
 				B51B56512097CD5800C6102A /* Address.swift in Sources */,
 				8353927C1F631F8800FD3FFC /* PlpFlags.swift in Sources */,
 				2B396EB61EFF5CEE008194C8 /* CategoryInfo.swift in Sources */,
+				6326E498215EC69F0034A1DF /* Edd.swift in Sources */,
 				2B396EB81EFF5CEE008194C8 /* BackendUrlManager.swift in Sources */,
 				A96A696B1F20787500407A82 /* SapInventario.swift in Sources */,
 				A96A69571F206DFC00407A82 /* RatingDetails.swift in Sources */,
 				A9CA18C51F7C536F00F9ACBE /* MWItems.swift in Sources */,
 				F41CBB6B20938F200002452B /* CategoryItemsInfo.swift in Sources */,
+				6326E494215EC6890034A1DF /* Delivery.swift in Sources */,
 				A96A695F1F20703300407A82 /* Gwp.swift in Sources */,
 				A9CA18C71F7C53A800F9ACBE /* Porcentaje.swift in Sources */,
 				A9A0EE161F0CAC190092DA45 /* ListaEventoResponse.swift in Sources */,
@@ -816,6 +846,7 @@
 				63690016215533AB009C4624 /* ZonasBlancas.swift in Sources */,
 				2B11985B1F01AE5900C7A1FC /* Records.swift in Sources */,
 				A9A0EE1A1F0CACDA0092DA45 /* ListaFestejados.swift in Sources */,
+				6326E499215EC69F0034A1DF /* Products.swift in Sources */,
 				71C31D8C1F1980D0003E7449 /* Results.swift in Sources */,
 				B517F27520850AD700194972 /* GiftListItems.swift in Sources */,
 				A9A0EE181F0CAC810092DA45 /* ListaDirecciones.swift in Sources */,
@@ -839,6 +870,7 @@
 				A96A69691F20781D00407A82 /* ConsultaSkuInventarioResponse.swift in Sources */,
 				834B7F411F6AFD3700146495 /* VariantsColor.swift in Sources */,
 				A9CA18BC1F7C4E9800F9ACBE /* Benefits.swift in Sources */,
+				6326E493215EC6890034A1DF /* ShippingGroups.swift in Sources */,
 				1490EADF212E000E00657114 /* Recommendation.swift in Sources */,
 				A9A0EE111F0C528D0092DA45 /* GiftRegistryParamaters.swift in Sources */,
 				A96A69551F206DB800407A82 /* Images.swift in Sources */,
