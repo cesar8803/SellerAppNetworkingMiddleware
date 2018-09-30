@@ -845,7 +845,7 @@ public class AsyncClientMW
     }
 
     // Request for Search Order
-    public class func getSearchOrder(order:String, completion:@escaping (_ dataResponse: Purchases)-> Void, completionError: @escaping ErrorStringHandler )
+    public class func getSearchOrder(order:String, completion:@escaping (_ dataResponse: purchases_Base)-> Void, completionError: @escaping ErrorStringHandler )
     {
         let params:Parameters = ["trackingNumber":order]
         

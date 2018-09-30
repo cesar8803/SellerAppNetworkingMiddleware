@@ -58,6 +58,7 @@
 		6326E498215EC69F0034A1DF /* Edd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6326E496215EC69F0034A1DF /* Edd.swift */; };
 		6326E499215EC69F0034A1DF /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6326E497215EC69F0034A1DF /* Products.swift */; };
 		63690016215533AB009C4624 /* ZonasBlancas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63690015215533AB009C4624 /* ZonasBlancas.swift */; };
+		636A1AE5216153EF00649D7A /* ArrayPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A1AE4216153EF00649D7A /* ArrayPurchase.swift */; };
 		71992E181F576BB100EE35A2 /* ShoppingListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71992E171F576BB100EE35A2 /* ShoppingListResponse.swift */; };
 		71992E1A1F576C0200EE35A2 /* DatosCliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71992E191F576C0200EE35A2 /* DatosCliente.swift */; };
 		71992E1C1F576C3200EE35A2 /* ListaSku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71992E1B1F576C3200EE35A2 /* ListaSku.swift */; };
@@ -194,6 +195,7 @@
 		6326E496215EC69F0034A1DF /* Edd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edd.swift; sourceTree = "<group>"; };
 		6326E497215EC69F0034A1DF /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		63690015215533AB009C4624 /* ZonasBlancas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonasBlancas.swift; sourceTree = "<group>"; };
+		636A1AE4216153EF00649D7A /* ArrayPurchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayPurchase.swift; sourceTree = "<group>"; };
 		71992E171F576BB100EE35A2 /* ShoppingListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListResponse.swift; sourceTree = "<group>"; };
 		71992E191F576C0200EE35A2 /* DatosCliente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatosCliente.swift; sourceTree = "<group>"; };
 		71992E1B1F576C3200EE35A2 /* ListaSku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaSku.swift; sourceTree = "<group>"; };
@@ -441,6 +443,7 @@
 		6326E48D215EC60B0034A1DF /* SearchOrder */ = {
 			isa = PBXGroup;
 			children = (
+				636A1AE4216153EF00649D7A /* ArrayPurchase.swift */,
 				6326E48E215EC6670034A1DF /* Purchases.swift */,
 				6326E491215EC6890034A1DF /* Delivery.swift */,
 				6326E492215EC6890034A1DF /* Payment.swift */,
@@ -877,6 +880,7 @@
 				A96A69531F206D5700407A82 /* ProductInfo.swift in Sources */,
 				2B7FD14C1F01BE5A00232C66 /* PLPResults.swift in Sources */,
 				14646416212E0885004F842C /* StatusSeller.swift in Sources */,
+				636A1AE5216153EF00649D7A /* ArrayPurchase.swift in Sources */,
 				2B1198651F01B2EC00C7A1FC /* MacVariantsInfo.swift in Sources */,
 				2B11985D1F01AE7F00C7A1FC /* PLPState.swift in Sources */,
 				A9A0EE1C1F0CAD170092DA45 /* ListaArticulos.swift in Sources */,
