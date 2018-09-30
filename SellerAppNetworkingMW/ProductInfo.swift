@@ -84,7 +84,12 @@ public class ProductInfo: Mappable {
         department <- map["department"]
         isGRConversionEligible <- map["isGRConversionEligible"]
         // PDP 3
-        isMarketPlace               <- map["isMarketPlace"]
+        //isMarketPlace <- map["isMarketPlace"]
+        switch map["isMarketPlace"].currentValue{
+        case (let v as String)  : isMarketPlace = Bool(v)
+        case (let v as Bool)    : isMarketPlace = v
+        default                 : debugPrint("You should add another kind of data")
+        }
         listPriceMin                <- map ["listPriceMin"]
         listPriceMax                <- map ["listPriceMax"]
         finalPriceMin               <- map ["finalPriceMin"]

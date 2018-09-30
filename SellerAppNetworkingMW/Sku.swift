@@ -55,6 +55,11 @@ public class Sku: Mappable{
         promotionLabel <- map["promotionLabel"]
         xlImage <- map["lgImage"]
         productInfo <- map["productInfo"]
-        isMarketPlace <- map["isMarketPlace"]
+        //isMarketPlace <- map["isMarketPlace"]
+        switch map["isMarketPlace"].currentValue{
+        case (let v as String)  : isMarketPlace = Bool(v)
+        case (let v as Bool)    : isMarketPlace = v
+        default                 : debugPrint("You should add another kind of data")
+        }
     }
 }
