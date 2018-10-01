@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 public class Payment : Mappable {
-    public var total : String?
+    public var total : Double?
 	public var paymentType : String?
 	public var paymentStatus : String?
 	public var paymentStatusHexColor : String?
