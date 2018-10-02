@@ -38,6 +38,7 @@ class BackendUrlManager : NSObject{
         case createOrderMirakl
         case whiteZone
         case searchOrder
+        case shipmentStatus
     }
     
     fileprivate static let SERVICE_CONTEXT:[String] = [
@@ -62,12 +63,13 @@ class BackendUrlManager : NSObject{
         "Middleware/rest/service/v1/gifttable/getGiftListGuestView?",           //newSearchDetail
         "Middleware/rest/service/v1/gifttable/getEventsBySearchableAdvance?",   //SearchAdvance
         "Middleware/rest/service/v1/marketplace/statusMP",                      //pdpMarketPlaceInventory
-        "Middleware/rest/service/v1/marketplace/updateMP",                       //marketPlaceUpdateInventory
+        "Middleware/rest/service/v1/marketplace/updateMP",                      //marketPlaceUpdateInventory
         "Middleware/rest/service/v1/marketplace/getSellersOfferDetailsPdp",     //Offers Details
         "Middleware/rest/service/v1/marketplace/getSellerDetails",              //SellerDEtails
         "invoke?",                                                              //CreateOrderMirakle
-        "Middleware/rest/service/v1/consolidacion/getBlockedCpCodeList",         //Zonas Blancas
-        "Middleware/rest/service/v1/marketplace/search-order"
+        "Middleware/rest/service/v1/consolidacion/getBlockedCpCodeList",        //Zonas Blancas
+        "Middleware/rest/service/v1/marketplace/search-order",                  //search Order
+        "/Middleware/rest/service/ShipmentStatus"                               //shipmentStatus
     ]
     
     // The array of all the services url's.
