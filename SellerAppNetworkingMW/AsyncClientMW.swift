@@ -858,11 +858,11 @@ public class AsyncClientMW
     
     // Request for Shipment Status
 
-    public class func getZonasBlancas(packageNumber : String, isSinglePackage : String, completion:@escaping (_ dataResponse: ShipmentStatus)-> Void, completionError: @escaping ErrorStringHandler )
+    public class func getShipmentStatus(packageNumber : String, isSinglePackage : String, completion:@escaping (_ dataResponse: ShipmentStatus)-> Void, completionError: @escaping ErrorStringHandler )
     {
         let params:Parameters = ["packageNumber":packageNumber, "isSinglePackage":isSinglePackage]
         
-        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.shipmentStatus, completion: { (zonas) in
+        AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.shipmentStatus, parameters: params, completion: { (zonas) in
             completion(zonas)
         }) { (msg) in
             completionError(msg)
