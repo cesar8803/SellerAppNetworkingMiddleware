@@ -58,8 +58,8 @@
 		6326E498215EC69F0034A1DF /* Edd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6326E496215EC69F0034A1DF /* Edd.swift */; };
 		6326E499215EC69F0034A1DF /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6326E497215EC69F0034A1DF /* Products.swift */; };
 		63330EAE21642033004BB70D /* ShipmentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63330EAD21642033004BB70D /* ShipmentStatus.swift */; };
-		63330EB121642087004BB70D /* StatusShipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63330EAF21642086004BB70D /* StatusShipment.swift */; };
 		63330EB221642087004BB70D /* StagesShipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63330EB021642086004BB70D /* StagesShipment.swift */; };
+		63330EB4216424A2004BB70D /* StatusShipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63330EB3216424A2004BB70D /* StatusShipment.swift */; };
 		63690016215533AB009C4624 /* ZonasBlancas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63690015215533AB009C4624 /* ZonasBlancas.swift */; };
 		636A1AE5216153EF00649D7A /* ArrayPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A1AE4216153EF00649D7A /* ArrayPurchase.swift */; };
 		71992E181F576BB100EE35A2 /* ShoppingListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71992E171F576BB100EE35A2 /* ShoppingListResponse.swift */; };
@@ -198,8 +198,8 @@
 		6326E496215EC69F0034A1DF /* Edd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edd.swift; sourceTree = "<group>"; };
 		6326E497215EC69F0034A1DF /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		63330EAD21642033004BB70D /* ShipmentStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentStatus.swift; sourceTree = "<group>"; };
-		63330EAF21642086004BB70D /* StatusShipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusShipment.swift; path = ../../../../Downloads/codegen_5bb3e8604065d/StatusShipment.swift; sourceTree = "<group>"; };
 		63330EB021642086004BB70D /* StagesShipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StagesShipment.swift; sourceTree = "<group>"; };
+		63330EB3216424A2004BB70D /* StatusShipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusShipment.swift; sourceTree = "<group>"; };
 		63690015215533AB009C4624 /* ZonasBlancas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonasBlancas.swift; sourceTree = "<group>"; };
 		636A1AE4216153EF00649D7A /* ArrayPurchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayPurchase.swift; sourceTree = "<group>"; };
 		71992E171F576BB100EE35A2 /* ShoppingListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListResponse.swift; sourceTree = "<group>"; };
@@ -466,7 +466,7 @@
 			children = (
 				63330EAD21642033004BB70D /* ShipmentStatus.swift */,
 				63330EB021642086004BB70D /* StagesShipment.swift */,
-				63330EAF21642086004BB70D /* StatusShipment.swift */,
+				63330EB3216424A2004BB70D /* StatusShipment.swift */,
 			);
 			name = "Shipment Status";
 			sourceTree = "<group>";
@@ -826,7 +826,6 @@
 				2B396EB61EFF5CEE008194C8 /* CategoryInfo.swift in Sources */,
 				6326E498215EC69F0034A1DF /* Edd.swift in Sources */,
 				2B396EB81EFF5CEE008194C8 /* BackendUrlManager.swift in Sources */,
-				63330EB121642087004BB70D /* StatusShipment.swift in Sources */,
 				A96A696B1F20787500407A82 /* SapInventario.swift in Sources */,
 				A96A69571F206DFC00407A82 /* RatingDetails.swift in Sources */,
 				A9CA18C51F7C536F00F9ACBE /* MWItems.swift in Sources */,
@@ -889,6 +888,7 @@
 				A96A69591F206E4200407A82 /* EddInfo.swift in Sources */,
 				F45069E4205B3C3C001D2864 /* CreaActualizaOVREMResponseMW.swift in Sources */,
 				A96A69691F20781D00407A82 /* ConsultaSkuInventarioResponse.swift in Sources */,
+				63330EB4216424A2004BB70D /* StatusShipment.swift in Sources */,
 				834B7F411F6AFD3700146495 /* VariantsColor.swift in Sources */,
 				A9CA18BC1F7C4E9800F9ACBE /* Benefits.swift in Sources */,
 				6326E493215EC6890034A1DF /* ShippingGroups.swift in Sources */,
