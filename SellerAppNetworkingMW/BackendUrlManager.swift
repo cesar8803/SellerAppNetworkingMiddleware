@@ -69,7 +69,7 @@ class BackendUrlManager : NSObject{
         "invoke?",                                                              //CreateOrderMirakle
         "Middleware/rest/service/v1/consolidacion/getBlockedCpCodeList",        //Zonas Blancas
         "Middleware/rest/service/v1/marketplace/search-order",                  //search Order
-        "/Middleware/rest/service/ShipmentStatus"                               //shipmentStatus
+        "Middleware/rest/service/ShipmentStatus"                               //shipmentStatus
     ]
     
     // The array of all the services url's.
