@@ -59,7 +59,7 @@ public class SellerDetailsResponse : Mappable {
         twoStarRatings <- map["twoStarRatings"]
         nextOffsetAvailable <- map["nextOffsetAvailable"]
         createdDate <- map["createdDate"]
-        evaltionsInfoBeanList <- map["evaltionsInfoBeanList"]
+        evaltionsInfoBeanList <- map["evaluationsInfoList"]
     }
     
 }

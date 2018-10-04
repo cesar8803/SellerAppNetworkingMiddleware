@@ -809,7 +809,7 @@ public class AsyncClientMW
         completion          : @escaping (_ dataResponse: OfferDetailResponse) -> Void,
         completionError     : @escaping ErrorStringHandler)
     {
-        let params:Parameters = ["skuId":sku]
+        let params:Parameters = ["sellerid":sku]
         
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.pdpMarketPlaceOfferDetail,
                                         parameters: params,
