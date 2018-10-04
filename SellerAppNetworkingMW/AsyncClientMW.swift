@@ -809,7 +809,7 @@ public class AsyncClientMW
         completion          : @escaping (_ dataResponse: OfferDetailResponse) -> Void,
         completionError     : @escaping ErrorStringHandler)
     {
-        let params:Parameters = ["sellerid":sku]
+        let params:Parameters = ["skuId":sku]
         
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.pdpMarketPlaceOfferDetail,
                                         parameters: params,
@@ -819,7 +819,8 @@ public class AsyncClientMW
     }
     
     public class func  getSellerDetail(sku:String, offset:Int, completionSuccess   : @escaping (_ dataResponse:SellerDetailsResponse) -> Void, completionError: @escaping ErrorStringHandler){
-        let params:Parameters = ["skuId":sku]
+        
+        let params:Parameters = ["sellerid":sku]
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.sellerDetails, parameters: params,
                                         completion: { (sellerDetail: SellerDetailsResponse) in
                                             completionSuccess(sellerDetail) })
