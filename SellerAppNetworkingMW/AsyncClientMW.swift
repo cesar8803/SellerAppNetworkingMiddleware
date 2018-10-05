@@ -820,7 +820,7 @@ public class AsyncClientMW
     
     public class func  getSellerDetail(sku:String, offset:Int, completionSuccess   : @escaping (_ dataResponse:SellerDetailsResponse) -> Void, completionError: @escaping ErrorStringHandler){
         
-        let params:Parameters = ["sellerid":sku]
+        let params:Parameters = ["sellerid":sku, "offset":offset]
         AsyncClientMW.getRequestExecute(BackendUrlManager.ServiceUrlsId.sellerDetails, parameters: params,
                                         completion: { (sellerDetail: SellerDetailsResponse) in
                                             completionSuccess(sellerDetail) })
