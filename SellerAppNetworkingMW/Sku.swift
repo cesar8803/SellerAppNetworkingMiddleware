@@ -24,12 +24,14 @@ public class Sku: Mappable{
     public var promotionLabel: String?
     public var xlImage: String?
     public var isMarketPlace: Bool?
+    public var productId : String?
 
     required public init?(map: Map){
         
     }
     
     public func mapping(map: Map){
+        productId <- map ["productId"]
         SKU <- map["SKU"]
         smImage <- map["smImage"]
         url <- map["url"]
