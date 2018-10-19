@@ -20,6 +20,7 @@ public class Results: Mappable{
     public var navigationState: String?
     public var productId: String?
     public var isMarketPlace : Bool?
+    public var sellerId : String?
     
     public required init?(map: Map)
     {
@@ -49,6 +50,7 @@ public class Results: Mappable{
         image <- map["image"]
         navigationState <- map["navigationState"]
         productId <- map["productId"]
+        sellerId <- map["sellerId"]
         //isMarketPlace <- map["isMarketPlace"]
         switch map["isMarketPlace"].currentValue{
         case (let v as String)  : isMarketPlace = Bool(v)
