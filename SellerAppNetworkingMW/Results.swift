@@ -33,6 +33,7 @@ public class Results: Mappable{
         image <- map["image"]
         navigationState <- map["navigationState"]
         productId <- map["productId"]
+        sellerId <- map["sellerId"]
         //isMarketPlace <- map["isMarketPlace"]
         switch map["isMarketPlace"].currentValue{
         case (let v as String)  : isMarketPlace = Bool(v)
