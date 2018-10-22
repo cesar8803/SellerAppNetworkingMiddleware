@@ -10,17 +10,19 @@ import Foundation
 import ObjectMapper
 
 public class Delivery : Mappable {
-	public var deliveryMethod : String?
-	public var deliveryAddressName : String?
-	public var deliveryDetails : String?
-
-	public required init?(map: Map) { }
-
-	public func mapping(map: Map) {
-
-		deliveryMethod <- map["deliveryMethod"]
-		deliveryAddressName <- map["deliveryAddressName"]
-		deliveryDetails <- map["deliveryDetails"]
-	}
-
+    public var deliveryMethod : String?
+    public var deliveryAddressName : String?
+    public var deliveryDetails : String?
+    public var seller : String?
+    
+    public required init?(map: Map) { }
+    
+    public func mapping(map: Map) {
+        
+        deliveryMethod <- map["deliveryMethod"]
+        deliveryAddressName <- map["deliveryAddressName"]
+        deliveryDetails <- map["deliveryDetails"]
+        seller <- map["seller"]
+    }
 }
+
