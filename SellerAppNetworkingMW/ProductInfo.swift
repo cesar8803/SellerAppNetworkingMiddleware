@@ -14,13 +14,13 @@ public class ProductInfo: Mappable {
     public var ratingCount: Float?
     public var images: Images?
     public var promoPrice: Float?
-    public var minimumListPrice: Int?
+    public var minimumListPrice: Float?
     public var firstLevelParent: String?
     public var ratingDetails: RatingDetails?
-    public var maximumPromoPrice: Int?
+    public var maximumPromoPrice: Float?
     public var shortDescription: String?
-    public var minimumPromoPrice: Int?
-    public var maximumListPrice: Int?
+    public var minimumPromoPrice: Float?
+    public var maximumListPrice: Float?
     public var type: String?
     public var productId: String?
     public var itrElegibility: Int?
@@ -32,8 +32,8 @@ public class ProductInfo: Mappable {
     public var displayName: String?
     public var flags: [Flags]?
     public var gwp: Gwp?
-    public var salePrice: Int?
-    public var listPrice: Int?
+    public var salePrice: Float?
+    public var listPrice: Float?
     public var videoLink: String?
     public var dynamicAttributes: [DynamicAttributes]?
     public var userManual: String?
