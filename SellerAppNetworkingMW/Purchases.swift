@@ -21,7 +21,7 @@ public class Purchases : Mappable {
 
 	public func mapping(map: Map) {
 
-		packageApplied <- map["packageApplied"]
+		packageApplied <- map["isSinglePackage"]
 		purchaseDate <- map["purchaseDate"]
 		orderId <- map["orderId"]
 		delivery <- map["delivery"]

@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 public class Sku: Mappable{
+    public var productId: String?
     public var SKU: String?
     public var smImage: String?
     public var url: String?
@@ -30,6 +31,7 @@ public class Sku: Mappable{
     }
     
     public func mapping(map: Map){
+        productId <- map["productId"]
         SKU <- map["SKU"]
         smImage <- map["smImage"]
         url <- map["url"]
