@@ -13,6 +13,7 @@ public class Delivery : Mappable {
 	public var deliveryMethod : String?
 	public var deliveryAddressName : String?
 	public var deliveryDetails : String?
+    public var seller : String?
 
 	public required init?(map: Map) { }
 
@@ -21,6 +22,7 @@ public class Delivery : Mappable {
 		deliveryMethod <- map["deliveryMethod"]
 		deliveryAddressName <- map["deliveryAddressName"]
 		deliveryDetails <- map["deliveryDetails"]
+        seller <- map["seller"]
 	}
 
 }
