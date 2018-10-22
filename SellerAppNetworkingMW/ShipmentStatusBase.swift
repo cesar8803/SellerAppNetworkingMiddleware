@@ -19,6 +19,7 @@ public class ShipmentStatusBase : Mappable {
 	public var shippingId : String?
 	public var status : StatusSS?
 	public var sellerInfo : SellerInfoSS?
+    public var edd : String?
 	public var currentStatus : String?
 	public var products : [ProductsSS]?
 	public var shippmentStatus : [ShippmentStatusSS]?
@@ -34,6 +35,7 @@ public class ShipmentStatusBase : Mappable {
 		currentStatus <- map["currentStatus"]
 		products <- map["products"]
 		shippmentStatus <- map["shippmentStatus"]
+        edd <- map["edd"]
 	}
 
 }
