@@ -721,7 +721,7 @@ public class AsyncClientMW
             let last = skuIdOfferIdList.last
             let isLast = "\(last!["sku"] ?? "")" == "\(sku["sku"] ?? "")" && "\(last!["offerId"] ?? "")" == "\(sku["offerId"] ?? "")"
             skus = skus + "{"
-            skus += "\"skuId\":\"" + "\(sku["sku"] ?? "")" + "\","
+            skus += "\"skuId\":\"" + "\(sku["skuId"] ?? "")" + "\","
             skus += "\"offerId\":\"" + "\(sku["offerId"] ?? "")" + "\","
             skus += "\"quantity\":" + "\(sku["quantity"] ?? "")"
             skus = skus + "}" + "\(isLast ? "" : ",")"
