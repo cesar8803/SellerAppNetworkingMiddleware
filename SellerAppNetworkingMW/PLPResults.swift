@@ -28,6 +28,6 @@ public class PLPResults: Mappable{
         sortOptions <- map["sortOptions"]
         label <- map["label"]
         marketplaceSLMessage <- map["marketplaceSLMessage"]
-        marketplaceSLMessage <- map["marketplaceBTMessage"]
+        marketplaceBTMessage <- map["marketplaceBTMessage"]
     }
 }
