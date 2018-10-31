@@ -24,6 +24,8 @@ public class RecommendedItems: Mappable {
     public var productId: String?
     public var minimumPromoPrice: Int?
     
+    public var isMarketPlace: Bool?
+    
     public required init?(){
     }
     
@@ -42,6 +44,8 @@ public class RecommendedItems: Mappable {
         productId <- map["productId"]
         listPrice <- map["listPrice"]
         minimumPromoPrice <- map["minimumPromoPrice"]
+        isMarketPlace <- map["isMarketPlace"]
     }
     
 }
+
